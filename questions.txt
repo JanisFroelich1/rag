@@ -1,0 +1,45 @@
+What transformer in the category "Geometries" can replace 2D ellipses?
+Which transformer converts YAML data for use with JSON transformers in FME?
+Can you name a transformer that handles raster cell values and falls under the "Rasters" category?
+Which transformer is used for reprojecting coordinates and integrations with the name "GtransReprojector"?
+What is the name of the transformer that connects to Autodesk BIM 360 Docs?
+Which transformer extracts properties of ellipses in the "Calculated Values" category?
+Name a transformer that performs a database join operation under the "Attributes, Filters and Joins" category.
+What transformer in the "Rasters, Web" category connects to Google Vision?
+Which transformer replaces raster cells and belongs to the "Rasters" category?
+What transformer under "Calculated Values, Point Clouds" can extract properties from point clouds?
+Can you identify a transformer that calculates raster statistics in the "Calculated Values, Rasters" category?
+Which transformer is used to create 2D arcs in the "Geometries" category?
+Name the transformer that calculates slopes for raster data in the "3D, Rasters" category.
+What is the function of the "SQLCreator" transformer in the "Workflows" category?
+Which transformer in the "Strings" category can pad text strings?
+Which transformer is used for merging lists of features in the "Filters and Joins" category?
+What transformer calculates values for raster cells in the "Calculated Values, Rasters" category?
+Which transformer accumulates bounding boxes in the "Spatial Analysis" category?
+What transformer extracts min and max values from raster bands in the "Calculated Values, Rasters" category?
+Can you name the transformer that sets the origin for raster cells in the "Rasters" category?
+Which transformer extracts character codes in the "Strings" category?
+What transformer merges point clouds in the "Filters and Joins, Point Clouds" category?
+Which transformer resolves raster palettes in the "Rasters" category?
+What transformer overlays areas on other areas in the "Filters and Joins, Spatial Analysis" category?
+Which transformer filters point clouds in the "Filters and Joins, Point Clouds" category?
+What transformer connects to WebSocket in the "Web, Workflows" category?
+Can you name the transformer that connects to RabbitMQ in the "Integrations, Web, Workflows" category?
+Which transformer creates hillshades for rasters in the "3D, Cartography and Reports, Rasters" category?
+What transformer is used for clipping geometries in the "Data Quality, Geometries" category?
+Which transformer creates features in the "3D, Workflows" category?
+Which transformer in the "Point Clouds" category provides a convenient way to construct math expressions from various data sources?
+What transformer in the "Rasters, Workflows" category is feature-based and has RasterConsumer as a related transformer?
+Name the transformer in the "Integrations, Web" category that deals with fetching Twitter statuses.
+Which transformer in the "Coordinates, Integrations" category uses the Gtrans reprojection engine?
+What transformer in the "Coordinates, Integrations" category reprojects attributes using Gtrans?
+Identify the transformer in the "Point Clouds" category that uses a text editor to construct text strings and regular expressions.
+Which transformer in the "Coordinates, Integrations" category converts coordinates to geocentric if the destination coordinate system is geocentric?
+Name the transformer in the "3D, Geometries" category that is used for generating TIN.
+What transformer in the "3D" category extracts parts of geometries?
+Which transformer in the "3D" category renames geometry properties?
+Identify the transformer in the "Rasters" category that removes raster palettes.
+What transformer appends XML elements and is related to other XML transformers?
+Which transformer in the "Coordinates, Geometries" category swaps coordinate values?
+Name the transformer in the "Cartography and Reports" category that builds KML tours.
+What transformer in the "Web" category connects to Google IoT?
