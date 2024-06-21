@@ -1,0 +1,3000 @@
+Name: 2DEllipseReplacer
+Category: Geometries
+Description: Name: 2DEllipseReplacer
+Category: Geometries
+Description: ArcPropertySetter
+Related Transformers: 2DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, ArcStroker, Bufferer, Creator, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter
+Name: YAMLtoJSONConverter
+Category: 
+Description: Name: YAMLtoJSONConverter
+Category: 
+Description: Converting YAML for use with JSON transformers in FME.
+Related Transformers: JSONExtractor, JSONFlattener, JSONFormatter, JSONFragmenter, JSONTemplater, JSONUpdater, JSONValidator
+Name: RasterCellValueReplacer
+Category: Rasters
+Description: Name: RasterCellValueReplacer
+Category: Rasters
+Description: , inclusive
+Related Transformers: RasterCellValueCalculator, RasterCellValueRounder, RasterExpressionEvaluator, RasterSingularCellValueCalculator
+Name: GtransReprojector
+Category: Coordinates, Integrations
+Description: Name: GtransReprojector
+Category: Coordinates, Integrations
+Description: No
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: AutodeskBIM360DocsConnector
+Category: Integrations, Web, Workflows
+Description: Name: AutodeskBIM360DocsConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: GoogleDriveConnector, SharePointOnlineConnector, S3Connector
+Name: EllipsePropertyExtractor
+Category: Calculated Values
+Description: Name: EllipsePropertyExtractor
+Category: Calculated Values
+Description: 
+Related Transformers: 2DArcReplacer, 2DEllipseReplacer, 3DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, ArcStroker, EllipsePropertySetter
+Name: DatabaseJoiner
+Category: Attributes, Filters and Joins
+Description: Name: DatabaseJoiner
+Category: Attributes, Filters and Joins
+Description: SELECT * from myrecords where record_type = 'highway'
+Related Transformers: DatabaseDeleter, DatabaseUpdater, FeatureJoiner, FeatureMerger, ListBasedFeatureMerger, InlineQuerier, SQLCreator, SQLExecutor, Matcher
+Name: GoogleVisionConnector
+Category: Rasters, Web
+Description: Name: GoogleVisionConnector
+Category: Rasters, Web
+Description: 
+Related Transformers: AzureComputerVisionConnector, AzureTextAnalyticsConnector, ComprehendConnector, GoogleBigQueryConnector, GoogleCloudPubSubConnector, GoogleCloudStorageConnector, GoogleDriveConnector, GoogleLanguageConnector, RekognitionConnector
+Name: RasterTiler
+Category: Rasters
+Description: Name: RasterTiler
+Category: Rasters
+Description: 
+Related Transformers: Clipper, RasterMosaicker, RasterSubsetter, Tiler, WebMapTiler
+Name: PROJReprojector
+Category: Coordinates, Integrations
+Description: Name: PROJReprojector
+Category: Coordinates, Integrations
+Description: Math Operators
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: PointCloudPropertyExtractor
+Category: Calculated Values, Point Clouds
+Description: Name: PointCloudPropertyExtractor
+Category: Calculated Values, Point Clouds
+Description: 
+Related Transformers: PointCloudExpressionEvaluator, PointCloudSorter, PointCloudStatisticsCalculator
+Name: RasterStatisticsCalculator
+Category: Calculated Values, Rasters
+Description: Name: RasterStatisticsCalculator
+Category: Calculated Values, Rasters
+Description: Bands are specified by their index number, starting at 0.
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterExpressionEvaluator, RasterSingularCellValueCalculator
+Name: RasterGCPExtractor
+Category: Coordinates, Rasters
+Description: Name: RasterGCPExtractor
+Category: Coordinates, Rasters
+Description: Text Editor
+Related Transformers: RasterGCPSetter
+Name: AzureQueueStorageConnector
+Category: Integrations, Web, Workflows
+Description: Name: AzureQueueStorageConnector
+Category: Integrations, Web, Workflows
+Description: Two message receiving options are available:
+Related Transformers: AzureBlobStorageConnector, AzureComputerVisionConnector, AzureEventHubsConnector, AzureFileStorageConnector, AzureTextAnalyticsConnector, GoogleCloudPubSubConnector, KafkaConnector, MQTTConnector, SQSConnector
+Name: TrimbleConnectConnector
+Category: Integrations, Web, Workflows
+Description: Name: TrimbleConnectConnector
+Category: Integrations, Web, Workflows
+Description: Destination
+Related Transformers: 
+Name: ListExploder
+Category: Attributes
+Description: Name: ListExploder
+Category: Attributes
+Description: somelist{0}.length = 7.3
+Related Transformers: 
+Name: CenterPointExtractor
+Category: Calculated Values, Coordinates
+Description: Name: CenterPointExtractor
+Category: Calculated Values, Coordinates
+Description: Identifying the center of the bounding box of a feature
+Related Transformers: CenterPointReplacer, CoordinateExtractor, VertexCreator
+Name: ArcPropertySetter
+Category: Geometries
+Description: Name: ArcPropertySetter
+Category: Geometries
+Description: 
+Related Transformers: 2DEllipseReplacer, 2DArcReplacer, 3DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcStroker, Creator, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter
+Name: CoordinateRounder
+Category: Coordinates, Geometries
+Description: Name: CoordinateRounder
+Category: Coordinates, Geometries
+Description: Math Operators
+Related Transformers: AttributeRounder, GeometryValidator, RasterCellValueRounder
+Name: SharedItemRetriever
+Category: 3D
+Description: Name: SharedItemRetriever
+Category: 3D
+Description: Special Characters
+Related Transformers: 
+Name: Intersector
+Category: Geometries, Spatial Analysis
+Description: Name: Intersector
+Category: Geometries, Spatial Analysis
+Description: In the Intersector parameters dialog,Generate Listis enabled. The list is namedIntersections, and one selected attribute -NAME- will be captured in the new list.
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: GoogleVisionConnector
+Category: Rasters, Web
+Description: Name: GoogleVisionConnector
+Category: Rasters, Web
+Description: The type of operation to perform. Choices are:
+Related Transformers: AzureComputerVisionConnector, AzureTextAnalyticsConnector, ComprehendConnector, GoogleBigQueryConnector, GoogleCloudPubSubConnector, GoogleCloudStorageConnector, GoogleDriveConnector, GoogleLanguageConnector, RekognitionConnector
+Name: Logger
+Category: Workflows
+Description: Name: Logger
+Category: Workflows
+Description: Reset/Refresh
+Related Transformers: 
+Name: BoundingBoxReplacer
+Category: Geometries
+Description: Name: BoundingBoxReplacer
+Category: Geometries
+Description: 
+Related Transformers: 2DBoxReplacer, 2DGridAccumulator, 2DGridCreator, BoundingBoxAccumulator, BoundsExtractor, Creator, HullAccumulator, HullReplacer, MinimumSpanningCircleReplacer, RasterExtentsCoercer
+Name: RasterBandInterpretationCoercer
+Category: Rasters
+Description: Name: RasterBandInterpretationCoercer
+Category: Rasters
+Description: 
+Related Transformers: RasterBandAdder, RasterInterpretationCoercer, RasterPaletteInterpretationCoercer
+Name: PROJReprojector
+Category: Coordinates, Integrations
+Description: Name: PROJReprojector
+Category: Coordinates, Integrations
+Description: Different coordinate system libraries (engines) not only contain coordinate system definitions, they also have unique reprojection algorithms. FME’s generic reprojection transformers, in the first table below, default to using the FME (CS-Map) library.
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: 
+Related Transformers: RasterAspectCalculator, RasterHillshader, Scaler
+Name: RasterPaletteExtractor
+Category: Rasters
+Description: Name: RasterPaletteExtractor
+Category: Rasters
+Description: String Functions
+Related Transformers: AttributeFileWriter, RasterPaletteAdder, RasterPaletteGenerator, RasterPaletteRemover, RasterPaletteResolver
+Name: Triangulator
+Category: Geometries
+Description: Name: Triangulator
+Category: Geometries
+Description: Triangulated features are output here.
+Related Transformers: 
+Name: StringPadder
+Category: Strings
+Description: Name: StringPadder
+Category: Strings
+Description: This sets the padding to the Right (suffix current attribute value) or the Left (prefix current attribute value).
+Related Transformers: 
+Name: PointCloudReplacer
+Category: Point Clouds
+Description: Name: PointCloudReplacer
+Category: Point Clouds
+Description: String Functions
+Related Transformers: AttributeFileReader, GeometryExtractor, GeometryRemover, GeometryReplacer, PointCloudExtractor, RasterExtractor, RasterReplacer
+Name: GeoRSSFeatureComposer
+Category: 
+Description: Name: GeoRSSFeatureComposer
+Category: 
+Description: Import
+Related Transformers: 
+Name: RasterCellValueRounder
+Category: Rasters
+Description: Name: RasterCellValueRounder
+Category: Rasters
+Description: Reference
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterExpressionEvaluator, RasterSingularCellValueCalculator
+Name: RasterSubsetter
+Category: Rasters
+Description: Name: RasterSubsetter
+Category: Rasters
+Description: RasterRGBCreator
+Related Transformers: Clipper, RasterTiler, WebMapTiler
+Name: Bufferer
+Category: 3D, Spatial Analysis
+Description: Name: Bufferer
+Category: 3D, Spatial Analysis
+Description: 
+Related Transformers: OffsetCurveGenerator, SpatialFilter, SpatialRelator
+Name: DatabaseJoiner
+Category: Attributes, Filters and Joins
+Description: Name: DatabaseJoiner
+Category: Attributes, Filters and Joins
+Description: Select attributes from a drop-down list in the Feature Attributes column. (You can type directly in the corresponding table fields or select from a list by clicking the Browse button.) For the Browse button to list available table fields, all the information needed to read from the table needs to be specified.
+Related Transformers: DatabaseDeleter, DatabaseUpdater, FeatureJoiner, FeatureMerger, ListBasedFeatureMerger, InlineQuerier, SQLCreator, SQLExecutor, Matcher
+Name: GeometryReplacer
+Category: 
+Description: Name: GeometryReplacer
+Category: 
+Description: 
+Related Transformers: GeometryExtractor, RasterExtractor, RasterReplacer, PointCloudExtractor, PointCloudReplacer
+Name: SubstringExtractor
+Category: Calculated Values, Strings
+Description: Name: SubstringExtractor
+Category: Calculated Values, Strings
+Description: Cut, Copy, and Paste
+Related Transformers: 
+Name: LabelPointReplacer
+Category: Cartography and Reports, Geometries
+Description: Name: LabelPointReplacer
+Category: Cartography and Reports, Geometries
+Description: Arithmetic Editor
+Related Transformers: 
+Name: ListSearcher
+Category: Strings
+Description: Name: ListSearcher
+Category: Strings
+Description: 
+Related Transformers: 
+Name: CoordinateSystemRemover
+Category: Coordinates
+Description: Name: CoordinateSystemRemover
+Category: Coordinates
+Description: Expressions and strings can include a number of functions, characters, parameters, and more.
+Related Transformers: CoordinateSystemDescriptionConverter, CoordinateSystemExtractor, CoordinateSystemSetter, LocalCoordinateSystemSetter
+Name: FeatureMerger
+Category: Filters and Joins
+Description: Name: FeatureMerger
+Category: Filters and Joins
+Description: 
+Related Transformers: DatabaseJoiner, FeatureJoiner, InlineQuerier, ListBasedFeatureMerger, SQLCreator, SQLExecutor, Matcher
+Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: RasterBandInterpretationCoercer
+Related Transformers: RasterAspectCalculator, RasterSlopeCalculator, Scaler
+Name: TextStroker
+Category: Cartography and Reports, Rasters
+Description: Name: TextStroker
+Category: Cartography and Reports, Rasters
+Description: Editing Transformer Parameters
+Related Transformers: 
+Name: XMLFlattener
+Category: 
+Description: Name: XMLFlattener
+Category: 
+Description: Math Functions
+Related Transformers: 
+Name: HDFSConnector
+Category: Integrations, Web, Workflows
+Description: Name: HDFSConnector
+Category: Integrations, Web, Workflows
+Description: The selected attributes will be added to the output feature.
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: RasterPaletteResolver
+Category: Rasters
+Description: Name: RasterPaletteResolver
+Category: Rasters
+Description: For information on raster geometry and properties, seeRasters (IFMERaster).
+Related Transformers: RasterPaletteAdder, RasterPaletteExtractor, RasterPaletteGenerator, RasterPaletteRemover
+Name: SharePointOnlineConnector
+Category: Integrations, Web, Workflows
+Description: Name: SharePointOnlineConnector
+Category: Integrations, Web, Workflows
+Description: Upload with File Name
+Related Transformers: GoogleDriveConnector, OneDriveConnector, S3Connector
+Name: BoundingBoxAccumulator
+Category: Spatial Analysis
+Description: Name: BoundingBoxAccumulator
+Category: Spatial Analysis
+Description: 
+Related Transformers: 2DBoxReplacer, 2DGridAccumulator, 2DGridCreator, BoundingBoxReplacer, BoundsExtractor, Creator, HullAccumulator, HullReplacer, MinimumSpanningCircleReplacer, RasterExtentsCoercer
+Name: SurfaceBuilder
+Category: 3D, Spatial Analysis
+Description: Name: SurfaceBuilder
+Category: 3D, Spatial Analysis
+Description: 
+Related Transformers: 
+Name: Clipper
+Category: Spatial Analysis
+Description: Name: Clipper
+Category: Spatial Analysis
+Description: Candidate Only: All Z values of Clippers will be dropped.
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: NeighborFinder
+Category: Spatial Analysis
+Description: Name: NeighborFinder
+Category: Spatial Analysis
+Description: All angles are measured in degrees counterclockwise from horizontal. Where angles are not well-defined (for example, when aCandidatepolygon is contained inside aBasepolygon), they are set to 0.
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborPairFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: DGNStyler
+Category: Cartography and Reports
+Description: Name: DGNStyler
+Category: Cartography and Reports
+Description: Cell Size By
+Related Transformers: 
+Name: PipeReplacer
+Category: 3D, Geometries
+Description: Name: PipeReplacer
+Category: 3D, Geometries
+Description: 
+Related Transformers: 
+Name: WebMapTiler
+Category: Cartography and Reports
+Description: Name: WebMapTiler
+Category: Cartography and Reports
+Description: 
+Related Transformers: Clipper, RasterMosaicker, RasterPyramider, RasterSubsetter, Tiler
+Name: AttributeRangeFilter
+Category: Filters and Joins
+Description: Name: AttributeRangeFilter
+Category: Filters and Joins
+Description: Reference
+Related Transformers: AttributeFilter, AttributeRangeMapper, AttributeValueMapper, TestFilter
+Name: CharacterCodeExtractor
+Category: Strings
+Description: Name: CharacterCodeExtractor
+Category: Strings
+Description: Special Characters
+Related Transformers: CharacterCodeReplacer
+Name: VoronoiCellGenerator
+Category: Spatial Analysis
+Description: Name: VoronoiCellGenerator
+Category: Spatial Analysis
+Description: Conditional Values
+Related Transformers: 
+Name: RasterRegisterer
+Category: Rasters
+Description: Name: RasterRegisterer
+Category: Rasters
+Description: Fixed Image(Default): The registered image will have the same extents as the fixed image. Pixel values will be interpolated.
+Related Transformers: RasterExpressionEvaluator, RasterStatisticsCalculator, RasterSharpener, RasterSegmenter
+Name: RasterInterpretationCoercer
+Category: Rasters
+Description: Name: RasterInterpretationCoercer
+Category: Rasters
+Description: If a source value does not fit, the corresponding destination value will either be set to its type's minimum or maximum value as appropriate.
+Related Transformers: RasterBandInterpretationCoercer, RasterPaletteInterpretationCoercer
+Name: BoundingBoxAccumulator
+Category: Spatial Analysis
+Description: Name: BoundingBoxAccumulator
+Category: Spatial Analysis
+Description: None
+Related Transformers: 2DBoxReplacer, 2DGridAccumulator, 2DGridCreator, BoundingBoxReplacer, BoundsExtractor, Creator, HullAccumulator, HullReplacer, MinimumSpanningCircleReplacer, RasterExtentsCoercer
+Name: ListExploder
+Category: Attributes
+Description: Name: ListExploder
+Category: Attributes
+Description:  = ’something else’
+Related Transformers: 
+Name: ListSummer
+Category: Strings
+Description: Name: ListSummer
+Category: Strings
+Description:  = 'a'
+Related Transformers: 
+Name: Aggregator
+Category: Attributes, Calculated Values, Filters and Joins
+Description: Name: Aggregator
+Category: Attributes, Calculated Values, Filters and Joins
+Description: The example below illustrates a  geometric feature of diverse attributes on the left and its aggregated output on the right.
+Related Transformers: 
+Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: 
+Related Transformers: RasterAspectCalculator, RasterHillshader, Scaler
+Name: AttributeValueMapper
+Category: Strings
+Description: Name: AttributeValueMapper
+Category: Strings
+Description: 
+Related Transformers: AttributeFilter, NullAttributeMapper
+Name: GeometryColorSetter
+Category: Cartography and Reports
+Description: Name: GeometryColorSetter
+Category: Cartography and Reports
+Description: Math Operators
+Related Transformers: 
+Name: HTMLReportGenerator
+Category: Cartography and Reports
+Description: Name: HTMLReportGenerator
+Category: Cartography and Reports
+Description: Label Attribute
+Related Transformers: 
+Name: GtransAttributeReprojector
+Category: Coordinates, Integrations
+Description: Name: GtransAttributeReprojector
+Category: Coordinates, Integrations
+Description: 
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: AttributePivoter
+Category: Calculated Values, Filters and Joins, Strings
+Description: Name: AttributePivoter
+Category: Calculated Values, Filters and Joins, Strings
+Description: Usage Notes
+Related Transformers: AttributeExploder, StatisticsCalculator
+Name: BaseConverter
+Category: Calculated Values, Strings
+Description: Name: BaseConverter
+Category: Calculated Values, Strings
+Description: Special Characters
+Related Transformers: 
+Name: SQLCreator
+Category: Workflows
+Description: Name: SQLCreator
+Category: Workflows
+Description: How does it work?
+Related Transformers: DatabaseDeleter, DatabaseJoiner, DatabaseUpdater, FeatureJoiner, FeatureMerger, InlineQuerier, ListBasedFeatureMerger, Matcher, SchemaScanner, SQLExecutor
+Name: SolidDissolver
+Category: 3D, Geometries, Spatial Analysis
+Description: Name: SolidDissolver
+Category: 3D, Geometries, Spatial Analysis
+Description: Note:Not all tools are available in all transformers.
+Related Transformers: Dissolver, SolidBuilder
+Name: CenterPointReplacer
+Category: Geometries, Spatial Analysis
+Description: Name: CenterPointReplacer
+Category: Geometries, Spatial Analysis
+Description: 
+Related Transformers: 
+Name: RasterBandOrderer
+Category: Rasters
+Description: Name: RasterBandOrderer
+Category: Rasters
+Description: Calculates statistics on raster bands and adds the results as attributes.
+Related Transformers: RasterBandAdder, RasterBandCombiner, RasterBandKeeper, RasterBandRemover, RasterBandSeparator
+Name: PointCloudMerger
+Category: Filters and Joins, Point Clouds
+Description: Name: PointCloudMerger
+Category: Filters and Joins, Point Clouds
+Description: 
+Related Transformers: ChangeDetector, FeatureMerger, ListBasedFeatureMerger, PointCloudCombiner, PointCloudComponentCopier, TraitMerger
+Name: GtransReprojector
+Category: Coordinates, Integrations
+Description: Name: GtransReprojector
+Category: Coordinates, Integrations
+Description: 
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: HTMLReportGenerator
+Category: Cartography and Reports
+Description: Name: HTMLReportGenerator
+Category: Cartography and Reports
+Description: Set values depending on one or more test conditions that either pass or fail.
+Related Transformers: 
+Name: FeatureHolder
+Category: Workflows
+Description: Name: FeatureHolder
+Category: Workflows
+Description: This is the default behavior. Processing will only occur in this transformer once all input is present.
+Related Transformers: 
+Name: SubstringExtractor
+Category: Calculated Values, Strings
+Description: Name: SubstringExtractor
+Category: Calculated Values, Strings
+Description: Configuration
+Related Transformers: 
+Name: SchemaMapper
+Category: Workflows
+Description: Name: SchemaMapper
+Category: Workflows
+Description: 
+Related Transformers: 
+Name: GridInQuestIIReprojector
+Category: Coordinates, Integrations
+Description: Name: GridInQuestIIReprojector
+Category: Coordinates, Integrations
+Description: 
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: TrimbleConnectConnector
+Category: Integrations, Web, Workflows
+Description: Name: TrimbleConnectConnector
+Category: Integrations, Web, Workflows
+Description: Cut, Copy, and Paste
+Related Transformers: 
+Name: PointCloudThinner
+Category: Point Clouds
+Description: Name: PointCloudThinner
+Category: Point Clouds
+Description: Input Ports
+Related Transformers: Generalizer, PointCloudSimplifier, Sampler
+Name: NetworkFlowOrientor
+Category: Spatial Analysis
+Description: Name: NetworkFlowOrientor
+Category: Spatial Analysis
+Description: Select the type of coordinates to use when identifying topological connections:
+Related Transformers: NetworkTopologyCalculator, ShortestPathFinder, StreamOrderCalculator, StreamPriorityCalculator
+Name: LineBuilder
+Category: Geometries
+Description: Name: LineBuilder
+Category: Geometries
+Description: Finding where points lay on lines.
+Related Transformers: LineCloser, LineCombiner, LineExtender, PathBuilder
+Name: RasterStatisticsCalculator
+Category: Calculated Values, Rasters
+Description: Name: RasterStatisticsCalculator
+Category: Calculated Values, Rasters
+Description: Parameter Condition Definition Dialog
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterExpressionEvaluator, RasterSingularCellValueCalculator
+Name: CesiumIonConnector
+Category: Web
+Description: Name: CesiumIonConnector
+Category: Web
+Description: Output Ports
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: RubberSheeter
+Category: Coordinates, Geometries
+Description: Name: RubberSheeter
+Category: Coordinates, Geometries
+Description: 
+Related Transformers: 3DAffiner, Affiner, AffineWarper, RasterGCPSetter, RasterGeoreferencer, LocalCoordinateSystemSetter, Offsetter, Scaler, Rotator
+Name: SQLCreator
+Category: Workflows
+Description: Name: SQLCreator
+Category: Workflows
+Description: Arithmetic Editor
+Related Transformers: DatabaseDeleter, DatabaseJoiner, DatabaseUpdater, FeatureJoiner, FeatureMerger, InlineQuerier, ListBasedFeatureMerger, Matcher, SchemaScanner, SQLExecutor
+Name: RasterExpressionEvaluator
+Category: Calculated Values, Rasters
+Description: Name: RasterExpressionEvaluator
+Category: Calculated Values, Rasters
+Description: Removes all unselected bands from a raster feature.
+Related Transformers: ExpressionEvaluator, PointCloudExpressionEvaluator, RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterSingularCellValueCalculator, RasterStatisticsCalculator
+Name: BulkAttributeRemover
+Category: Attributes
+Description: Name: BulkAttributeRemover
+Category: Attributes
+Description: Enter a regular expression that specifies what string an attribute name needs to contain for it to be removed.
+Related Transformers: AttributeCopier, AttributeCreator, AttributeKeeper, AttributeManager, AttributeRemover, AttributeRenamer, AttributeValueMapper, BulkAttributeRenamer
+Name: RasterCellValueCalculator
+Category: Calculated Values, Rasters
+Description: Name: RasterCellValueCalculator
+Category: Calculated Values, Rasters
+Description: Pairs of raster features to perform calculations on. Palettes are not supported.
+Related Transformers: RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterExpressionEvaluator, RasterSingularCellValueCalculator, RasterStatisticsCalculator
+Name: RasterPyramider
+Category: Rasters, Web
+Description: Name: RasterPyramider
+Category: Rasters, Web
+Description: Nearest Neighbor
+Related Transformers: RasterResampler, RasterTiler, WebMapTiler
+Name: JSONTemplater
+Category: 
+Description: Name: JSONTemplater
+Category: 
+Description: FME Community
+Related Transformers: 
+Name: LatLongToMGRSConverter
+Category: Coordinates
+Description: Name: LatLongToMGRSConverter
+Category: Coordinates
+Description: Defining Values
+Related Transformers: GeometryExtractor, GeometryReplacer, MGRSToLatLongConverter
+Name: ListIndexer
+Category: Attributes
+Description: Name: ListIndexer
+Category: Attributes
+Description: Special Characters
+Related Transformers: 
+Name: XMLFlattener
+Category: 
+Description: Name: XMLFlattener
+Category: 
+Description: If the value is attributes, then only the attributes of the matched element are prefixed.
+Related Transformers: 
+Name: GeometryRemover
+Category: Geometries
+Description: Name: GeometryRemover
+Category: Geometries
+Description: There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+Related Transformers: 
+Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Creates a palette from an attribute, and adds this palette to all selected bands on a raster.
+Related Transformers: RasterAspectCalculator, RasterSlopeCalculator, Scaler
+Name: EllipsePropertyExtractor
+Category: Calculated Values
+Description: Name: EllipsePropertyExtractor
+Category: Calculated Values
+Description: 
+Related Transformers: 2DArcReplacer, 2DEllipseReplacer, 3DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, ArcStroker, EllipsePropertySetter
+Name: RasterBandNodataRemover
+Category: Rasters
+Description: Name: RasterBandNodataRemover
+Category: Rasters
+Description: 
+Related Transformers: RasterBandNodataSetter, RasterPaletteNodataSetter
+Name: SharedItemRetriever
+Category: 3D
+Description: Name: SharedItemRetriever
+Category: 3D
+Description: Filter
+Related Transformers: 
+Name: TextureCoordinateSetter
+Category: Calculated Values, Coordinates
+Description: Name: TextureCoordinateSetter
+Category: Calculated Values, Coordinates
+Description: 
+Related Transformers: 
+Name: SQLExecutor
+Category: Workflows
+Description: Name: SQLExecutor
+Category: Workflows
+Description: 
+Related Transformers: DatabaseDeleter, DatabaseJoiner, DatabaseUpdater, FeatureJoiner, FeatureMerger, InlineQuerier, ListBasedFeatureMerger, Matcher, SchemaScanner, SQLCreator
+Name: ListBuilder
+Category: Attributes
+Description: Name: ListBuilder
+Category: Attributes
+Description: Cut, copy, and paste may be used within a transformer, or between transformers.
+Related Transformers: 
+Name: MapnikRasterizer
+Category: Cartography and Reports, Rasters
+Description: Name: MapnikRasterizer
+Category: Cartography and Reports, Rasters
+Description: Performance gains are most likely when the data is already sorted (or read using aSQL ORDER BYstatement) since less work is required of FME. If the data needs ordering, it can be sorted in theworkspace(though the added processing overhead may negate any gains).
+Related Transformers: ImageRasterizer, NumericRasterizer, RasterNumericCreator, RasterRGBCreator, VectorOnRasterOverlayer
+Name: NLPTrainer
+Category: Filters and Joins, Strings
+Description: Name: NLPTrainer
+Category: Filters and Joins, Strings
+Description: Math Functions
+Related Transformers: AzureTextAnalyticsConnector, NLPClassifier
+Name: GeometryPropertySetter
+Category: 3D
+Description: Name: GeometryPropertySetter
+Category: 3D
+Description: Count Output Trait
+Related Transformers: Counter, GeometryPropertyExtractor, GeometryPropertyRemover, GeometryPropertyRenamer
+Name: PipeReplacer
+Category: 3D, Geometries
+Description: Name: PipeReplacer
+Category: 3D, Geometries
+Description: Dialog Options - Tables
+Related Transformers: 
+Name: TrimbleConnectConnector
+Category: Integrations, Web, Workflows
+Description: Name: TrimbleConnectConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: 
+Name: CRCCalculator
+Category: Calculated Values, Data Quality
+Description: Name: CRCCalculator
+Category: Calculated Values, Data Quality
+Description: Conditional Values
+Related Transformers: 
+Name: LengthCalculator
+Category: Calculated Values
+Description: Name: LengthCalculator
+Category: Calculated Values
+Description:  any Z values, if present, are ignored.
+Related Transformers: 
+Name: DimensionExtractor
+Category: 3D, Calculated Values, Coordinates, Data Quality, Strings
+Description: Name: DimensionExtractor
+Category: 3D, Calculated Values, Coordinates, Data Quality, Strings
+Description: The features are first routed into a DimensionExtractor, and then on to anAttributeFilterto separate them.
+Related Transformers: CoordinateExtractor, ElevationExtractor
+Name: ReprojectAngleCalculator
+Category: Calculated Values, Coordinates
+Description: Name: ReprojectAngleCalculator
+Category: Calculated Values, Coordinates
+Description: Grid InQuestII
+Related Transformers: AngleConverter, AttributeReprojector, ReprojectLengthCalculator, Reprojector
+Name: MeasureExtractor
+Category: Calculated Values
+Description: Name: MeasureExtractor
+Category: Calculated Values
+Description: Name the attribute to contain the starting point of the measure whenTypeisEnd Point of Arc.
+Related Transformers: PathSplitter, PathBuilder
+Name: AzureEventHubsConnector
+Category: Web
+Description: Name: AzureEventHubsConnector
+Category: Web
+Description: _receive_id
+Related Transformers: AzureIoTConnector, AzureQueueStorageConnector, GoogleCloudPubSubConnector, KafkaConnector, SQSConnector
+Name: Recorder
+Category: Workflows
+Description: Name: Recorder
+Category: Workflows
+Description: 
+Related Transformers: Player
+Name: PointCloudStatisticsCalculator
+Category: Calculated Values, Point Clouds
+Description: Name: PointCloudStatisticsCalculator
+Category: Calculated Values, Point Clouds
+Description: The average value, calculated as the sum of values divided by the number of points. Undefined for string components.
+Related Transformers: PointCloudExpressionEvaluator, PointCloudPropertyExtractor, PointCloudSorter, RasterBandMinMaxExtractor, RasterStatisticsCalculator, StatisticsCalculator
+Name: Triangulator
+Category: Geometries
+Description: Name: Triangulator
+Category: Geometries
+Description: 
+Related Transformers: 
+Name: PointCloudPropertyExtractor
+Category: Calculated Values, Point Clouds
+Description: Name: PointCloudPropertyExtractor
+Category: Calculated Values, Point Clouds
+Description: Dialog Options - Tables
+Related Transformers: PointCloudExpressionEvaluator, PointCloudSorter, PointCloudStatisticsCalculator
+Name: RasterConvolver
+Category: Rasters
+Description: Name: RasterConvolver
+Category: Rasters
+Description: RasterBandNodataRemover
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterExpressionEvaluator, RasterSingularCellValueCalculator, RasterStatisticsCalculator
+Name: ImageFetcher
+Category: Rasters, Workflows
+Description: Name: ImageFetcher
+Category: Rasters, Workflows
+Description: Reset/Refresh
+Related Transformers: 
+Name: KMLRegionSetter
+Category: Cartography and Reports
+Description: Name: KMLRegionSetter
+Category: Cartography and Reports
+Description: This parameter is only available when the region bounding box is being calculated from the bounding box of the feature geometry.  It may be used to make the bounding box of the KML region larger (or smaller) than the bounding box of the geometry. The geometry bounding box will be expanded (or decreased if the value is negative) on all sides, by the value of the parameter.  The parameter value should be given in degrees of latitude/longitude.
+Related Transformers: 
+Name: SurfaceOnSurfaceOverlayer
+Category: 3D, Spatial Analysis
+Description: Name: SurfaceOnSurfaceOverlayer
+Category: 3D, Spatial Analysis
+Description: Specifies how attributes should be accumulated.  IfDrop Incoming Attributesis selected, all incoming attributes are removed from the features.
+Related Transformers: 
+Name: RasterConvolver
+Category: Rasters
+Description: Name: RasterConvolver
+Category: Rasters
+Description: 
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterExpressionEvaluator, RasterSingularCellValueCalculator, RasterStatisticsCalculator
+Name: H3HexagonalIndexer
+Category: Calculated Values, Geometries
+Description: Name: H3HexagonalIndexer
+Category: Calculated Values, Geometries
+Description: Output Ports
+Related Transformers: GeometryExtractor, GeometryReplacer
+Name: XMLAppender
+Category: 
+Description: Name: XMLAppender
+Category: 
+Description: When Group Changes (Advanced)
+Related Transformers: 
+Name: VectorOnRasterOverlayer
+Category: Rasters, Spatial Analysis
+Description: Name: VectorOnRasterOverlayer
+Category: Rasters, Spatial Analysis
+Description: Filter
+Related Transformers: FeatureColorSetter, ImageRasterizer, MapnikRasterizer, NumericRasterizer, RasterNumericCreator, RasterRGBCreator, PointCloudOnRasterComponentSetter
+Name: PointOnLineOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: PointOnLineOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Replace with Single Incoming: The original feature will have all of its attributes removed, except geometry attributes that start with fme_. Then, all of the attributes from one (arbitrary) incoming feature will be placed onto the original.
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: RasterPaletteGenerator
+Category: Rasters
+Description: Name: RasterPaletteGenerator
+Category: Rasters
+Description: Georeferences a raster by either known corner coordinates or origin, cell size, and rotation.
+Related Transformers: RasterPaletteAdder, RasterPaletteExtractor, RasterPaletteResolver
+Name: SystemCaller
+Category: Workflows
+Description: Name: SystemCaller
+Category: Workflows
+Description: Import
+Related Transformers: 
+Name: HDFSConnector
+Category: Integrations, Web, Workflows
+Description: Name: HDFSConnector
+Category: Integrations, Web, Workflows
+Description: FME Parameters
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: 3DForcer
+Category: 3D, Coordinates, Geometries
+Description: Name: 3DForcer
+Category: 3D, Coordinates, Geometries
+Description: 
+Related Transformers: 2DForcer, PointOnRasterValueExtractor, SurfaceDraper
+Name: PointCloudReplacer
+Category: Point Clouds
+Description: Name: PointCloudReplacer
+Category: Point Clouds
+Description: 
+Related Transformers: AttributeFileReader, GeometryExtractor, GeometryRemover, GeometryReplacer, PointCloudExtractor, RasterExtractor, RasterReplacer
+Name: 2DEllipseReplacer
+Category: Geometries
+Description: Name: 2DEllipseReplacer
+Category: Geometries
+Description: Arc by 3 points
+Related Transformers: 2DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, ArcStroker, Bufferer, Creator, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter
+Name: Clipper
+Category: Spatial Analysis
+Description: Name: Clipper
+Category: Spatial Analysis
+Description: Merge Clipper: The Candidate feature will retain all of its own un-conflicted attributes, and will additionally acquire any un-conflicted attributes that the Clipper feature has. This mode will handle conflicted attributes based on the Conflict Resolution parameter.
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: PointCloudComponentKeeper
+Category: Point Clouds
+Description: Name: PointCloudComponentKeeper
+Category: Point Clouds
+Description: PointCloudConsumer
+Related Transformers: PointCloudComponentAdder, PointCloudComponentCopier, PointCloudComponentRemover, PointCloudComponentRenamer, PointCloudComponentTypeCoercer
+Name: CsmapReprojector
+Category: Coordinates, Integrations
+Description: Name: CsmapReprojector
+Category: Coordinates, Integrations
+Description: There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: AttributeValueMapper
+Category: Strings
+Description: Name: AttributeValueMapper
+Category: Strings
+Description: You can import attribute values (input value, output value, or both) from any FME-supported source dataset.
+Related Transformers: AttributeFilter, NullAttributeMapper
+Name: RasterObjectDetectorSamplePreparer
+Category: Rasters
+Description: Name: RasterObjectDetectorSamplePreparer
+Category: Rasters
+Description: Directory containing negative sample images. For best operation, make sure the names do not contain spaces or special characters.
+Related Transformers: RasterObjectDetectionModelTrainer, RasterObjectDetector, RasterObjectDetectorSampleGenerator
+Name: SQLExecutor
+Category: Workflows
+Description: Name: SQLExecutor
+Category: Workflows
+Description: The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Related Transformers: DatabaseDeleter, DatabaseJoiner, DatabaseUpdater, FeatureJoiner, FeatureMerger, InlineQuerier, ListBasedFeatureMerger, Matcher, SchemaScanner, SQLCreator
+Name: AutodeskDocsConnector
+Category: Integrations, Web, Workflows
+Description: Name: AutodeskDocsConnector
+Category: Integrations, Web, Workflows
+Description: _version_number
+Related Transformers: GoogleDriveConnector, SharePointOnlineConnector, S3Connector
+Name: RasterObjectDetectorSampleGenerator
+Category: Rasters
+Description: Name: RasterObjectDetectorSampleGenerator
+Category: Rasters
+Description: Filter
+Related Transformers: RasterObjectDetectionModelTrainer, RasterObjectDetector, RasterObjectDetectorSamplePreparer
+Name: HTMLLayouter
+Category: Cartography and Reports
+Description: Name: HTMLLayouter
+Category: Cartography and Reports
+Description: Using the Arithmetic Editor
+Related Transformers: 
+Name: PointOnPointOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: PointOnPointOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Group By
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: AttributeFilter
+Category: Filters and Joins
+Description: Name: AttributeFilter
+Category: Filters and Joins
+Description: Attribute to Filter by
+Related Transformers: AttributeRangeFilter, TestFilter
+Name: RasterToPolygonCoercer
+Category: Rasters
+Description: Name: RasterToPolygonCoercer
+Category: Rasters
+Description: 
+Related Transformers: AttributeRangeFilter, AttributeRangeMapper, Dissolver, RasterCellCoercer
+Name: HTMLLayouter
+Category: Cartography and Reports
+Description: Name: HTMLLayouter
+Category: Cartography and Reports
+Description: Text Editor
+Related Transformers: 
+Name: Displacer
+Category: Cartography and Reports, Geometries, Spatial Analysis
+Description: Name: Displacer
+Category: Cartography and Reports, Geometries, Spatial Analysis
+Description: TheFME Communityis the place for demos, how-tos, articles, FAQs, and more. Get answers to your questions, learn from other users, and suggest, vote, and comment on new features.
+Related Transformers: Generalizer
+Name: Intersector
+Category: Geometries, Spatial Analysis
+Description: Name: Intersector
+Category: Geometries, Spatial Analysis
+Description: 
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: Recorder
+Category: Workflows
+Description: Name: Recorder
+Category: Workflows
+Description: Configuration
+Related Transformers: Player
+Name: StringConcatenator
+Category: Strings
+Description: Name: StringConcatenator
+Category: Strings
+Description: Enabled once you have clicked on a row item. Choices include:
+Related Transformers: AttributeCreator, AttributeManager, ExpressionEvaluator, ListConcatenator, CoordinateConcatenator
+Name: 2DArcReplacer
+Category: Geometries
+Description: Name: 2DArcReplacer
+Category: Geometries
+Description: 
+Related Transformers: 2DEllipseReplacer, 3DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, ArcStroker, Creator, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter
+Name: RasterExtractor
+Category: Rasters
+Description: Name: RasterExtractor
+Category: Rasters
+Description: 
+Related Transformers: AttributeFileWriter, GeometryExtractor, GeometryRemover, GeometryReplacer, PointCloudExtractor, PointCloudReplacer, RasterReplacer
+Name: PointCloudTransformationApplier
+Category: Point Clouds
+Description: Name: PointCloudTransformationApplier
+Category: Point Clouds
+Description: For information on point cloud geometry and properties, seePoint Clouds (IFMEPointCloud).
+Related Transformers: 3DAffiner, 3DRotator, Affiner, Offsetter, RasterRotationApplier, Rotator, Scaler
+Name: TopologyBuilder
+Category: Spatial Analysis
+Description: Name: TopologyBuilder
+Category: Spatial Analysis
+Description: IfGenerate List From Input Edgesis enabled, alist attributedescribing the topological relationship of each edge connected to the node is added. The edges in this list are ordered counterclockwise.
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator
+Name: AttributeReprojector
+Category: Coordinates, Strings
+Description: Name: AttributeReprojector
+Category: Coordinates, Strings
+Description: 
+Related Transformers: 
+Name: PointCloudThinner
+Category: Point Clouds
+Description: Name: PointCloudThinner
+Category: Point Clouds
+Description: Sorts the points within a point cloud by one or more component values.
+Related Transformers: Generalizer, PointCloudSimplifier, Sampler
+Name: RasterNumericCreator
+Category: Rasters
+Description: Name: RasterNumericCreator
+Category: Rasters
+Description: How does it work?
+Related Transformers: 2DGridCreator, Creator, PointCloudCreator, RasterRGBCreator
+Name: XMLTemplater
+Category: 
+Description: Name: XMLTemplater
+Category: 
+Description: <owner>John Doe</owner>
+Related Transformers: 
+Name: 2DEllipseReplacer
+Category: Geometries
+Description: Name: 2DEllipseReplacer
+Category: Geometries
+Description: Center X
+Related Transformers: 2DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, ArcStroker, Bufferer, Creator, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter
+Name: TextEncoder
+Category: Strings
+Description: Name: TextEncoder
+Category: Strings
+Description: 
+Related Transformers: 
+Name: RasterMosaicker
+Category: Filters and Joins, Rasters
+Description: Name: RasterMosaicker
+Category: Filters and Joins, Rasters
+Description: Creates a numeric raster of specified size and resolution, with default cell values.
+Related Transformers: RasterConvolver, RasterGeoreferencer, RasterPyramider, RasterResampler, RasterRotationApplier, RasterSelector, RasterSubsetter, RasterTiler, WebMapTiler
+Name: ModuloCounter
+Category: Calculated Values
+Description: Name: ModuloCounter
+Category: Calculated Values
+Description: 
+Related Transformers: 
+Name: FMEFlowLogFileRetriever
+Category: Integrations, Web, Workflows
+Description: Name: FMEFlowLogFileRetriever
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: 
+Name: ListBasedFeatureMerger
+Category: Filters and Joins
+Description: Name: ListBasedFeatureMerger
+Category: Filters and Joins
+Description: 
+Related Transformers: DatabaseJoiner, FeatureJoiner, FeatureMerger, InlineQuerier, ListBuilder, ListConcatenator, ListCopier, ListDuplicateRemover, ListElementCounter, ListExploder, ListExpressionPopulator, ListHistogrammer, ListIndexer, ListPopulator, ListRangeExtractor, ListRenamer, ListSearcher, ListSorter, ListSummer, Matcher, SQLCreator, SQLExecutor
+Name: RasterCellValueCalculator
+Category: Calculated Values, Rasters
+Description: Name: RasterCellValueCalculator
+Category: Calculated Values, Rasters
+Description: The second possible reason is potential performance gains.
+Related Transformers: RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterExpressionEvaluator, RasterSingularCellValueCalculator, RasterStatisticsCalculator
+Name: BoundingBoxAccumulator
+Category: Spatial Analysis
+Description: Name: BoundingBoxAccumulator
+Category: Spatial Analysis
+Description: 
+Related Transformers: 2DBoxReplacer, 2DGridAccumulator, 2DGridCreator, BoundingBoxReplacer, BoundsExtractor, Creator, HullAccumulator, HullReplacer, MinimumSpanningCircleReplacer, RasterExtentsCoercer
+Name: RasterBandMinMaxExtractor
+Category: Calculated Values, Rasters
+Description: Name: RasterBandMinMaxExtractor
+Category: Calculated Values, Rasters
+Description: The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Related Transformers: RasterBandInterpretationCoercer, RasterBandPropertyExtractor, RasterCellValueCalculator, RasterExpressionEvaluator, RasterInterpretationCoercer, RasterPropertyExtractor, RasterStatisticsCalculator
+Name: RasterCellOriginSetter
+Category: Rasters
+Description: Name: RasterCellOriginSetter
+Category: Rasters
+Description: Merges multiple raster features into a single raster feature.
+Related Transformers: RasterCellCoercer, RasterGeoreferencer
+Name: CharacterCodeExtractor
+Category: Strings
+Description: Name: CharacterCodeExtractor
+Category: Strings
+Description: 
+Related Transformers: CharacterCodeReplacer
+Name: PointCloudMerger
+Category: Filters and Joins, Point Clouds
+Description: Name: PointCloudMerger
+Category: Filters and Joins, Point Clouds
+Description: 
+Related Transformers: ChangeDetector, FeatureMerger, ListBasedFeatureMerger, PointCloudCombiner, PointCloudComponentCopier, TraitMerger
+Name: RasterPaletteResolver
+Category: Rasters
+Description: Name: RasterPaletteResolver
+Category: Rasters
+Description: RasterReplacer
+Related Transformers: RasterPaletteAdder, RasterPaletteExtractor, RasterPaletteGenerator, RasterPaletteRemover
+Name: AreaOnAreaOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: AreaOnAreaOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: When viewed in 2D (ignoring Z), a path (which may define the border of a polygon) may appear to be closed as shown in the left figure below.  This same path, when viewed in 3D, may appear to be open as shown in the right figure below.
+Related Transformers: Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: PointCloudFilter
+Category: Filters and Joins, Point Clouds
+Description: Name: PointCloudFilter
+Category: Filters and Joins, Point Clouds
+Description: In the parameters dialog, we create three expressions based on the classification component values.
+Related Transformers: PointCloudCombiner, PointCloudMerger, PointCloudSorter, PointCloudSplitter
+Name: WebSocketConnector
+Category: Web, Workflows
+Description: Name: WebSocketConnector
+Category: Web, Workflows
+Description: 
+Related Transformers: KafkaConnector, MQTTConnector
+Name: RabbitMQConnector
+Category: Integrations, Web, Workflows
+Description: Name: RabbitMQConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: AzureQueueStorageConnector, GoogleCloudPubSubConnector, KafkaConnector, MQTTConnector, SQSConnector
+Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Creates a numeric raster of specified size and resolution, with default cell values.
+Related Transformers: RasterAspectCalculator, RasterSlopeCalculator, Scaler
+Name: Snipper
+Category: Data Quality, Geometries
+Description: Name: Snipper
+Category: Data Quality, Geometries
+Description: Math Functions
+Related Transformers: 
+Name: Creator
+Category: 3D, Workflows
+Description: Name: Creator
+Category: 3D, Workflows
+Description: Triangle Strip
+Related Transformers: 2DGridCreator, PointCloudCreator, RasterNumericCreator, RasterRGBCreator
+Name: LogMessageStreamer
+Category: Workflows
+Description: Name: LogMessageStreamer
+Category: Workflows
+Description: Input Ports
+Related Transformers: 
+Name: JSONTemplater
+Category: 
+Description: Name: JSONTemplater
+Category: 
+Description: "houses" : [
+Related Transformers: 
+Name: RasterExtractor
+Category: Rasters
+Description: Name: RasterExtractor
+Category: Rasters
+Description: 
+Related Transformers: AttributeFileWriter, GeometryExtractor, GeometryRemover, GeometryReplacer, PointCloudExtractor, PointCloudReplacer, RasterReplacer
+Name: Cloner
+Category: Workflows
+Description: Name: Cloner
+Category: Workflows
+Description: Makes the specified number of copies of the input features and outputs all copies through its 
+Related Transformers: 
+Name: RasterExtentsCoercer
+Category: Rasters
+Description: Name: RasterExtentsCoercer
+Category: Rasters
+Description: The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Related Transformers: RasterBandNodataRemover, RasterBandNodataSetter, RasterCellCoercer, RasterToPolygonCoercer
+Name: KafkaConnector
+Category: Web
+Description: Name: KafkaConnector
+Category: Web
+Description: 
+Related Transformers: AzureEventHubsConnector, AzureQueueStorageConnector, GoogleCloudPubSubConnector, MQTTConnector, SQSConnector
+Name: StringConcatenator
+Category: Strings
+Description: Name: StringConcatenator
+Category: Strings
+Description: 
+Related Transformers: AttributeCreator, AttributeManager, ExpressionEvaluator, ListConcatenator, CoordinateConcatenator
+Name: TINGenerator
+Category: 3D, Geometries
+Description: Name: TINGenerator
+Category: 3D, Geometries
+Description: 
+Related Transformers: 
+Name: PointCloudComponentRemover
+Category: Point Clouds
+Description: Name: PointCloudComponentRemover
+Category: Point Clouds
+Description: Configuration
+Related Transformers: PointCloudComponentAdder, PointCloudComponentCopier, PointCloudComponentKeeper, PointCloudComponentRenamer, PointCloudComponentTypeCoercer
+Name: RasterPaletteInterpretationCoercer
+Category: Rasters
+Description: Name: RasterPaletteInterpretationCoercer
+Category: Rasters
+Description: Multiplies all RGB values with their corresponding, normalized alpha value.
+Related Transformers: RasterBandInterpretationCoercer, RasterInterpretationCoercer
+Name: Affiner
+Category: Coordinates
+Description: Name: Affiner
+Category: Coordinates
+Description: 
+Related Transformers: 3DAffiner, 3DRotator, AffineWarper, Offsetter, PointCloudTransformationApplier, RasterRotationApplier, Rotator, Scaler, SecondOrderConformer
+Name: RasterBandSeparator
+Category: Rasters
+Description: Name: RasterBandSeparator
+Category: Rasters
+Description: RasterCellCoercer
+Related Transformers: RasterBandAdder, RasterBandCombiner, RasterBandKeeper, RasterBandOrderer, RasterBandRemover
+Name: RasterRegisterer
+Category: Rasters
+Description: Name: RasterRegisterer
+Category: Rasters
+Description: The RasterRegisterer accepts two sets of raster features:
+Related Transformers: RasterExpressionEvaluator, RasterStatisticsCalculator, RasterSharpener, RasterSegmenter
+Name: GeometryExtractor
+Category: Calculated Values, Geometries
+Description: Name: GeometryExtractor
+Category: Calculated Values, Geometries
+Description: GML srsName
+Related Transformers: GeometryReplacer, RasterExtractor, RasterReplacer, PointCloudExtractor, PointCloudReplacer
+Name: DirectTweeter
+Category: Integrations, Web
+Description: Name: DirectTweeter
+Category: Integrations, Web
+Description: If a status update could not be sent, the feature will be output through theErroroutput port, and will have the following new attributes:
+Related Transformers: JSONExtractor, JSONFragmenter
+Name: AttributeTrimmer
+Category: Strings
+Description: Name: AttributeTrimmer
+Category: Strings
+Description: The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Related Transformers: StringReplacer
+Name: PROJReprojector
+Category: Coordinates, Integrations
+Description: Name: PROJReprojector
+Category: Coordinates, Integrations
+Description: EPSG:4326
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: PointOnLineOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: PointOnLineOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: 
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: WhiteStarLeaseBuilder
+Category: Integrations
+Description: Name: WhiteStarLeaseBuilder
+Category: Integrations
+Description: Note: For access outside of your network using a proxy server, use the Network tools in FME Options. From theFME Workbenchmenu, selectTools > FME Options > Network. For more information, see "Network" in theFME WorkbenchHelp.
+Related Transformers: 
+Name: PROJReprojector
+Category: Coordinates, Integrations
+Description: Name: PROJReprojector
+Category: Coordinates, Integrations
+Description: They may also be used in a PROJ string or pipeline for a Manual transformation.
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: BoundingBoxReplacer
+Category: Geometries
+Description: Name: BoundingBoxReplacer
+Category: Geometries
+Description: 2DBoxReplacer
+Related Transformers: 2DBoxReplacer, 2DGridAccumulator, 2DGridCreator, BoundingBoxAccumulator, BoundsExtractor, Creator, HullAccumulator, HullReplacer, MinimumSpanningCircleReplacer, RasterExtentsCoercer
+Name: CSGEvaluator
+Category: 3D
+Description: Name: CSGEvaluator
+Category: 3D
+Description: Dialog Options - Tables
+Related Transformers: 
+Name: SolidDissolver
+Category: 3D, Geometries, Spatial Analysis
+Description: Name: SolidDissolver
+Category: 3D, Geometries, Spatial Analysis
+Description: For example, if three input solids dissolved into one single solid, then that one solid would have this attribute set to3.
+Related Transformers: Dissolver, SolidBuilder
+Name: Matcher
+Category: Data Quality
+Description: Name: Matcher
+Category: Data Quality
+Description: Editing Transformer Parameters
+Related Transformers: ChangeDetector, DatabaseJoiner, DuplicateFilter, FeatureJoiner, InlineQuerier, ListBasedFeatureMerger, SQLCreator, SQLExecutor
+Name: NeighborhoodAggregator
+Category: Filters and Joins, Spatial Analysis
+Description: Name: NeighborhoodAggregator
+Category: Filters and Joins, Spatial Analysis
+Description: Accumulation Mode
+Related Transformers: 
+Name: LineBuilder
+Category: Geometries
+Description: Name: LineBuilder
+Category: Geometries
+Description: Breaks input features into points, lines, or areas. Chopped features contain the same set of vertices as input features.
+Related Transformers: LineCloser, LineCombiner, LineExtender, PathBuilder
+Name: RasterExpressionEvaluator
+Category: Calculated Values, Rasters
+Description: Name: RasterExpressionEvaluator
+Category: Calculated Values, Rasters
+Description: 
+Related Transformers: ExpressionEvaluator, PointCloudExpressionEvaluator, RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterSingularCellValueCalculator, RasterStatisticsCalculator
+Name: RasterStatisticsCalculator
+Category: Calculated Values, Rasters
+Description: Name: RasterStatisticsCalculator
+Category: Calculated Values, Rasters
+Description: Decodes a binary attribute containing encoded rasters stored as Blobs, replacing the feature’s geometry with the decoded raster.
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterExpressionEvaluator, RasterSingularCellValueCalculator
+Name: HTTPCaller
+Category: Web, Workflows
+Description: Name: HTTPCaller
+Category: Web, Workflows
+Description: Using the Text Editor
+Related Transformers: 
+Name: SolidDissolver
+Category: 3D, Geometries, Spatial Analysis
+Description: Name: SolidDissolver
+Category: 3D, Geometries, Spatial Analysis
+Description: Specify how attributes should be accumulated:
+Related Transformers: Dissolver, SolidBuilder
+Name: MapInfoStyler
+Category: Cartography and Reports
+Description: Name: MapInfoStyler
+Category: Cartography and Reports
+Description: 
+Related Transformers: 
+Name: LeftRightSpatialCalculator
+Category: Calculated Values
+Description: Name: LeftRightSpatialCalculator
+Category: Calculated Values
+Description: Parameter Condition Definition Dialog
+Related Transformers: 
+Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: Transforms an image to minimize its difference with another.
+Related Transformers: RasterAspectCalculator, RasterHillshader, Scaler
+Name: GoogleBigQueryConnector
+Category: Web
+Description: Name: GoogleBigQueryConnector
+Category: Web
+Description: 
+Related Transformers: AmazonAthenaConnector, GoogleCloudPubSubConnector, GoogleCloudStorageConnector, GoogleDriveConnector, GoogleLanguageConnector, GoogleVisionConnector
+Name: RasterSubsetter
+Category: Rasters
+Description: Name: RasterSubsetter
+Category: Rasters
+Description: In this example, we will extract a portion of a raster image, and add a frame of empty cells around it. Note that the original image is 1600 x 1000 pixels.
+Related Transformers: Clipper, RasterTiler, WebMapTiler
+Name: RasterExtractor
+Category: Rasters
+Description: Name: RasterExtractor
+Category: Rasters
+Description: In this example, we will prepare and write a raster to a Microsoft SQL Server Non-Spatial database, which does not support geometry of any form as an attribute type.
+Related Transformers: AttributeFileWriter, GeometryExtractor, GeometryRemover, GeometryReplacer, PointCloudExtractor, PointCloudReplacer, RasterReplacer
+Name: PointCloudCombiner
+Category: Point Clouds
+Description: Name: PointCloudCombiner
+Category: Point Clouds
+Description: Specify the attribute’s string or numeric data type.
+Related Transformers: GeometryCoercer, PointCloudToPointCoercer
+Name: ShortestPathFinder
+Category: Spatial Analysis
+Description: Name: ShortestPathFinder
+Category: Spatial Analysis
+Description: Time (minutes)
+Related Transformers: NetworkFlowOrientor, NetworkTopologyCalculator, StreamOrderCalculator, StreamPriorityCalculator
+Name: RasterDEMGenerator
+Category: 3D, Rasters
+Description: Name: RasterDEMGenerator
+Category: 3D, Rasters
+Description: Complete Groups
+Related Transformers: 3DForcer, DEMGenerator, NumericRasterizer, SurfaceModeller
+Name: RasterBandKeeper
+Category: Rasters
+Description: Name: RasterBandKeeper
+Category: Rasters
+Description: Working with Rasters
+Related Transformers: RasterBandAdder, RasterBandCombiner, RasterBandRemover, RasterBandSeparator
+Name: GtransReprojector
+Category: Coordinates, Integrations
+Description: Name: GtransReprojector
+Category: Coordinates, Integrations
+Description: Each*.tf/*.tfifile corresponds to a line item in the Gtrans Translation Files library accessed in the parameters dialog.
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: RasterBandKeeper
+Category: Rasters
+Description: Name: RasterBandKeeper
+Category: Rasters
+Description: WebMapTiler
+Related Transformers: RasterBandAdder, RasterBandCombiner, RasterBandRemover, RasterBandSeparator
+Name: CityEngineModelGenerator
+Category: 3D, Geometries, Integrations
+Description: Name: CityEngineModelGenerator
+Category: 3D, Geometries, Integrations
+Description: Text Editor
+Related Transformers: Extruder
+Name: 3DArcReplacer
+Category: 3D, Geometries
+Description: Name: 3DArcReplacer
+Category: 3D, Geometries
+Description: Extracts the property values that describe an arc’s geometry and stores them as attributes.
+Related Transformers: 
+Name: AzureQueueStorageConnector
+Category: Integrations, Web, Workflows
+Description: Name: AzureQueueStorageConnector
+Category: Integrations, Web, Workflows
+Description: Dialog Options - Tables
+Related Transformers: AzureBlobStorageConnector, AzureComputerVisionConnector, AzureEventHubsConnector, AzureFileStorageConnector, AzureTextAnalyticsConnector, GoogleCloudPubSubConnector, KafkaConnector, MQTTConnector, SQSConnector
+Name: LabelPointReplacer
+Category: Cartography and Reports, Geometries
+Description: Name: LabelPointReplacer
+Category: Cartography and Reports, Geometries
+Description: Filter
+Related Transformers: 
+Name: Curvefitter
+Category: Cartography and Reports, Geometries
+Description: Name: Curvefitter
+Category: Cartography and Reports, Geometries
+Description: Smoothing jagged geometry
+Related Transformers: 2DArcReplacer, 2DEllipseReplacer, 3DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, ArcStroker, Creator, EllipsePropertyExtractor, EllipsePropertySetter, Generalizer
+Name: S3Connector
+Category: Integrations, Web, Workflows
+Description: Name: S3Connector
+Category: Integrations, Web, Workflows
+Description: The name of the file created from the data supplied inAttribute to Upload as File. The name must include a filename extension (for example, .txt, .jpg, .doc).
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, ComprehendConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, RekognitionConnector, SQSConnector
+Name: LogMessageStreamer
+Category: Workflows
+Description: Name: LogMessageStreamer
+Category: Workflows
+Description: Math Operators
+Related Transformers: 
+Name: PointCloudConsumer
+Category: Point Clouds
+Description: Name: PointCloudConsumer
+Category: Point Clouds
+Description: PointCloudPropertyExtractor
+Related Transformers: RasterConsumer
+Name: ListPopulator
+Category: Attributes
+Description: Name: ListPopulator
+Category: Attributes
+Description: Populates a new list from a series of attributes.
+Related Transformers: 
+Name: PathBuilder
+Category: Geometries
+Description: Name: PathBuilder
+Category: Geometries
+Description: The PathBuilder receives features with line or arc geometry and connects them in the order received.
+Related Transformers: LineBuilder, LineCombiner, PathSplitter
+Name: RasterSegmenter
+Category: Rasters
+Description: Name: RasterSegmenter
+Category: Rasters
+Description: Evaluates expressions on each cell in a raster or pair of rasters, including algebraic operations and conditional statements.
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterExpressionEvaluator, RasterSingularCellValueCalculator, RasterStatisticsCalculator
+Name: TrelloConnector
+Category: Integrations, Web, Workflows
+Description: Name: TrelloConnector
+Category: Integrations, Web, Workflows
+Description: Comment
+Related Transformers: EthereumConnector, SalesforceConnector, SlackConnector
+Name: ProjectWiseWSGConnector
+Category: Integrations, Web, Workflows
+Description: Name: ProjectWiseWSGConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, S3Connector
+Name: PointCloudReplacer
+Category: Point Clouds
+Description: Name: PointCloudReplacer
+Category: Point Clouds
+Description: The PointCloudReplacer receives features of any geometry type (or no geometry) that have point clouds stored as Blob attribute of the feature, most often a result of having previously used thePointCloudExtractorto store them as Blob attributes to meet format or processing requirements.
+Related Transformers: AttributeFileReader, GeometryExtractor, GeometryRemover, GeometryReplacer, PointCloudExtractor, RasterExtractor, RasterReplacer
+Name: AzureEventHubsConnector
+Category: Web
+Description: Name: AzureEventHubsConnector
+Category: Web
+Description: (Optional) Start receiving from this event position if there is no checkpoint data for the partition.
+Related Transformers: AzureIoTConnector, AzureQueueStorageConnector, GoogleCloudPubSubConnector, KafkaConnector, SQSConnector
+Name: RasterBandSeparator
+Category: Rasters
+Description: Name: RasterBandSeparator
+Category: Rasters
+Description: 
+Related Transformers: RasterBandAdder, RasterBandCombiner, RasterBandKeeper, RasterBandOrderer, RasterBandRemover
+Name: AttributeRangeFilter
+Category: Filters and Joins
+Description: Name: AttributeRangeFilter
+Category: Filters and Joins
+Description: In the parameters dialog, we use theGenerate…option to calculate three equal-interval ranges, based on our knowledge of the upper and lower limits of the daily traffic attribute values.
+Related Transformers: AttributeFilter, AttributeRangeMapper, AttributeValueMapper, TestFilter
+Name: 3DArcReplacer
+Category: 3D, Geometries
+Description: Name: 3DArcReplacer
+Category: 3D, Geometries
+Description: Arc by bulge
+Related Transformers: 
+Name: HDFSConnector
+Category: Integrations, Web, Workflows
+Description: Name: HDFSConnector
+Category: Integrations, Web, Workflows
+Description: Type (file or folder) of an object on HDFS.
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: RasterBandInterpretationCoercer
+Category: Rasters
+Description: Name: RasterBandInterpretationCoercer
+Category: Rasters
+Description: RasterCellValueCalculator
+Related Transformers: RasterBandAdder, RasterInterpretationCoercer, RasterPaletteInterpretationCoercer
+Name: EllipsePropertyExtractor
+Category: Calculated Values
+Description: Name: EllipsePropertyExtractor
+Category: Calculated Values
+Description: 
+Related Transformers: 2DArcReplacer, 2DEllipseReplacer, 3DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, ArcStroker, EllipsePropertySetter
+Name: PointCloudPropertyExtractor
+Category: Calculated Values, Point Clouds
+Description: Name: PointCloudPropertyExtractor
+Category: Calculated Values, Point Clouds
+Description: _<component>_max
+Related Transformers: PointCloudExpressionEvaluator, PointCloudSorter, PointCloudStatisticsCalculator
+Name: ClosedCurveFilter
+Category: Data Quality, Filters and Joins
+Description: Name: ClosedCurveFilter
+Category: Data Quality, Filters and Joins
+Description: 
+Related Transformers: 
+Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: RasterTiler
+Related Transformers: RasterAspectCalculator, RasterHillshader, Scaler
+Name: FeatureHolder
+Category: Workflows
+Description: Name: FeatureHolder
+Category: Workflows
+Description: Enabled once you have clicked on a row item. Choices include:
+Related Transformers: 
+Name: VectorOnRasterOverlayer
+Category: Rasters, Spatial Analysis
+Description: Name: VectorOnRasterOverlayer
+Category: Rasters, Spatial Analysis
+Description: 
+Related Transformers: FeatureColorSetter, ImageRasterizer, MapnikRasterizer, NumericRasterizer, RasterNumericCreator, RasterRGBCreator, PointCloudOnRasterComponentSetter
+Name: SurfaceModeller
+Category: 3D, Point Clouds
+Description: Name: SurfaceModeller
+Category: 3D, Point Clouds
+Description: 
+Related Transformers: 
+Name: RasterSharpener
+Category: Rasters
+Description: Name: RasterSharpener
+Category: Rasters
+Description: FME has an extensive selection of transformers for working with raster data. They can be generally categorized as working with whole rasters, bands, cells or palettes, and those designed for workflow control or combining raster with vector data.
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterExpressionEvaluator, RasterSingularCellValueCalculator, RasterStatisticsCalculator
+Name: WebSocketConnector
+Category: Web, Workflows
+Description: Name: WebSocketConnector
+Category: Web, Workflows
+Description: Editing Transformer Parameters
+Related Transformers: KafkaConnector, MQTTConnector
+Name: PointCloudSurfaceBuilder
+Category: 3D, Geometries, Point Clouds
+Description: Name: PointCloudSurfaceBuilder
+Category: 3D, Geometries, Point Clouds
+Description: Filter
+Related Transformers: 
+Name: MinimumSpanningCircleReplacer
+Category: Geometries
+Description: Name: MinimumSpanningCircleReplacer
+Category: Geometries
+Description: 
+Related Transformers: 2DArcReplacer, 2DEllipseReplacer, ArcPropertyExtractor, ArcPropertySetter, BoundingBoxAccumulator, BoundingBoxReplacer, BoundsExtractor, EllipsePropertyExtractor, EllipsePropertySetter, HullAccumulator, HullReplacer
+Name: RasterExtractor
+Category: Rasters
+Description: Name: RasterExtractor
+Category: Rasters
+Description: Parameters
+Related Transformers: AttributeFileWriter, GeometryExtractor, GeometryRemover, GeometryReplacer, PointCloudExtractor, PointCloudReplacer, RasterReplacer
+Name: RasterObjectDetectionModelTrainer
+Category: Rasters
+Description: Name: RasterObjectDetectionModelTrainer
+Category: Rasters
+Description: 
+Related Transformers: RasterObjectDetector, RasterObjectDetectorSampleGenerator, RasterObjectDetectorSamplePreparer
+Name: AzureQueueStorageConnector
+Category: Integrations, Web, Workflows
+Description: Name: AzureQueueStorageConnector
+Category: Integrations, Web, Workflows
+Description: This transformer accepts any feature.
+Related Transformers: AzureBlobStorageConnector, AzureComputerVisionConnector, AzureEventHubsConnector, AzureFileStorageConnector, AzureTextAnalyticsConnector, GoogleCloudPubSubConnector, KafkaConnector, MQTTConnector, SQSConnector
+Name: AttributeDereferencer
+Category: Attributes
+Description: Name: AttributeDereferencer
+Category: Attributes
+Description: 
+Related Transformers: AttributeCopier, AttributeManager, FeatureMerger, ParameterFetcher
+Name: ArcStroker
+Category: Geometries
+Description: Name: ArcStroker
+Category: Geometries
+Description: The output feature, shown in blue over the original arc in yellow, is a line with 23 coordinates. Note that it tightly follows the original arc, and coordinate 4 is highlighted.
+Related Transformers: 2DEllipseReplacer, 2DArcReplacer, 3DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, ArcStroker, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter, TextStroker
+Name: CityEngineModelGenerator
+Category: 3D, Geometries, Integrations
+Description: Name: CityEngineModelGenerator
+Category: 3D, Geometries, Integrations
+Description: 
+Related Transformers: Extruder
+Name: RasterCellOriginSetter
+Category: Rasters
+Description: Name: RasterCellOriginSetter
+Category: Rasters
+Description: Examples
+Related Transformers: RasterCellCoercer, RasterGeoreferencer
+Name: RasterSingularCellValueCalculator
+Category: Calculated Values, Rasters
+Description: Name: RasterSingularCellValueCalculator
+Category: Calculated Values, Rasters
+Description: Rotates a raster feature according to its rotation angle property, interpolating new cell values, updating all other affected raster properties, and producing an output raster feature with a rotation angle of zero.
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterExpressionEvaluator, RasterStatisticsCalculator
+Name: CoordinateSystemExtractor
+Category: Coordinates
+Description: Name: CoordinateSystemExtractor
+Category: Coordinates
+Description: Conditional Values
+Related Transformers: CoordinateSystemDescriptionConverter, CoordinateSystemRemover, CoordinateSystemSetter, LocalCoordinateSystemSetter
+Name: RubberSheeter
+Category: Coordinates, Geometries
+Description: Name: RubberSheeter
+Category: Coordinates, Geometries
+Description: Typical Uses
+Related Transformers: 3DAffiner, Affiner, AffineWarper, RasterGCPSetter, RasterGeoreferencer, LocalCoordinateSystemSetter, Offsetter, Scaler, Rotator
+Name: NeighborhoodAggregator
+Category: Filters and Joins, Spatial Analysis
+Description: Name: NeighborhoodAggregator
+Category: Filters and Joins, Spatial Analysis
+Description:  was output by itself. For systems that support aggregates, or multi-part 
+Related Transformers: 
+Name: RabbitMQConnector
+Category: Integrations, Web, Workflows
+Description: Name: RabbitMQConnector
+Category: Integrations, Web, Workflows
+Description: _payload
+Related Transformers: AzureQueueStorageConnector, GoogleCloudPubSubConnector, KafkaConnector, MQTTConnector, SQSConnector
+Name: SharePointOnlineConnector
+Category: Integrations, Web, Workflows
+Description: Name: SharePointOnlineConnector
+Category: Integrations, Web, Workflows
+Description: Using the Arithmetic Editor
+Related Transformers: GoogleDriveConnector, OneDriveConnector, S3Connector
+Name: BinaryEncoder
+Category: Strings
+Description: Name: BinaryEncoder
+Category: Strings
+Description: 
+Related Transformers: 
+Name: RekognitionConnector
+Category: Web
+Description: Name: RekognitionConnector
+Category: Web
+Description: Note:Not all tools are available in all transformers.
+Related Transformers: AmazonAthenaConnector, AzureComputerVisionConnector, AzureTextAnalyticsConnector, ComprehendConnector, GoogleLanguageConnector, GoogleVisionConnector, RasterObjectDetector, S3Connector, SQSConnector
+Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Extracts the band and palette values from a raster at the location of one or more input points and sets them as attributes on the feature.
+Related Transformers: RasterAspectCalculator, RasterSlopeCalculator, Scaler
+Name: Classifier
+Category: Calculated Values
+Description: Name: Classifier
+Category: Calculated Values
+Description: Cut, copy, and paste may be used within a transformer, or between transformers.
+Related Transformers: 
+Name: PointCloudSorter
+Category: Point Clouds
+Description: Name: PointCloudSorter
+Category: Point Clouds
+Description: 
+Related Transformers: PointCloudExpressionEvaluator, PointCloudFilter, PointCloudPropertyExtractor, PointCloudSplitter, PointCloudStatisticsCalculator
+Name: StringPadder
+Category: Strings
+Description: Name: StringPadder
+Category: Strings
+Description: Import
+Related Transformers: 
+Name: GridInQuestIIReprojector
+Category: Coordinates, Integrations
+Description: Name: GridInQuestIIReprojector
+Category: Coordinates, Integrations
+Description: AttributeReprojector
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: RasterCellOriginSetter
+Category: Rasters
+Description: Name: RasterCellOriginSetter
+Category: Rasters
+Description: Workflow Control
+Related Transformers: RasterCellCoercer, RasterGeoreferencer
+Name: RasterCellValueRounder
+Category: Rasters
+Description: Name: RasterCellValueRounder
+Category: Rasters
+Description: Generates a raster from input vector and raster features, with fine control over symbolization and labeling, using the Mapnik toolkit.
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterExpressionEvaluator, RasterSingularCellValueCalculator
+Name: UniqueIdentifierGenerator
+Category: Calculated Values
+Description: Name: UniqueIdentifierGenerator
+Category: Calculated Values
+Description: 
+Related Transformers: GOIDGenerator
+Name: Offsetter
+Category: 3D, Spatial Analysis
+Description: Name: Offsetter
+Category: 3D, Spatial Analysis
+Description: The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Related Transformers: 
+Name: StringReplacer
+Category: Strings
+Description: Name: StringReplacer
+Category: Strings
+Description: Text Editor
+Related Transformers: StringPairReplacer, StringSearcher
+Name: FMEFlowLogFileRetriever
+Category: Integrations, Web, Workflows
+Description: Name: FMEFlowLogFileRetriever
+Category: Integrations, Web, Workflows
+Description: Cut, copy, and paste may be used within a transformer, or between transformers.
+Related Transformers: 
+Name: WebMapTiler
+Category: Cartography and Reports
+Description: Name: WebMapTiler
+Category: Cartography and Reports
+Description: Using the Text Editor
+Related Transformers: Clipper, RasterMosaicker, RasterPyramider, RasterSubsetter, Tiler
+Name: ChangeDetector
+Category: Data Quality, Filters and Joins
+Description: Name: ChangeDetector
+Category: Data Quality, Filters and Joins
+Description: 
+Related Transformers: 
+Name: TrelloConnector
+Category: Integrations, Web, Workflows
+Description: Name: TrelloConnector
+Category: Integrations, Web, Workflows
+Description: The new due date and time of the Trello card, in the local timezone. Note: if an attribute value is passed to this parameter already containing timezone information, this timezone information will not be overwritten.
+Related Transformers: EthereumConnector, SalesforceConnector, SlackConnector
+Name: RasterPyramider
+Category: Rasters, Web
+Description: Name: RasterPyramider
+Category: Rasters, Web
+Description: Creates a series of image tiles that can be utilized by web mapping applications such as Bing™ Maps, Google Maps™, or Web Map Tile Service. This is done by resampling rasters to various different resolutions and then splitting them into tiles.
+Related Transformers: RasterResampler, RasterTiler, WebMapTiler
+Name: BoxConnector
+Category: Integrations, Web, Workflows
+Description: Name: BoxConnector
+Category: Integrations, Web, Workflows
+Description: Box treats file uploads of the same name, in a specific folder, as duplicates, but does not allow multiple instances in a specific folder. You must upload the file to a different folder than the existing one.
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: RasterSelector
+Category: Rasters
+Description: Name: RasterSelector
+Category: Rasters
+Description: Enabled once you have clicked on a row item. Choices include:
+Related Transformers: 
+Name: ListBuilder
+Category: Attributes
+Description: Name: ListBuilder
+Category: Attributes
+Description: Sorting becomes more difficult according to the number of data streams. Multiple streams of data could be almost impossible to sort into the correct order, since all features matching aGroup Byvalue need to arrive before any features (of any feature type or dataset) belonging to the next group. In this case, usingGroup BywithWhen All Features Receivedmay be the equivalent and simpler approach.
+Related Transformers: 
+Name: AzureFileStorageConnector
+Category: Integrations, Web, Workflows
+Description: Name: AzureFileStorageConnector
+Category: Integrations, Web, Workflows
+Description: The remaining parameters available depend on the value of the Request > Action parameter. Parameters for each Action are detailed below.
+Related Transformers: AzureBlobStorageConnector, AzureComputerVisionConnector, AzureQueueStorageConnector, AzureTextAnalyticsConnector, BoxConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: CoordinateExtractor
+Category: Calculated Values, Coordinates
+Description: Name: CoordinateExtractor
+Category: Calculated Values, Coordinates
+Description: 
+Related Transformers: AttributeReprojector, CenterPointExtractor, CenterPointReplacer, CoordinateConcatenator, CoordinateRounder, CoordinateSwapper, CoordinateSystemExtractor, DimensionExtractor, ElevationExtractor, VertexCounter
+Name: PointCloudTransformationApplier
+Category: Point Clouds
+Description: Name: PointCloudTransformationApplier
+Category: Point Clouds
+Description: Special Characters
+Related Transformers: 3DAffiner, 3DRotator, Affiner, Offsetter, RasterRotationApplier, Rotator, Scaler
+Name: CsmapReprojector
+Category: Coordinates, Integrations
+Description: Name: CsmapReprojector
+Category: Coordinates, Integrations
+Description: Reprojects feature coordinates from one coordinate system to another using the Gtrans reprojection engine from the National Land Survey of Sweden (Lantmäteriet).
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: BoxConnector
+Category: Integrations, Web, Workflows
+Description: Name: BoxConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: HTMLLayouter
+Category: Cartography and Reports
+Description: Name: HTMLLayouter
+Category: Cartography and Reports
+Description: 
+Related Transformers: 
+Name: PythonCaller
+Category: Workflows
+Description: Name: PythonCaller
+Category: Workflows
+Description: The example below calculates the total area of all features grouped by the_shapeattribute and then outputs all the features with a new attribute containing the total area for each group:
+Related Transformers: PythonCreator, RCaller
+Name: OneDriveConnector
+Category: Integrations, Web, Workflows
+Description: Name: OneDriveConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, ProjectWiseWSGConnector, S3Connector
+Name: TwitterStatusFetcher
+Category: Integrations, Web
+Description: Name: TwitterStatusFetcher
+Category: Integrations, Web
+Description: 
+Related Transformers: JSONFragmenter, JSONExtractor, Tweeter, TweetSearcher, TweetStreamer
+Name: SurfaceDraper
+Category: 3D, Point Clouds, Spatial Analysis
+Description: Name: SurfaceDraper
+Category: 3D, Point Clouds, Spatial Analysis
+Description: Parameters
+Related Transformers: 
+Name: TCPIPReceiver
+Category: Integrations, Web, Workflows
+Description: Name: TCPIPReceiver
+Category: Integrations, Web, Workflows
+Description: Continue Listening on Client Disconnect
+Related Transformers: TCPIPSender
+Name: StringSearcher
+Category: Strings
+Description: Name: StringSearcher
+Category: Strings
+Description: The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Related Transformers: StringReplacer
+Name: ProjectWiseWSGConnector
+Category: Integrations, Web, Workflows
+Description: Name: ProjectWiseWSGConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, S3Connector
+Name: KMLPropertySetter
+Category: Cartography and Reports
+Description: Name: KMLPropertySetter
+Category: Cartography and Reports
+Description: Extrude specifies whether or not to connect the geometry of vectors to the ground. KML Viewers, such as Google Earth, will not display extruded geometry unless the Altitude Mode is Absolute, Relative To Ground, or Relative to Sea Floor.
+Related Transformers: 
+Name: XMLUpdater
+Category: 
+Description: Name: XMLUpdater
+Category: 
+Description: If the Value Type parameter is set to XML/XQuery, the contents of this parameter will be interpreted as an XQuery expression.  This allows the insertion of XML elements into the document.  Also, this allows the use of the FME XQuery functions.  For example, an XML Template (for example, from theXMLTemplatertransformer) could be entered as the parameter value. It would then be evaluated before being inserted into the document.
+Related Transformers: 
+Name: RasterBandNodataRemover
+Category: Rasters
+Description: Name: RasterBandNodataRemover
+Category: Rasters
+Description: 
+Related Transformers: RasterBandNodataSetter, RasterPaletteNodataSetter
+Name: WebMapTiler
+Category: Cartography and Reports
+Description: Name: WebMapTiler
+Category: Cartography and Reports
+Description: The simplest and fastest method. Values are copied from the nearest cell.
+Related Transformers: Clipper, RasterMosaicker, RasterPyramider, RasterSubsetter, Tiler
+Name: GeometryPropertyRemover
+Category: 3D
+Description: Name: GeometryPropertyRemover
+Category: 3D
+Description: Text Editor
+Related Transformers: GeometryPropertyExtractor, GeometryPropertyRenamer, GeometryPropertySetter
+Name: Snapper
+Category: Data Quality, Geometries, Spatial Analysis
+Description: Name: Snapper
+Category: Data Quality, Geometries, Spatial Analysis
+Description: 
+Related Transformers: 
+Name: RevitStyler
+Category: Cartography and Reports
+Description: Name: RevitStyler
+Category: Cartography and Reports
+Description: 
+Related Transformers: 
+Name: RasterBandNodataSetter
+Category: Rasters
+Description: Name: RasterBandNodataSetter
+Category: Rasters
+Description: 
+Related Transformers: RasterBandNodataRemover, RasterPaletteNodataSetter
+Name: Logger
+Category: Workflows
+Description: Name: Logger
+Category: Workflows
+Description: 
+Related Transformers: 
+Name: NLPTrainer
+Category: Filters and Joins, Strings
+Description: Name: NLPTrainer
+Category: Filters and Joins, Strings
+Description: Reset/Refresh
+Related Transformers: AzureTextAnalyticsConnector, NLPClassifier
+Name: RandomNumberGenerator
+Category: Calculated Values, Strings
+Description: Name: RandomNumberGenerator
+Category: Calculated Values, Strings
+Description: Maximum Value
+Related Transformers: 
+Name: ComprehendConnector
+Category: Web
+Description: Name: ComprehendConnector
+Category: Web
+Description: Reset/Refresh
+Related Transformers: AmazonAthenaConnector, AzureComputerVisionConnector, AzureTextAnalyticsConnector, GoogleLanguageConnector, GoogleVisionConnector, RasterObjectDetector, RekognitionConnector, S3Connector, SQSConnector
+Name: CesiumIonConnector
+Category: Web
+Description: Name: CesiumIonConnector
+Category: Web
+Description: Reset/Refresh
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: RasterResampler
+Category: Rasters
+Description: Name: RasterResampler
+Category: Rasters
+Description: Nearest Neighbor
+Related Transformers: RasterPyramider, RasterSubsetter, RasterTiler, WebMapTiler
+Name: RasterConsumer
+Category: Rasters
+Description: Name: RasterConsumer
+Category: Rasters
+Description: Merges multiple raster features into a single raster feature.
+Related Transformers: PointCloudConsumer, RasterCheckpointer
+Name: RasterPyramider
+Category: Rasters, Web
+Description: Name: RasterPyramider
+Category: Rasters, Web
+Description: Serializes the geometry of a raster feature into a Blob attribute, encoding the contents according to a choice of common binary raster formats.
+Related Transformers: RasterResampler, RasterTiler, WebMapTiler
+Name: AppearanceMerger
+Category: 3D, Rasters
+Description: Name: AppearanceMerger
+Category: 3D, Rasters
+Description: When an appearance with a raster texture is set, each part of the Geometry that is affected will also require texture coordinates.
+Related Transformers: 
+Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Conditional Values
+Related Transformers: RasterAspectCalculator, RasterSlopeCalculator, Scaler
+Name: ListIndexer
+Category: Attributes
+Description: Name: ListIndexer
+Category: Attributes
+Description: Reset/Refresh
+Related Transformers: 
+Name: AreaAmalgamator
+Category: Cartography and Reports, Geometries, Spatial Analysis
+Description: Name: AreaAmalgamator
+Category: Cartography and Reports, Geometries, Spatial Analysis
+Description: Parameter Condition Definition Dialog
+Related Transformers: 
+Name: GoogleIoTConnector
+Category: Web
+Description: Name: GoogleIoTConnector
+Category: Web
+Description: Row Reordering
+Related Transformers: AWSIoTConnector, AzureIoTConnector, AzureQueueStorageConnector, GoogleCloudPubSubConnector, IBMIoTConnector, KafkaConnector, MQTTConnector, SQSConnector
+Name: HoleCounter
+Category: Calculated Values, Data Quality
+Description: Name: HoleCounter
+Category: Calculated Values, Data Quality
+Description: Features with the calculated number of holes leave through this port.
+Related Transformers: 
+Name: CesiumIonConnector
+Category: Web
+Description: Name: CesiumIonConnector
+Category: Web
+Description: 
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: PointCloudSimplifier
+Category: Point Clouds
+Description: Name: PointCloudSimplifier
+Category: Point Clouds
+Description: Keeps only specified point cloud components, discarding all others.
+Related Transformers: Generalizer, MeshSimplifier, PointCloudThinner, Sampler
+Name: RasterPropertyExtractor
+Category: Calculated Values, Rasters
+Description: Name: RasterPropertyExtractor
+Category: Calculated Values, Rasters
+Description: 
+Related Transformers: RasterBandMinMaxExtractor, RasterBandPropertyExtractor, RasterStatisticsCalculator
+Name: TCPIPSender
+Category: Integrations, Web, Workflows
+Description: Name: TCPIPSender
+Category: Integrations, Web, Workflows
+Description: Enabled once you have clicked on a row item. Choices include:
+Related Transformers: TCPIPReceiver
+Name: ArcPropertyExtractor
+Category: Calculated Values
+Description: Name: ArcPropertyExtractor
+Category: Calculated Values
+Description: Features with attributes containing geometry property values.
+Related Transformers: 2DEllipseReplacer, 2DArcReplacer, 3DArcReplacer, ArcEstimator, ArcPropertySetter, ArcStroker, Creator, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter
+Name: RasterPaletteAdder
+Category: Rasters
+Description: Name: RasterPaletteAdder
+Category: Rasters
+Description: 
+Related Transformers: AttributeFileReader, RasterBandInterpretationCoercer, RasterPaletteExtractor, RasterPaletteGenerator, RasterPaletteRemover, RasterPaletteResolver
+Name: RasterSegmenter
+Category: Rasters
+Description: Name: RasterSegmenter
+Category: Rasters
+Description: Arithmetic Editor
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterExpressionEvaluator, RasterSingularCellValueCalculator, RasterStatisticsCalculator
+Name: PointCloudSimplifier
+Category: Point Clouds
+Description: Name: PointCloudSimplifier
+Category: Point Clouds
+Description: Specifies the number of nearby points to check against the Bisector Threshold. Higher values will result in fewer noisy MAT points but will also limit the ability to detect small features.
+Related Transformers: Generalizer, MeshSimplifier, PointCloudThinner, Sampler
+Name: SQSConnector
+Category: Web
+Description: Name: SQSConnector
+Category: Web
+Description: Receive Options
+Related Transformers: AmazonAthenaConnector, AzureEventHubsConnector, AzureQueueStorageConnector, ComprehendConnector, GoogleCloudPubSubConnector, KafkaConnector, RekognitionConnector, S3Connector
+Name: CoordinateSystemExtractor
+Category: Coordinates
+Description: Name: CoordinateSystemExtractor
+Category: Coordinates
+Description: Converts a given length from one coordinate system to another.
+Related Transformers: CoordinateSystemDescriptionConverter, CoordinateSystemRemover, CoordinateSystemSetter, LocalCoordinateSystemSetter
+Name: CenterPointExtractor
+Category: Calculated Values, Coordinates
+Description: Name: CenterPointExtractor
+Category: Calculated Values, Coordinates
+Description: Using the Text Editor
+Related Transformers: CenterPointReplacer, CoordinateExtractor, VertexCreator
+Name: PointCloudCombiner
+Category: Point Clouds
+Description: Name: PointCloudCombiner
+Category: Point Clouds
+Description: The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Related Transformers: GeometryCoercer, PointCloudToPointCoercer
+Name: RasterCheckpointer
+Category: Rasters, Workflows
+Description: Name: RasterCheckpointer
+Category: Rasters, Workflows
+Description: Feature-Based
+Related Transformers: RasterConsumer
+Name: TwitterStatusFetcher
+Category: Integrations, Web
+Description: Name: TwitterStatusFetcher
+Category: Integrations, Web
+Description: Defining Values
+Related Transformers: JSONFragmenter, JSONExtractor, Tweeter, TweetSearcher, TweetStreamer
+Name: GtransReprojector
+Category: Coordinates, Integrations
+Description: Name: GtransReprojector
+Category: Coordinates, Integrations
+Description: Bicubic
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: GtransAttributeReprojector
+Category: Coordinates, Integrations
+Description: Name: GtransAttributeReprojector
+Category: Coordinates, Integrations
+Description: Gtrans
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: PointCloudSorter
+Category: Point Clouds
+Description: Name: PointCloudSorter
+Category: Point Clouds
+Description: The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Related Transformers: PointCloudExpressionEvaluator, PointCloudFilter, PointCloudPropertyExtractor, PointCloudSplitter, PointCloudStatisticsCalculator
+Name: CsmapReprojector
+Category: Coordinates, Integrations
+Description: Name: CsmapReprojector
+Category: Coordinates, Integrations
+Description: If theDestination Coordinate Systemis geocentric, coordinates will be converted to geocentric after being processed.
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: TINGenerator
+Category: 3D, Geometries
+Description: Name: TINGenerator
+Category: 3D, Geometries
+Description: Import
+Related Transformers: 
+Name: GeometryPartExtractor
+Category: 3D
+Description: Name: GeometryPartExtractor
+Category: 3D
+Description: 
+Related Transformers: 
+Name: GeometryPropertyRenamer
+Category: 3D
+Description: Name: GeometryPropertyRenamer
+Category: 3D
+Description: 
+Related Transformers: GeometryPropertyExtractor, GeometryPropertySetter, GeometryPropertyRemover
+Name: RasterPaletteRemover
+Category: Rasters
+Description: Name: RasterPaletteRemover
+Category: Rasters
+Description: SetsGround Control Points(GCPs) on a raster, pairing cell positions with known coordinates.
+Related Transformers: RasterPaletteExtractor, RasterPaletteResolver
+Name: XMLAppender
+Category: 
+Description: Name: XMLAppender
+Category: 
+Description: 
+Related Transformers: 
+Name: CoordinateSwapper
+Category: Coordinates, Geometries
+Description: Name: CoordinateSwapper
+Category: Coordinates, Geometries
+Description: 
+Related Transformers: CoordinateConcatenator, CoordinateExtractor
+Name: KMLTourBuilder
+Category: Cartography and Reports
+Description: Name: KMLTourBuilder
+Category: Cartography and Reports
+Description: 
+Related Transformers: 
+Name: GoogleIoTConnector
+Category: Web
+Description: Name: GoogleIoTConnector
+Category: Web
+Description: Registry ID
+Related Transformers: AWSIoTConnector, AzureIoTConnector, AzureQueueStorageConnector, GoogleCloudPubSubConnector, IBMIoTConnector, KafkaConnector, MQTTConnector, SQSConnector
+Name: AttributeKeeper
+Category: Attributes
+Description: Name: AttributeKeeper
+Category: Attributes
+Description: 
+Related Transformers: AttributeCopier, AttributeCreator, AttributeManager, AttributeRemover, AttributeRenamer, AttributeValueMapper, BulkAttributeRenamer, BulkAttributeRemover
+Name: KinesisReceiver
+Category: Integrations
+Description: Name: KinesisReceiver
+Category: Integrations
+Description: 
+Related Transformers: 
+Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: 
+Related Transformers: RasterAspectCalculator, RasterSlopeCalculator, Scaler
+Name: AttributeDecompressor
+Category: Attributes, Strings
+Description: Name: AttributeDecompressor
+Category: Attributes, Strings
+Description: No
+Related Transformers: AttributeCompressor
+Name: PointOnPointOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: PointOnPointOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Enabled once you have clicked on a row item. Choices include:
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: RasterCellValueRounder
+Category: Rasters
+Description: Name: RasterCellValueRounder
+Category: Rasters
+Description: Reset/Refresh
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterExpressionEvaluator, RasterSingularCellValueCalculator
+Name: AWSIoTConnector
+Category: Web
+Description: Name: AWSIoTConnector
+Category: Web
+Description: Feature Holding
+Related Transformers: AzureIoTConnector, AzureQueueStorageConnector, GoogleCloudPubSubConnector, GoogleIoTConnector, IBMIoTConnector, KafkaConnector, MQTTConnector, SQSConnector
+Name: MeasureRemover
+Category: Geometries
+Description: Name: MeasureRemover
+Category: Geometries
+Description: Math Operators
+Related Transformers: 
+Name: PointCloudToPointCoercer
+Category: Point Clouds
+Description: Name: PointCloudToPointCoercer
+Category: Point Clouds
+Description: 
+Related Transformers: GeometryCoercer, PointCloudCombiner, PointCloudExtractor, PointCloudReplacer, PointCloudSurfaceBuilder
+Name: RasterObjectDetector
+Category: Rasters
+Description: Name: RasterObjectDetector
+Category: Rasters
+Description: 
+Related Transformers: RasterObjectDetectionModelTrainer, RasterObjectDetectorSampleGenerator, RasterObjectDetectorSamplePreparer
+Name: CoordinateSystemRemover
+Category: Coordinates
+Description: Name: CoordinateSystemRemover
+Category: Coordinates
+Description: The CoordinateSystemRemover receives any feature and removes any assigned coordinate system from it. No geometry is modified, and data is not reprojected.
+Related Transformers: CoordinateSystemDescriptionConverter, CoordinateSystemExtractor, CoordinateSystemSetter, LocalCoordinateSystemSetter
+Name: PointCloudCreator
+Category: Point Clouds
+Description: Name: PointCloudCreator
+Category: Point Clouds
+Description: Enabled once you have clicked on a row item. Choices include:
+Related Transformers: 2DGridCreator, Creator, RasterNumericCreator, RasterRGBCreator
+Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: 
+Related Transformers: RasterAspectCalculator, RasterSlopeCalculator, Scaler
+Name: CenterPointExtractor
+Category: Calculated Values, Coordinates
+Description: Name: CenterPointExtractor
+Category: Calculated Values, Coordinates
+Description: Point Extraction Modes include:
+Related Transformers: CenterPointReplacer, CoordinateExtractor, VertexCreator
+Name: SherbendGeneralizer
+Category: Cartography and Reports, Geometries
+Description: Name: SherbendGeneralizer
+Category: Cartography and Reports, Geometries
+Description: FME Community
+Related Transformers: 
+Name: VectorOnRasterOverlayer
+Category: Rasters, Spatial Analysis
+Description: Name: VectorOnRasterOverlayer
+Category: Rasters, Spatial Analysis
+Description: 
+Related Transformers: FeatureColorSetter, ImageRasterizer, MapnikRasterizer, NumericRasterizer, RasterNumericCreator, RasterRGBCreator, PointCloudOnRasterComponentSetter
+Name: MinimumSpanningCircleReplacer
+Category: Geometries
+Description: Name: MinimumSpanningCircleReplacer
+Category: Geometries
+Description: There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+Related Transformers: 2DArcReplacer, 2DEllipseReplacer, ArcPropertyExtractor, ArcPropertySetter, BoundingBoxAccumulator, BoundingBoxReplacer, BoundsExtractor, EllipsePropertyExtractor, EllipsePropertySetter, HullAccumulator, HullReplacer
+Name: GeometryReplacer
+Category: 
+Description: Name: GeometryReplacer
+Category: 
+Description: Parameters
+Related Transformers: GeometryExtractor, RasterExtractor, RasterReplacer, PointCloudExtractor, PointCloudReplacer
+Name: LogMessageStreamer
+Category: Workflows
+Description: Name: LogMessageStreamer
+Category: Workflows
+Description: Math Functions
+Related Transformers: 
+Name: RasterCellValueReplacer
+Category: Rasters
+Description: Name: RasterCellValueReplacer
+Category: Rasters
+Description: Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+Related Transformers: RasterCellValueCalculator, RasterCellValueRounder, RasterExpressionEvaluator, RasterSingularCellValueCalculator
+Name: PipeEvaluator
+Category: 3D, Geometries
+Description: Name: PipeEvaluator
+Category: 3D, Geometries
+Description: 
+Related Transformers: 
+Name: RasterObjectDetectorSamplePreparer
+Category: Rasters
+Description: Name: RasterObjectDetectorSamplePreparer
+Category: Rasters
+Description: 
+Related Transformers: RasterObjectDetectionModelTrainer, RasterObjectDetector, RasterObjectDetectorSampleGenerator
+Name: EllipsePropertySetter
+Category: Geometries
+Description: Name: EllipsePropertySetter
+Category: Geometries
+Description: Features without valid ellipse or point geometry will be rejected, as will points that do not have the required parameter values to create an ellipse.
+Related Transformers: 2DArcReplacer, 2DEllipseReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, Creator, EllipsePropertyExtractor
+Name: AreaAmalgamator
+Category: Cartography and Reports, Geometries, Spatial Analysis
+Description: Name: AreaAmalgamator
+Category: Cartography and Reports, Geometries, Spatial Analysis
+Description: Using the Arithmetic Editor
+Related Transformers: 
+Name: StatisticsCalculator
+Category: Calculated Values
+Description: Name: StatisticsCalculator
+Category: Calculated Values
+Description: WhenCalculation MethodisNumeric, only values that can be converted to numbers will be counted.
+Related Transformers: 
+Name: 2DArcReplacer
+Category: Geometries
+Description: Name: 2DArcReplacer
+Category: Geometries
+Description: When setting values - whether entered directly in a parameter or constructed using one of the editors - strings and expressions containing String, Math, Date/Time or FME Feature Functions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+Related Transformers: 2DEllipseReplacer, 3DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, ArcStroker, Creator, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter
+Name: AzureServiceBusConnector
+Category: Integrations, Web, Workflows
+Description: Name: AzureServiceBusConnector
+Category: Integrations, Web, Workflows
+Description: content_type
+Related Transformers: 
+Name: SurfaceBuilder
+Category: 3D, Spatial Analysis
+Description: Name: SurfaceBuilder
+Category: 3D, Spatial Analysis
+Description: Parameters
+Related Transformers: 
+Name: MapnikRasterizer
+Category: Cartography and Reports, Rasters
+Description: Name: MapnikRasterizer
+Category: Cartography and Reports, Rasters
+Description: Calculates statistics on raster bands and adds the results as attributes.
+Related Transformers: ImageRasterizer, NumericRasterizer, RasterNumericCreator, RasterRGBCreator, VectorOnRasterOverlayer
+Name: SharedItemRetriever
+Category: 3D
+Description: Name: SharedItemRetriever
+Category: 3D
+Description: X,Y,Z,U1,V1,dU2,dV2,dU3,dV3,a,b,c,d,e,f
+Related Transformers: 
+Name: RasterPropertyExtractor
+Category: Calculated Values, Rasters
+Description: Name: RasterPropertyExtractor
+Category: Calculated Values, Rasters
+Description: INVALID_GEOMETRY_TYPE
+Related Transformers: RasterBandMinMaxExtractor, RasterBandPropertyExtractor, RasterStatisticsCalculator
+Name: 2DEllipseReplacer
+Category: Geometries
+Description: Name: 2DEllipseReplacer
+Category: Geometries
+Description: Specify the X coordinate of the ellipse’s origin.
+Related Transformers: 2DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, ArcStroker, Bufferer, Creator, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter
+Name: DEMDistanceCalculator
+Category: 3D, Calculated Values, Rasters, Spatial Analysis
+Description: Name: DEMDistanceCalculator
+Category: 3D, Calculated Values, Rasters, Spatial Analysis
+Description: 
+Related Transformers: 
+Name: PointOnRasterValueExtractor
+Category: Rasters, Spatial Analysis
+Description: Name: PointOnRasterValueExtractor
+Category: Rasters, Spatial Analysis
+Description: RasterSegmenter
+Related Transformers: PointCloudOnRasterComponentSetter, PointOnAreaOverlayer, RasterCellCoercer, RasterToPolygonCoercer, VectorOnRasterOverlayer
+Name: GoogleVisionConnector
+Category: Rasters, Web
+Description: Name: GoogleVisionConnector
+Category: Rasters, Web
+Description: Reset/Refresh
+Related Transformers: AzureComputerVisionConnector, AzureTextAnalyticsConnector, ComprehendConnector, GoogleBigQueryConnector, GoogleCloudPubSubConnector, GoogleCloudStorageConnector, GoogleDriveConnector, GoogleLanguageConnector, RekognitionConnector
+Name: LineOnAreaOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: LineOnAreaOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Add To 'Line' List
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: GtransAttributeReprojector
+Category: Coordinates, Integrations
+Description: Name: GtransAttributeReprojector
+Category: Coordinates, Integrations
+Description: 
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: AttributeCompressor
+Category: Attributes, Strings
+Description: Name: AttributeCompressor
+Category: Attributes, Strings
+Description: Math Functions
+Related Transformers: AttributeDecompressor
+Name: PointOnLineOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: PointOnLineOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Examples
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: PathSplitter
+Category: Geometries
+Description: Name: PathSplitter
+Category: Geometries
+Description: Reset/Refresh
+Related Transformers: 
+Name: PointCloudComponentTypeCoercer
+Category: Point Clouds
+Description: Name: PointCloudComponentTypeCoercer
+Category: Point Clouds
+Description: PointCloudComponentKeeper
+Related Transformers: PointCloudComponentAdder, PointCloudComponentCopier, PointCloudExpressionEvaluator, PointCloudOnRasterComponentSetter, PointCloudTransformationApplier
+Name: IFCPropertySetDefinitionCreator
+Category: 3D
+Description: Name: IFCPropertySetDefinitionCreator
+Category: 3D
+Description: 
+Related Transformers: 
+Name: Tiler
+Category: Geometries
+Description: Name: Tiler
+Category: Geometries
+Description: Import
+Related Transformers: 2DGridAccumulator, 2DGridCreator, RasterTiler, WebMapTiler
+Name: RasterMosaicker
+Category: Filters and Joins, Rasters
+Description: Name: RasterMosaicker
+Category: Filters and Joins, Rasters
+Description: Merge Incoming Attributes:Attributes from incoming features are merged onto the output raster feature.
+Related Transformers: RasterConvolver, RasterGeoreferencer, RasterPyramider, RasterResampler, RasterRotationApplier, RasterSelector, RasterSubsetter, RasterTiler, WebMapTiler
+Name: GeometryColorSetter
+Category: Cartography and Reports
+Description: Name: GeometryColorSetter
+Category: Cartography and Reports
+Description: There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+Related Transformers: 
+Name: Tiler
+Category: Geometries
+Description: Name: Tiler
+Category: Geometries
+Description: 
+Related Transformers: 2DGridAccumulator, 2DGridCreator, RasterTiler, WebMapTiler
+Name: CKANConnector
+Category: Integrations, Web, Workflows
+Description: Name: CKANConnector
+Category: Integrations, Web, Workflows
+Description: Arithmetic Editor
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, ComprehendConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, RekognitionConnector, S3Connector, SQSConnector
+Name: RasterObjectDetector
+Category: Rasters
+Description: Name: RasterObjectDetector
+Category: Rasters
+Description: Description
+Related Transformers: RasterObjectDetectionModelTrainer, RasterObjectDetectorSampleGenerator, RasterObjectDetectorSamplePreparer
+Name: VectorOnRasterOverlayer
+Category: Rasters, Spatial Analysis
+Description: Name: VectorOnRasterOverlayer
+Category: Rasters, Spatial Analysis
+Description: RasterExpressionEvaluator
+Related Transformers: FeatureColorSetter, ImageRasterizer, MapnikRasterizer, NumericRasterizer, RasterNumericCreator, RasterRGBCreator, PointCloudOnRasterComponentSetter
+Name: DatabaseJoiner
+Category: Attributes, Filters and Joins
+Description: Name: DatabaseJoiner
+Category: Attributes, Filters and Joins
+Description: Expressions and strings can include a number of functions, characters, parameters, and more.
+Related Transformers: DatabaseDeleter, DatabaseUpdater, FeatureJoiner, FeatureMerger, ListBasedFeatureMerger, InlineQuerier, SQLCreator, SQLExecutor, Matcher
+Name: S3Connector
+Category: Integrations, Web, Workflows
+Description: Name: S3Connector
+Category: Integrations, Web, Workflows
+Description: When allowing S3 Acceleration, keep in mind the following:
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, ComprehendConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, RekognitionConnector, SQSConnector
+Name: AttributeCreator
+Category: Attributes
+Description: Name: AttributeCreator
+Category: Attributes
+Description: fme_uint8
+Related Transformers: AttributeCopier, AttributeExploder, AttributeKeeper, AttributeManager, AttributeRemover, AttributeRenamer, AttributeValueMapper, BulkAttributeRenamer, BulkAttributeRemover
+Name: CityEngineModelGenerator
+Category: 3D, Geometries, Integrations
+Description: Name: CityEngineModelGenerator
+Category: 3D, Geometries, Integrations
+Description: CityEngine stores geometry internally in a y-Up orientation, which does not match the standard z-Up orientation of FME and other GIS applications. As a result, the CityEngineModelGenerator will transform input geometry from an assumed z-Up orientation to y-Up before processing through the PyPRT module. The generated geometry model will be transformed to a z-Up orientation on output.
+Related Transformers: Extruder
+Name: ArcPropertyExtractor
+Category: Calculated Values
+Description: Name: ArcPropertyExtractor
+Category: Calculated Values
+Description: Yes, at center point
+Related Transformers: 2DEllipseReplacer, 2DArcReplacer, 3DArcReplacer, ArcEstimator, ArcPropertySetter, ArcStroker, Creator, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter
+Name: RasterCellValueRounder
+Category: Rasters
+Description: Name: RasterCellValueRounder
+Category: Rasters
+Description: Alters the interpretation type of raster palettes.
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterExpressionEvaluator, RasterSingularCellValueCalculator
+Name: AttributeDereferencer
+Category: Attributes
+Description: Name: AttributeDereferencer
+Category: Attributes
+Description: Transformers with table-style parameters have additional tools for populating and manipulating values.
+Related Transformers: AttributeCopier, AttributeManager, FeatureMerger, ParameterFetcher
+Name: HTMLReportGenerator
+Category: Cartography and Reports
+Description: Name: HTMLReportGenerator
+Category: Cartography and Reports
+Description: Attachment Method
+Related Transformers: 
+Name: AppearanceExtractor
+Category: 3D, Rasters
+Description: Name: AppearanceExtractor
+Category: 3D, Rasters
+Description: 
+Related Transformers: 
+Name: Tester
+Category: Data Quality, Filters and Joins
+Description: Name: Tester
+Category: Data Quality, Filters and Joins
+Description: To test for values that contain either single (') or double (") quotes, enclose the value in the opposing quotes:"Duncan's Lake"or'Say "Hello"'.
+Related Transformers: AttributeFilter, AttributeRangeFilter, AttributeValidator, GeometryValidator, JSONValidator, TestFilter, XMLValidator
+Name: NetworkTopologyCalculator
+Category: Calculated Values, Spatial Analysis
+Description: Name: NetworkTopologyCalculator
+Category: Calculated Values, Spatial Analysis
+Description: Cut, Copy, and Paste
+Related Transformers: NetworkFlowOrientor, ShortestPathFinder, StreamOrderCalculator, StreamPriorityCalculator
+Name: RasterAspectCalculator
+Category: Calculated Values, Rasters
+Description: Name: RasterAspectCalculator
+Category: Calculated Values, Rasters
+Description: Merges coincidental raster features into a single output raster feature, preserving and appending all bands.
+Related Transformers: RasterHillshader, RasterSlopeCalculator
+Name: RasterBandPropertyExtractor
+Category: Calculated Values, Rasters
+Description: Name: RasterBandPropertyExtractor
+Category: Calculated Values, Rasters
+Description: Input Ports
+Related Transformers: RasterBandMinMaxExtractor, RasterPropertyExtractor, RasterStatisticsCalculator
+Name: PointCloudConsumer
+Category: Point Clouds
+Description: Name: PointCloudConsumer
+Category: Point Clouds
+Description: Cut, Copy, and Paste
+Related Transformers: RasterConsumer
+Name: RasterBandSeparator
+Category: Rasters
+Description: Name: RasterBandSeparator
+Category: Rasters
+Description: RasterCheckpointer
+Related Transformers: RasterBandAdder, RasterBandCombiner, RasterBandKeeper, RasterBandOrderer, RasterBandRemover
+Name: 3DForcer
+Category: 3D, Coordinates, Geometries
+Description: Name: 3DForcer
+Category: 3D, Coordinates, Geometries
+Description: 
+Related Transformers: 2DForcer, PointOnRasterValueExtractor, SurfaceDraper
+Name: AttributeRangeMapper
+Category: Strings
+Description: Name: AttributeRangeMapper
+Category: Strings
+Description: Arithmetic Editor
+Related Transformers: AttributeFilter, AttributeRangeFilter, AttributeValueMapper, TestFilter
+Name: GeometryPropertyExtractor
+Category: 3D
+Description: Name: GeometryPropertyExtractor
+Category: 3D
+Description: 
+Related Transformers: GeometryPropertyRemover, GeometryPropertyRenamer, GeometryPropertySetter
+Name: PROJAttributeReprojector
+Category: Coordinates, Integrations
+Description: Name: PROJAttributeReprojector
+Category: Coordinates, Integrations
+Description: 
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector
+Name: RasterRotationApplier
+Category: Rasters
+Description: Name: RasterRotationApplier
+Category: Rasters
+Description: 
+Related Transformers: Affiner, Rotator
+Name: Scaler
+Category: 3D, Coordinates, Geometries
+Description: Name: Scaler
+Category: 3D, Coordinates, Geometries
+Description: Feature-Based
+Related Transformers: 3DAffiner, AffinerAffineWarper, ExpressionEvaluator, Offsetter, PointCloudExpressionEvaluator, RasterExpressionEvaluator, RasterGeoreferencer, Rotator
+Name: AutodeskBIM360DocsConnector
+Category: Integrations, Web, Workflows
+Description: Name: AutodeskBIM360DocsConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: GoogleDriveConnector, SharePointOnlineConnector, S3Connector
+Name: Intersector
+Category: Geometries, Spatial Analysis
+Description: Name: Intersector
+Category: Geometries, Spatial Analysis
+Description: Prefix
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder
+Name: BulkAttributeRenamer
+Category: Attributes
+Description: Name: BulkAttributeRenamer
+Category: Attributes
+Description: There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+Related Transformers: AttributeCopier, AttributeCreator, AttributeKeeper, AttributeManager, AttributeRemover, AttributeRenamer, AttributeValueMapper, BulkAttributeRemover
+Name: ReprojectLengthCalculator
+Category: Calculated Values, Coordinates
+Description: Name: ReprojectLengthCalculator
+Category: Calculated Values, Coordinates
+Description: ReprojectLengthCalculator
+Related Transformers: AttributeReprojector, LengthCalculator, ReprojectAngleCalculator, Reprojector
+Name: RasterGeoreferencer
+Category: Coordinates, Rasters
+Description: Name: RasterGeoreferencer
+Category: Coordinates, Rasters
+Description: 
+Related Transformers: CoordinateSystemSetter, RasterGCPExtractor, RasterGCPSetter, Reprojector
+Name: RasterRegisterer
+Category: Rasters
+Description: Name: RasterRegisterer
+Category: Rasters
+Description: Increasing this parameter reduces computation time at the cost of accuracy.
+Related Transformers: RasterExpressionEvaluator, RasterStatisticsCalculator, RasterSharpener, RasterSegmenter
+Name: AutodeskBIM360DocsConnector
+Category: Integrations, Web, Workflows
+Description: Name: AutodeskBIM360DocsConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: GoogleDriveConnector, SharePointOnlineConnector, S3Connector
+Name: EthereumConnector
+Category: Web
+Description: Name: EthereumConnector
+Category: Web
+Description: 
+Related Transformers: SalesforceConnector, SlackConnector, TrelloConnector
+Name: DateTimeConverter
+Category: Calculated Values, Strings
+Description: Name: DateTimeConverter
+Category: Calculated Values, Strings
+Description: Enabled once you have clicked on a row item. Choices include:
+Related Transformers: DateTimeCalculator, DateTimeRounder, DateTimeStamper
+Name: KafkaConnector
+Category: Web
+Description: Name: KafkaConnector
+Category: Web
+Description: Example
+Related Transformers: AzureEventHubsConnector, AzureQueueStorageConnector, GoogleCloudPubSubConnector, MQTTConnector, SQSConnector
+Name: AzureBlobStorageConnector
+Category: Integrations, Web, Workflows
+Description: Name: AzureBlobStorageConnector
+Category: Integrations, Web, Workflows
+Description: If Yes, the token can only be used via HTTPS.
+Related Transformers: AzureComputerVisionConnector, AzureFileStorageConnector, AzureQueueStorageConnector, AzureTextAnalyticsConnector, BoxConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: 
+Related Transformers: RasterAspectCalculator, RasterHillshader, Scaler
+Name: CharacterCodeExtractor
+Category: Strings
+Description: Name: CharacterCodeExtractor
+Category: Strings
+Description: Text Editor
+Related Transformers: CharacterCodeReplacer
+Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: RasterCheckpointer
+Related Transformers: RasterAspectCalculator, RasterHillshader, Scaler
+Name: DMSCalculator
+Category: Calculated Values, Coordinates
+Description: Name: DMSCalculator
+Category: Calculated Values, Coordinates
+Description: Using the Text Editor
+Related Transformers: DecimalDegreesCalculator
+Name: LengthCalculator
+Category: Calculated Values
+Description: Name: LengthCalculator
+Category: Calculated Values
+Description: Input Ports
+Related Transformers: 
+Name: GeometryPropertySetter
+Category: 3D
+Description: Name: GeometryPropertySetter
+Category: 3D
+Description: Expressions and strings can include a number of functions, characters, parameters, and more.
+Related Transformers: Counter, GeometryPropertyExtractor, GeometryPropertyRemover, GeometryPropertyRenamer
+Name: HDFSConnector
+Category: Integrations, Web, Workflows
+Description: Name: HDFSConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: RasterBandPropertyExtractor
+Category: Calculated Values, Rasters
+Description: Name: RasterBandPropertyExtractor
+Category: Calculated Values, Rasters
+Description: ExtractsGround Control Point(GCP) coordinate system and point values from a raster feature and exposes them as attributes.
+Related Transformers: RasterBandMinMaxExtractor, RasterPropertyExtractor, RasterStatisticsCalculator
+Name: HullAccumulator
+Category: Spatial Analysis
+Description: Name: HullAccumulator
+Category: Spatial Analysis
+Description: The hull will consider 3D vertices from the input features.
+Related Transformers: 2DBoxReplacer, BoundingBoxAccumulator, BoundingBoxReplacer, BoundsExtractor, HullReplacer, MinimumSpanningCircleReplacer, RasterExtentsCoercer
+Name: AttributeDecompressor
+Category: Attributes, Strings
+Description: Name: AttributeDecompressor
+Category: Attributes, Strings
+Description: 
+Related Transformers: AttributeCompressor
+Name: RasterResampler
+Category: Rasters
+Description: Name: RasterResampler
+Category: Rasters
+Description: 
+Related Transformers: RasterPyramider, RasterSubsetter, RasterTiler, WebMapTiler
+Name: RasterObjectDetectorSampleGenerator
+Category: Rasters
+Description: Name: RasterObjectDetectorSampleGenerator
+Category: Rasters
+Description: 
+Related Transformers: RasterObjectDetectionModelTrainer, RasterObjectDetector, RasterObjectDetectorSamplePreparer
+Name: FMEFlowResourceConnector
+Category: Integrations, Web, Workflows
+Description: Name: FMEFlowResourceConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, DropboxConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: 
+Related Transformers: RasterAspectCalculator, RasterSlopeCalculator, Scaler
+Name: RasterRotationApplier
+Category: Rasters
+Description: Name: RasterRotationApplier
+Category: Rasters
+Description: 
+Related Transformers: Affiner, Rotator
+Name: GeometryPropertyExtractor
+Category: 3D
+Description: Name: GeometryPropertyExtractor
+Category: 3D
+Description: 
+Related Transformers: GeometryPropertyRemover, GeometryPropertyRenamer, GeometryPropertySetter
+Name: RasterConvolver
+Category: Rasters
+Description: Name: RasterConvolver
+Category: Rasters
+Description: Creates individual points or polygons for each cell in a raster, optionally extracting band values as z coordinates or attributes.
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterExpressionEvaluator, RasterSingularCellValueCalculator, RasterStatisticsCalculator
+Name: PointCloudComponentKeeper
+Category: Point Clouds
+Description: Name: PointCloudComponentKeeper
+Category: Point Clouds
+Description: The output point cloud now has only four components.
+Related Transformers: PointCloudComponentAdder, PointCloudComponentCopier, PointCloudComponentRemover, PointCloudComponentRenamer, PointCloudComponentTypeCoercer
+Name: FilenamePartExtractor
+Category: Strings
+Description: Name: FilenamePartExtractor
+Category: Strings
+Description: Filename Root
+Related Transformers: 
+Name: RasterPyramider
+Category: Rasters, Web
+Description: Name: RasterPyramider
+Category: Rasters, Web
+Description: 
+Related Transformers: RasterResampler, RasterTiler, WebMapTiler
+Name: FMEFlowJobWaiter
+Category: Integrations, Web, Workflows
+Description: Name: FMEFlowJobWaiter
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: 
+Name: Creator
+Category: 3D, Workflows
+Description: Name: Creator
+Category: 3D, Workflows
+Description: 
+Related Transformers: 2DGridCreator, PointCloudCreator, RasterNumericCreator, RasterRGBCreator
+Name: DonutBuilder
+Category: Geometries
+Description: Name: DonutBuilder
+Category: Geometries
+Description: Example
+Related Transformers: 
+Name: HTMLToXHTMLConverter
+Category: 
+Description: Name: HTMLToXHTMLConverter
+Category: 
+Description: XHTML Filename
+Related Transformers: 
+Name: KMLRegionSetter
+Category: Cartography and Reports
+Description: Name: KMLRegionSetter
+Category: Cartography and Reports
+Description: Cut, Copy, and Paste
+Related Transformers: 
+Name: RasterDEMGenerator
+Category: 3D, Rasters
+Description: Name: RasterDEMGenerator
+Category: 3D, Rasters
+Description: 
+Related Transformers: 3DForcer, DEMGenerator, NumericRasterizer, SurfaceModeller
+Name: 3DArcReplacer
+Category: 3D, Geometries
+Description: Name: 3DArcReplacer
+Category: 3D, Geometries
+Description:  point values or the values of existing attributes.
+Related Transformers: 
+Name: CoordinateSystemSetter
+Category: Coordinates
+Description: Name: CoordinateSystemSetter
+Category: Coordinates
+Description: There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+Related Transformers: CoordinateSystemDescriptionConverter, CoordinateSystemExtractor, CoordinateSystemRemover, LocalCoordinateSystemSetter
+Name: PipeEvaluator
+Category: 3D, Geometries
+Description: Name: PipeEvaluator
+Category: 3D, Geometries
+Description: Filter
+Related Transformers: 
+Name: FMEFlowJobWaiter
+Category: Integrations, Web, Workflows
+Description: Name: FMEFlowJobWaiter
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: 
+Name: BinaryEncoder
+Category: Strings
+Description: Name: BinaryEncoder
+Category: Strings
+Description: Encodes binary data to text using Base64 or HEX encoding methods.  The transformer can convert attributes that contain any type of data.  This is useful when a binary file, such as an image, must be included in a text file.
+Related Transformers: 
+Name: DonutBridgeBuilder
+Category: Geometries, Spatial Analysis
+Description: Name: DonutBridgeBuilder
+Category: Geometries, Spatial Analysis
+Description: 
+Related Transformers: 
+Name: SQSConnector
+Category: Web
+Description: Name: SQSConnector
+Category: Web
+Description: 
+Related Transformers: AmazonAthenaConnector, AzureEventHubsConnector, AzureQueueStorageConnector, ComprehendConnector, GoogleCloudPubSubConnector, KafkaConnector, RekognitionConnector, S3Connector
+Name: ChartGenerator
+Category: Cartography and Reports, Rasters, Web
+Description: Name: ChartGenerator
+Category: Cartography and Reports, Rasters, Web
+Description: Specifies the color of each line. If colors are provided on individual features via the setting of thefme_colorattribute, these values will override the color set here.
+Related Transformers: 
+Name: GeometryColorSetter
+Category: Cartography and Reports
+Description: Name: GeometryColorSetter
+Category: Cartography and Reports
+Description: For more information on appearance support in FME, seeAppearances.
+Related Transformers: 
+Name: Curvefitter
+Category: Cartography and Reports, Geometries
+Description: Name: Curvefitter
+Category: Cartography and Reports, Geometries
+Description: 
+Related Transformers: 2DArcReplacer, 2DEllipseReplacer, 3DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, ArcStroker, Creator, EllipsePropertyExtractor, EllipsePropertySetter, Generalizer
+Name: JMSReceiver
+Category: Integrations, Web
+Description: Name: JMSReceiver
+Category: Integrations, Web
+Description: The URL of the folder containing connection details for the JMS provider.
+Related Transformers: 
+Name: HTTPCaller
+Category: Web, Workflows
+Description: Name: HTTPCaller
+Category: Web, Workflows
+Description: Send username and password to the first domain only:In this case, the authentication headers will only be sent to the domain provided in theRequest URLparameter. This is the more secure option.
+Related Transformers: 
+Name: 2DForcer
+Category: Coordinates, Geometries
+Description: Name: 2DForcer
+Category: Coordinates, Geometries
+Description: Expressions and strings can include a number of functions, characters, parameters, and more.
+Related Transformers: 3DForcer, Extruder, GeometryCoercer
+Name: RasterPyramider
+Category: Rasters, Web
+Description: Name: RasterPyramider
+Category: Rasters, Web
+Description: RasterCellValueReplacer
+Related Transformers: RasterResampler, RasterTiler, WebMapTiler
+Name: RasterPaletteResolver
+Category: Rasters
+Description: Name: RasterPaletteResolver
+Category: Rasters
+Description: The RasterPaletteResolver receives raster features and, for all selected bands, resolves palette values onto bands by replacing cell values with their corresponding palette values. Palettes are removed from the output raster features.
+Related Transformers: RasterPaletteAdder, RasterPaletteExtractor, RasterPaletteGenerator, RasterPaletteRemover
+Name: CoordinateSystemDescriptionConverter
+Category: Coordinates, Strings
+Description: Name: CoordinateSystemDescriptionConverter
+Category: Coordinates, Strings
+Description: 
+Related Transformers: CoordinateSystemExtractor, CoordinateSystemSetter
+Name: PointPropertySetter
+Category: Geometries
+Description: Name: PointPropertySetter
+Category: Geometries
+Description: Row Reordering
+Related Transformers: PointPropertyExtractor
+Name: AttributeCopier
+Category: Attributes
+Description: Name: AttributeCopier
+Category: Attributes
+Description: 
+Related Transformers: AttributeCreator, AttributeKeeper, AttributeManager, AttributeRemover, AttributeRenamer, AttributeValueMapper, BulkAttributeRenamer, BulkAttributeRemover
+Name: RasterCellCoercer
+Category: Rasters
+Description: Name: RasterCellCoercer
+Category: Rasters
+Description: Creates individual points or polygons for each cell in a raster, optionally extracting band values as z coordinates or attributes.
+Related Transformers: RasterToPolygonCoercer, SurfaceModeller
+Name: PointCloudComponentCopier
+Category: Point Clouds
+Description: Name: PointCloudComponentCopier
+Category: Point Clouds
+Description: Filter
+Related Transformers: PointCloudComponentAdder, PointCloudComponentRenamer, PointCloudExpressionEvaluator, PointCloudOnRasterComponentSetter
+Name: GeometryRefiner
+Category: Geometries
+Description: Name: GeometryRefiner
+Category: Geometries
+Description: Import
+Related Transformers: 
+Name: Dissolver
+Category: Geometries, Spatial Analysis
+Description: Name: Dissolver
+Category: Geometries, Spatial Analysis
+Description: Attributes to Average, Weighted by Area
+Related Transformers: 
+Name: MultipleGeometryFilter
+Category: Filters and Joins
+Description: Name: MultipleGeometryFilter
+Category: Filters and Joins
+Description: Enabled once you have clicked on a row item. Choices include:
+Related Transformers: 
+Name: IFCPropertySetDefinitionCreator
+Category: 3D
+Description: Name: IFCPropertySetDefinitionCreator
+Category: 3D
+Description: Name
+Related Transformers: 
+Name: AttributeRangeFilter
+Category: Filters and Joins
+Description: Name: AttributeRangeFilter
+Category: Filters and Joins
+Description: The upper limit of the range (inclusive). Open-ended if left blank.
+Related Transformers: AttributeFilter, AttributeRangeMapper, AttributeValueMapper, TestFilter
+Name: 2DBoxReplacer
+Category: Geometries
+Description: Name: 2DBoxReplacer
+Category: Geometries
+Description: FME Parameters
+Related Transformers: 2DGridCreator, 2DGridAccumulator, BoundingBoxAccumulator, BoundingBoxReplacer, BoundsExtractor, Creator, RasterExtentsCoercer
+Name: SharePointOnlineConnector
+Category: Integrations, Web, Workflows
+Description: Name: SharePointOnlineConnector
+Category: Integrations, Web, Workflows
+Description: Transformers with table-style parameters have additional tools for populating and manipulating values.
+Related Transformers: GoogleDriveConnector, OneDriveConnector, S3Connector
+Name: DropboxConnector
+Category: Integrations, Web, Workflows
+Description: Name: DropboxConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: AttributeManager
+Category: Attributes
+Description: Name: AttributeManager
+Category: Attributes
+Description: 
+Related Transformers: AttributeCopier, AttributeCreator, AttributeKeeper, AttributeRemover, AttributeRenamer, AttributeValueMapper, BulkAttributeRenamer, BulkAttributeRemover
+Name: XMLUpdater
+Category: 
+Description: Name: XMLUpdater
+Category: 
+Description: For each feature that enters theUpdateport, all update operations listed in the transformer will be applied to each feature that entered the transformer through theDocumentport.Therefore, no changes will be made to the XML document if no features enter the transformer through theUpdateport.
+Related Transformers: 
+Name: CoordinateSystemDescriptionConverter
+Category: Coordinates, Strings
+Description: Name: CoordinateSystemDescriptionConverter
+Category: Coordinates, Strings
+Description: Library-Specific Reprojection Transformers (Recommended)
+Related Transformers: CoordinateSystemExtractor, CoordinateSystemSetter
+Name: HullReplacer
+Category: Geometries
+Description: Name: HullReplacer
+Category: Geometries
+Description: Reference
+Related Transformers: 2DBoxReplacer, BoundingBoxAccumulator, BoundingBoxReplacer, BoundsExtractor, HullAccumulator, MinimumSpanningCircleReplacer, RasterExtentsCoercer
+Name: ListDuplicateRemover
+Category: Data Quality, Strings
+Description: Name: ListDuplicateRemover
+Category: Data Quality, Strings
+Description: 
+Related Transformers: 
+Name: TopologyBuilder
+Category: Spatial Analysis
+Description: Name: TopologyBuilder
+Category: Spatial Analysis
+Description: Supported Types*
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator
+Name: RasterGeoreferencer
+Category: Coordinates, Rasters
+Description: Name: RasterGeoreferencer
+Category: Coordinates, Rasters
+Description: RasterInterpretationCoercer
+Related Transformers: CoordinateSystemSetter, RasterGCPExtractor, RasterGCPSetter, Reprojector
+Name: Geocoder
+Category: Integrations, Web
+Description: Name: Geocoder
+Category: Integrations, Web
+Description: Note that use of the Geocoder transformer with this service may use up credits and you may be subject to transaction limits.
+Related Transformers: None
+Name: RasterObjectDetector
+Category: Rasters
+Description: Name: RasterObjectDetector
+Category: Rasters
+Description: When a detection (kernel) window is being moved across the raster, an object might be detected multiple times in the same area. These similar area detections are called neighbors.Minimum Number of Neighborsspecifies how many neighbors each candidate detected object requires before it as accepted as a valid detected object.  The default is 2 neighbors.
+Related Transformers: RasterObjectDetectionModelTrainer, RasterObjectDetectorSampleGenerator, RasterObjectDetectorSamplePreparer
+Name: PointCloudComponentTypeCoercer
+Category: Point Clouds
+Description: Name: PointCloudComponentTypeCoercer
+Category: Point Clouds
+Description: Evaluates expressions on each point in a point cloud feature, including algebraic operations and conditional statements, and sets individual point cloud component values.
+Related Transformers: PointCloudComponentAdder, PointCloudComponentCopier, PointCloudExpressionEvaluator, PointCloudOnRasterComponentSetter, PointCloudTransformationApplier
+Name: FMEFlowResourceConnector
+Category: Integrations, Web, Workflows
+Description: Name: FMEFlowResourceConnector
+Category: Integrations, Web, Workflows
+Description: 
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, DropboxConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector
+Name: Creator
+Category: 3D, Workflows
+Description: Name: Creator
+Category: 3D, Workflows
+Description: The first three vertices (labelled below as v1, v2, and v3), define the first triangular face. A new triangle is formed by connecting the next point with its immediate predecessor and the first point of the triangle fan. That is, every additional point vi defines a new triangular face with vertices v1, vi-1, and vi.
+Related Transformers: 2DGridCreator, PointCloudCreator, RasterNumericCreator, RasterRGBCreator
+Name: MeasureSetter
+Category: Geometries
+Description: Name: MeasureSetter
+Category: Geometries
+Description: Source Measure List Attribute of Line or Area
+Related Transformers: 
+Name: SectorGenerator
+Category: Spatial Analysis
+Description: Name: SectorGenerator
+Category: Spatial Analysis
+Description: String Functions
+Related Transformers: 
+Name: AzureServiceBusConnector
+Category: Integrations, Web, Workflows
+Description: Name: AzureServiceBusConnector
+Category: Integrations, Web, Workflows
+Description: Payload
+Related Transformers: 
+Name: AzureServiceBusConnector
+Category: Integrations, Web, Workflows
+Description: Name: AzureServiceBusConnector
+Category: Integrations, Web, Workflows
+Description: A key, value pair of message properties.
+Related Transformers: 
+Name: CoordinateSystemExtractor
+Category: Coordinates
+Description: Name: CoordinateSystemExtractor
+Category: Coordinates
+Description: 
+Related Transformers: CoordinateSystemDescriptionConverter, CoordinateSystemRemover, CoordinateSystemSetter, LocalCoordinateSystemSetter
