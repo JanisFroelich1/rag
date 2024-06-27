@@ -1,0 +1,3088 @@
+;id;text
+0;2329bf02-8d29-4b0d-b16b-c12f50314931;"Name: RasterPaletteResolver
+Category: Rasters
+Description: Name: RasterPaletteResolver Category: Rasters Description: erGeoreferencer
+Georeferences a raster by either known corner coordinates or origin, cell size, and rotation.
+RasterHillshader
+Generates a grayscale shaded relief representation of terrain, based on elevation values.
+RasterInterpretationCoercer
+Alters the interpretation type of rasters, including all bands, and converts cell values if necessary.
+RasterMosaicker
+Merges multiple raster features into a single raster feature.
+RasterPropertyExtractor
+Extracts the geometry properties of a raster feature and exposes them as attributes.
+RasterPyramider
+Resamples rasters to
+Related Transformers: RasterPaletteAdder, RasterPaletteExtractor, RasterPaletteGenerator, RasterPaletteRemover"
+1;fea7a481-edcb-4c3d-9fe8-840ba25c5cb0;"Name: RasterGCPExtractor
+Category: Coordinates, Rasters
+Description: Name: RasterGCPExtractor Category: Coordinates, Rasters Description: Usage Notes
+Related Transformers: RasterGCPSetter"
+2;dd898564-341b-45f5-9619-ee19505ad54e;"Name: RasterMosaicker
+Category: Filters and Joins, Rasters
+Description: Name: RasterMosaicker Category: Filters and Joins, Rasters Description: rectly inside a parameter.
+Arithmetic Editor
+
+Conditional Values
+
+Set values depending on one or more test conditions that either pass or fail.
+Parameter Condition Definition Dialog
+
+Content
+
+Expressions and strings can include a number of functions, characters, parameters, and more.
+When setting values - whether entered directly in a parameter or constructed using one of the editors - strings and expressions containing String, Math, Date/Time or FME Feature Functions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) sho
+Related Transformers: RasterConvolver, RasterGeoreferencer, RasterPyramider, RasterResampler, RasterRotationApplier, RasterSelector, RasterSubsetter, RasterTiler, WebMapTiler"
+3;92463f76-c130-40cd-9a4a-37a71374fd3d;"Name: RasterCellValueReplacer
+Category: Rasters
+Description: Name: RasterCellValueReplacer Category: Rasters Description: lue are considered valid data.
+RasterBandNodataSetter
+Sets a new Nodata value on selected bands of a raster feature.
+RasterBandOrderer
+Specifies the required order of bands in a raster. Bands are reordered according 
+ to the input band indices.
+RasterBandPropertyExtractor
+Extracts the band and palette properties of a raster feature and exposes them as attributes.
+RasterBandRemover
+Removes any selected bands from a raster feature.
+RasterBandSeparator
+Separates bands or unique band and palette combinations, and outputs either individual raster features or a single new 
+Related Transformers: RasterCellValueCalculator, RasterCellValueRounder, RasterExpressionEvaluator, RasterSingularCellValueCalculator"
+4;db039908-7b39-4ed0-a7de-f62abdcb9400;"Name: Emailer
+Category: Integrations, Web
+Description: Name: Emailer Category: Integrations, Web Description: Input Ports
+
+This transformer accepts any feature. One email will be sent for each feature that is received by the transformer.
+
+Output Ports
+
+Each input feature that results in a successfully sent email is output unchanged via this port.
+Each input feature whose email could not be sent is output via this port. Anfme_rejection_codeattribute, having the valueERROR_DURING_PROCESSING, will be added, along with a more descriptivefme_rejection_messageattribute which contains more specific details as to the reason for the failure.
+
+Parameters
+
+Email Service
+Select th
+Related Transformers: "
+5;bf0b84b4-f930-44f5-922f-157daebcc470;"Name: CsmapReprojector
+Category: Coordinates, Integrations
+Description: Name: CsmapReprojector Category: Coordinates, Integrations Description: ).
+If theDestination Coordinate Systemis geocentric, coordinates will be converted to geocentric after being processed.
+Example:
+LL + orthometric height (datum A) -> LL + ellipsoid height (datum A) -> LL + ellipsoid height (datum B) [-> Geocentric (datum B)]
+NAD27 heights in NGVD29; NAD83 heights in NAVD88
+VERTCON will be used to convert between NAD27 (NGVD29) and NAD83 (NAVD88). Z values have the same units as the horizontal units (or meters, for geographic coordinate systems).
+Geoid Height Grid
+IfVertical Handlingincludes an Orthometric height, specify the Geoid height grid f
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector"
+6;02bd6f32-9127-42ec-b5d6-6a0df962d72d;"Name: HTMLToXHTMLConverter
+Category: 
+Description: Name: HTMLToXHTMLConverter Category:  Description: he table to its initial state, and may provide additional options to remove invalid entries. Behavior varies between transformers.
+Note:Not all tools are available in all transformers.
+
+FME Community
+
+TheFME Communityis the place for demos, how-tos, articles, FAQs, and more. Get answers to your questions, learn from other users, and suggest, vote, and comment on new features.
+Search forall results about the HTMLToXHTMLConverteron theFME Community.
+Related Transformers: "
+7;f347d594-2e73-4914-b078-cb56cb09fbfa;"Name: ArcPropertyExtractor
+Category: Calculated Values
+Description: Name: ArcPropertyExtractor Category: Calculated Values Description: ary radius in ground units of the feature’s coordinate system.
+Secondary Radius
+Name the attribute to contain the length of the secondary radius in ground units of the feature’s coordinate system.
+Rotation
+Name the attribute to contain the rotation angle.
+Rotation is measured in degrees from the horizontal axis to the primary axis in a counterclockwise direction.
+Start Angle
+Name the attribute to contain the starting angle of the arc, in degrees counterclockwise from the primary axis (horizontal plus or minus rotation).
+Sweep Angle
+Name the attribute to contain the sweep an
+Related Transformers: 2DEllipseReplacer, 2DArcReplacer, 3DArcReplacer, ArcEstimator, ArcPropertySetter, ArcStroker, Creator, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter"
+8;41b00e42-92cd-4dda-9a7f-10682a545c4b;"Name: PointCloudSurfaceBuilder
+Category: 3D, Geometries, Point Clouds
+Description: Name: PointCloudSurfaceBuilder Category: 3D, Geometries, Point Clouds Description: ndition Definition Dialog
+
+Content
+
+Expressions and strings can include a number of functions, characters, parameters, and more.
+When setting values - whether entered directly in a parameter or constructed using one of the editors - strings and expressions containing String, Math, Date/Time or FME Feature Functions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+String Functions
+Special Characters
+Math Functions
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tabl
+Related Transformers: "
+9;f9eb35ee-c951-47d2-8bf4-36a4fd8600da;"Name: RasterReplacer
+Category: Rasters
+Description: Name: RasterReplacer Category: Rasters Description: lculator
+Evaluates basic arithmetic , minimum, maximum or average operations on the cell values of a pair of rasters.
+RasterCellValueReplacer
+Replaces a range of band values in a raster with a new single value.
+RasterCellValueRounder
+Rounds off raster cell values.
+RasterSegmenter
+Partitions a raster image into arbitrarily sized groups of cells from the input image based on intensity differences in the input raster image cells.
+RasterSingularCellValueCalculator
+Performs basic arithmetic operations on the cell values of a raster against a numeric value.
+Raster
+Related Transformers: AttributeFileReader, GeometryExtractor, GeometryRemover, GeometryReplacer, PointCloudExtractor, PointCloudReplacer, RasterExtractor"
+10;2296049f-4b46-4a5b-bbd8-c87e37a3e08d;"Name: LineOnAreaOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: LineOnAreaOverlayer Category: Filters and Joins, Spatial Analysis Description: pler approach.
+As with many scenarios, testing different approaches in yourworkspacewith your data is the only definitive way to identify performance gains.
+Mode
+Split Lines With Areas:Default.  Each input line is split at any area boundaries it intersects, and attributes may be shared between related lines and areas (spatial join).
+Split Areas With Lines:Each input area is split wherever it is subdivided by line input.  Attributes may be shared between areas and their splitting lines (spatial join).
+Tolerance
+The minimum distance between geometries in 2D before they are considered equal, i
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder"
+11;ca85faed-9d9a-4b0d-82c9-9292ef94e6c1;"Name: TweetSearcher
+Category: Integrations, Web
+Description: Name: TweetSearcher Category: Integrations, Web Description: ions and strings can include a number of functions, characters, parameters, and more.
+When setting values - whether entered directly in a parameter or constructed using one of the editors - strings and expressions containing String, Math, Date/Time or FME Feature Functions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+String Functions
+Special Characters
+Math Functions
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tables
+
+Transformers with
+Related Transformers: JSONFragmenter, JSONExtractor, Tester, Tweeter, TweetStreamer, TwitterStatusFetcher"
+12;ab5c063d-86a8-4e39-afac-814efdf20978;"Name: 3DInterpolator
+Category: 3D, Geometries
+Description: Name: 3DInterpolator Category: 3D, Geometries Description: for the last vertex of the input feature.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value o
+Related Transformers: "
+13;9828aa4e-cc17-4878-84af-3290edebb1c4;"Name: RasterBandNodataRemover
+Category: Rasters
+Description: Name: RasterBandNodataRemover Category: Rasters Description:  answers to your questions, learn from other users, and suggest, vote, and comment on new features.
+Search forall results about the RasterBandNodataRemoveron theFME Community.
+
+Examples may contain information licensed under the Open Government Licence – Vancouver and/or the Open Government Licence – Canada.
+Related Transformers: RasterBandNodataSetter, RasterPaletteNodataSetter"
+14;e84898b7-0e3d-49cc-a2ea-863a796c200e;"Name: StatisticsCalculator
+Category: Calculated Values
+Description: Name: StatisticsCalculator Category: Calculated Values Description: orkspacewith your data is the only definitive way to identify performance gains.
+Calculation Method
+Use this setting to specify a method for evaluating values when calculating statistics. This choice will be applied to all data when it enters the transformer, determining whether values should be treated numerically or lexically.
+Attribute
+Select which attributes to include, one per line.
+Statistics
+The following statistics may be calculated:
+Minimum
+The numerical minimum for numeric attributes. The lexical minimum for string attributes.
+Maximum
+The numerical maximum for num
+Related Transformers: "
+15;31dafc3e-195f-4307-92a2-015491791100;"Name: RasterDEMGenerator
+Category: 3D, Rasters
+Description: Name: RasterDEMGenerator Category: 3D, Rasters Description: t cloud on a raster. The component values for each point are interpolated from band values at the point location.
+PointOnRasterValueExtractor
+Extracts the band and palette values from a raster at the location of one or more input points and sets them as attributes on the feature.
+RasterDEMGenerator
+Produces a raster digital elevation model (DEM) by uniformly sampling a Delaunay triangulation generated from input points and breaklines.
+VectorOnRasterOverlayer
+Rasterizes vector or point cloud features onto an existing raster. For vector features the fme_color attribut
+Related Transformers: 3DForcer, DEMGenerator, NumericRasterizer, SurfaceModeller"
+16;0a7432b1-a803-481e-8192-5b905127497d;"Name: RasterStatisticsCalculator
+Category: Calculated Values, Rasters
+Description: Name: RasterStatisticsCalculator Category: Calculated Values, Rasters Description: How does it work?
+
+The RasterStatisticsCalculator receives raster features and calculates selected statistics on them individually. The results are output on each raster, and may be generated for Band, Palette, or both.
+Available statistics include:
+Band statistics are stored as attributes, named<band>.<statisticname>.
+Palette statistics are calculated on resolved palette values, and are stored aslist attributes, named<band>.<palette>.<statisticname>.
+For both types of attribute,<statisticname>will be one of the following:min, max, range, mean, stdev, sum, median, mode.
+Formulti-band rast
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterExpressionEvaluator, RasterSingularCellValueCalculator"
+17;65c717fb-a3c3-4f6b-b619-191d9298cf67;"Name: RasterRegisterer
+Category: Rasters
+Description: Name: RasterRegisterer Category: Rasters Description: esults.
+RasterExpressionEvaluator
+Evaluates expressions on each cell in a raster or pair of rasters, including algebraic operations and conditional statements.
+RasterExtentsCoercer
+Replaces the geometry of input raster features with a polygon covering either the extents of a raster or the extent of data within a raster.
+RasterGCPExtractor
+ExtractsGround Control Point(GCP) coordinate system and point values from a raster feature and exposes them as attributes.
+RasterGCPSetter
+SetsGround Control Points(GCPs) on a raster, pairing cell positions with known coordin
+Related Transformers: RasterExpressionEvaluator, RasterStatisticsCalculator, RasterSharpener, RasterSegmenter"
+18;0951f457-4fc6-4ed6-b852-7932dde86433;"Name: ArcPropertyExtractor
+Category: Calculated Values
+Description: Name: ArcPropertyExtractor Category: Calculated Values Description:  an ArcPropertyExtractor.
+
+In the parameters dialog, we keep the defaults given for allOutput Attribute Names.
+
+The output features have new attributes added, containing the geometry properties.
+Related Transformers: 2DEllipseReplacer, 2DArcReplacer, 3DArcReplacer, ArcEstimator, ArcPropertySetter, ArcStroker, Creator, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter"
+19;fc8b46c5-1e09-4734-91f2-6b39b3b6785b;"Name: PointCloudFilter
+Category: Filters and Joins, Point Clouds
+Description: Name: PointCloudFilter Category: Filters and Joins, Point Clouds Description: y type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using t
+Related Transformers: PointCloudCombiner, PointCloudMerger, PointCloudSorter, PointCloudSplitter"
+20;43ee9fb0-00cc-4ec4-bd7e-ab6a3bbf97ee;"Name: RasterBandSeparator
+Category: Rasters
+Description: Name: RasterBandSeparator Category: Rasters Description:  text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Arithmetic Editor
+
+Conditional Values
+
+Set values depending on one or more test conditions that either pass or fail.
+Parameter Condition De
+Related Transformers: RasterBandAdder, RasterBandCombiner, RasterBandKeeper, RasterBandOrderer, RasterBandRemover"
+21;38b52f72-b009-4ede-b176-62775af1ca39;"Name: DonutBuilder
+Category: Geometries
+Description: Name: DonutBuilder Category: Geometries Description: ters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andw
+Related Transformers: "
+22;d51f71f9-9d59-49cd-a038-15424c124b13;"Name: KMLStyler
+Category: Cartography and Reports
+Description: Name: KMLStyler Category: Cartography and Reports Description: Format Specific
+Creates a common style for a group of features destined for the OGCKML writer.
+
+Example
+
+This screen capture shows a polygon that has had its color and fill color set by the KMLStyler.
+Related Transformers: "
+23;b741ded3-9022-48e8-96e3-8f06adec0446;"Name: RasterPaletteExtractor
+Category: Rasters
+Description: Name: RasterPaletteExtractor Category: Rasters Description: Reordering
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, copy, and paste may be used within a transformer, or between transformers.
+Filter
+
+Import
+
+Reset/Refresh
+
+Generally resets the table to its initial state, and may provide additional options to remove invalid entries. Behavior varies between transformers.
+Note:Not all tools are available in all transformers.
+
+Reference
+
+Processing Behavior
+Feature-Based
+Feature Holding
+No
+
+FME Community
+
+TheFME Communityis 
+Related Transformers: AttributeFileWriter, RasterPaletteAdder, RasterPaletteGenerator, RasterPaletteRemover, RasterPaletteResolver"
+24;b7924ae3-1669-45b5-8ddb-95096994c0db;"Name: RasterAspectCalculator
+Category: Calculated Values, Rasters
+Description: Name: RasterAspectCalculator Category: Calculated Values, Rasters Description:  in - cells that are Nodata in the input raster will remain Nodata in the output.
+Algorithm
+The algorithm used to calculate the aspect. Some analyses have suggested that Horn's formula is better suited to rougher terrain, whereas Zevenbergen & Thorne's formula is better for smooth terrain.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options
+Related Transformers: RasterHillshader, RasterSlopeCalculator"
+25;f1434966-f08d-44de-892e-697bb8dda33f;"Name: RasterReplacer
+Category: Rasters
+Description: Name: RasterReplacer Category: Rasters Description: es depending on one or more test conditions that either pass or fail.
+Parameter Condition Definition Dialog
+
+Content
+
+Expressions and strings can include a number of functions, characters, parameters, and more.
+When setting values - whether entered directly in a parameter or constructed using one of the editors - strings and expressions containing String, Math, Date/Time or FME Feature Functions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+String Funct
+Related Transformers: AttributeFileReader, GeometryExtractor, GeometryRemover, GeometryReplacer, PointCloudExtractor, PointCloudReplacer, RasterExtractor"
+26;4a11d4ba-c83d-4ea7-8c6d-c3bc3646d8ef;"Name: KMLRegionSetter
+Category: Cartography and Reports
+Description: Name: KMLRegionSetter Category: Cartography and Reports Description: ype in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+U
+Related Transformers: "
+27;3b7afeeb-8d39-44ce-8e7f-9b17a2661fe2;"Name: RasterExtentsCoercer
+Category: Rasters
+Description: Name: RasterExtentsCoercer Category: Rasters Description: ays to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameter
+Related Transformers: RasterBandNodataRemover, RasterBandNodataSetter, RasterCellCoercer, RasterToPolygonCoercer"
+28;d37965db-5288-4e45-b9f1-444f4a3c2f29;"Name: RCaller
+Category: 
+Description: Name: RCaller Category:  Description:  construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Arithmetic Editor
+
+Conditional Values
+
+Set values depending on one or more test conditions that either pass or fail.
+Parameter Condition Definition Dialog
+
+Content
+
+Expressions and strings can include a number of functions, characters, parameters, and more.
+When setting values - whether entered directly in a parameter or constructed using one of the editors - strings and expressions 
+Related Transformers: "
+29;0e0b56ef-026d-410c-81fc-a142e14a86b6;"Name: GtransReprojector
+Category: Coordinates, Integrations
+Description: Name: GtransReprojector Category: Coordinates, Integrations Description: ust be identified as well.
+Output features’ coordinate system will show asUnknown, as these features no longer have an FME coordinate system tag. If the output coordinate system is known to have an exact match in FME’s coordinate system library, it can be tagged manually with aCoordinateSystemSetter.
+
+Translation Files
+
+A selection ofGtrans Translation Filesare provided with FME.
+Only reprojections defined here or with a user-provided Gtrans Translation File (see below) may be performed with this transformer.
+File Type
+Description
+Location
+*.tf, *.tfi
+Translation File- a text fi
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector"
+30;e79b4fa8-64cc-4c25-b0e5-2391a13bebbc;"Name: Aggregator
+Category: Attributes, Calculated Values, Filters and Joins
+Description: Name: Aggregator Category: Attributes, Calculated Values, Filters and Joins Description: g functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, su
+Related Transformers: "
+31;f7d1a746-bc85-46a0-9346-faa483d7a3b9;"Name: HTMLToXHTMLConverter
+Category: 
+Description: Name: HTMLToXHTMLConverter Category:  Description: es with at least one error will be output through theFailedport with a new list attribute specified inError and Warning List Nameadded to the features. If the default_html_erroris the list name, the elements of the list attribute contain the following:
+Ignore Warnings
+If set to Yes, errors are only reported in the list name during the conversion process.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an
+Related Transformers: "
+32;c4da3d06-1125-4ac1-9b87-12979ebd11d2;"Name: Player
+Category: Workflows
+Description: Name: Player Category: Workflows Description: ferencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters.
+Related Transformers: Recorder"
+33;1af36894-eb5a-4e83-a455-5cd3606a0df6;"Name: PointCloudComponentTypeCoercer
+Category: Point Clouds
+Description: Name: PointCloudComponentTypeCoercer Category: Point Clouds Description: ressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Arithmetic Editor
+
+Conditional Values
+
+Set values depending on one or more test conditions that either pass or fail.
+Parameter Condition Definition Dialog
+
+Content
+
+Expressions and strings ca
+Related Transformers: PointCloudComponentAdder, PointCloudComponentCopier, PointCloudExpressionEvaluator, PointCloudOnRasterComponentSetter, PointCloudTransformationApplier"
+34;009ff4b9-e72a-495e-8a3e-dc26d6baf3a4;"Name: GeometryPropertyExtractor
+Category: 3D
+Description: Name: GeometryPropertyExtractor Category: 3D Description: ransformer, or between transformers.
+Filter
+
+Import
+
+Reset/Refresh
+
+Generally resets the table to its initial state, and may provide additional options to remove invalid entries. Behavior varies between transformers.
+Note:Not all tools are available in all transformers.
+
+FME Community
+
+TheFME Communityis the place for demos, how-tos, articles, FAQs, and more. Get answers to your questions, learn from other users, and suggest, vote, and comment on new features.
+Search forall results about the GeometryPropertyExtractoron theFME Community.
+Keywords: GeometryTraitExtr
+Related Transformers: GeometryPropertyRemover, GeometryPropertyRenamer, GeometryPropertySetter"
+35;14088426-c6dd-4421-87ac-603d2172b0af;"Name: AttributeRounder
+Category: Calculated Values, Strings
+Description: Name: AttributeRounder Category: Calculated Values, Strings Description: Rounds off attributes with numeric values to the specified number of decimal places. Rounding may be nearest, up, or down.
+Jump to Configuration
+
+Typical Uses
+Related Transformers: CoordinateRounder, DateTimeRounder, RasterCellValueRounder"
+36;2c94cabc-c3d6-43d8-ba56-d8194aed346c;"Name: RekognitionConnector
+Category: Web
+Description: Name: RekognitionConnector Category: Web Description: bels{}.name
+A word or phrase describing the content of the image.
+_detection_labels{}.parent
+For the descriptor in_labels{n}.name,_labels{n}.parentwill contain a comma-separated list of parent descriptors.
+
+Text Detection
+
+A summary feature with the original geometry and attributes preserved will always be output through the Summary port. Attributes will be added to indicate the number of lines and words detected.
+Attributes
+_detected_words
+The number of words that were detected in the image.
+_detected_lines
+The number of lines of text that were detected in th
+Related Transformers: AmazonAthenaConnector, AzureComputerVisionConnector, AzureTextAnalyticsConnector, ComprehendConnector, GoogleLanguageConnector, GoogleVisionConnector, RasterObjectDetector, S3Connector, SQSConnector"
+37;1fef6aa9-001f-4a00-9a44-113e58993a2b;"Name: Offsetter
+Category: 3D, Spatial Analysis
+Description: Name: Offsetter Category: 3D, Spatial Analysis Description: ures. Note that the x, y, and z components can be offset using theX Offset,Y Offset, andZ Offsetparameters. This parameter is intended for non-spatial components (for example, intensity).
+If the same component occurs multiple times in the table, each of theOffsetvalues will be added to that component's value.
+Offset
+The offset that will be applied to the corresponding point cloud component.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such 
+Related Transformers: "
+38;0e437ece-4fa3-4eb3-ae2f-f1ffcdf9170a;"Name: RasterSelector
+Category: Rasters
+Description: Name: RasterSelector Category: Rasters Description:  results.
+RasterExpressionEvaluator
+Evaluates expressions on each cell in a raster or pair of rasters, including algebraic operations and conditional statements.
+RasterExtentsCoercer
+Replaces the geometry of input raster features with a polygon covering either the extents of a raster or the extent of data within a raster.
+RasterGCPExtractor
+ExtractsGround Control Point(GCP) coordinate system and point values from a raster feature and exposes them as attributes.
+RasterGCPSetter
+SetsGround Control Points(GCPs) on a raster, pairing cell positions with known coo
+Related Transformers: "
+39;43643dfe-c197-4038-9a79-cd0a023f7f69;"Name: XMLFeatureMapper
+Category: 
+Description: Name: XMLFeatureMapper Category:  Description:  an external DTD.
+Entity Resolver
+
+By the default this parameter isEnabledand a custom entity resolver is used to resolve external entities such as DTDs.
+The installed custom entity resolver relies on an URI Map that incoming URIs to resolved URIs. The resolved URIs are usually URLs with local copies of the resource.
+If an XML document does not have any external entities that need to be resolved, this parameter may beDisabledand the URI Map will not be loaded unnecessarily.
+Attributes to Expose
+Exposes attributes so they can be used elsewhere in the wor
+Related Transformers: "
+40;4f3a5278-6d5d-4be7-8723-37e7edecea2c;"Name: GoogleLanguageConnector
+Category: Web
+Description: Name: GoogleLanguageConnector Category: Web Description: Accesses the Google Natural Language and Google Cloud Translation API for text analysis, such as language and sentiment detection.
+Jump to Configuration
+
+Typical Uses
+Related Transformers: AzureComputerVisionConnector, AzureTextAnalyticsConnector, ComprehendConnector, GoogleBigQueryConnector, GoogleCloudPubSubConnector, GoogleCloudStorageConnector, GoogleDriveConnector, GoogleVisionConnector, RekognitionConnector"
+41;6580a9f9-951d-4171-a9b1-7daf10ec085e;"Name: RasterBandNameSetter
+Category: Rasters
+Description: Name: RasterBandNameSetter Category: Rasters Description: Choosing a Raster Transformer
+
+FME has an extensive selection of transformers for working with raster data. They can be generally categorized as working with whole rasters, bands, cells or palettes, and those designed for workflow control or combining raster with vector data.
+For information on raster geometry and properties, seeRasters (IFMERaster).
+
+Working with Rasters
+
+RasterCellOriginSetter
+Sets the cell origin point within cells in a raster.
+RasterConvolver
+Applies a convolution filter (sometimes called akernelorlens) to raster features and outputs the resul
+Related Transformers: RasterBandAdder, RasterBandPropertyExtractor"
+42;8fba2255-2820-4f5a-9dbf-2d2d69dc1c93;"Name: MapnikRasterizer
+Category: Cartography and Reports, Rasters
+Description: Name: MapnikRasterizer Category: Cartography and Reports, Rasters Description: ning String, Math, Date/Time or FME Feature Functions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+String Functions
+Special Characters
+Math Functions
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tables
+
+Transformers with table-style parameters have additional tools for populating and manipulating values.
+Row Reordering
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices
+Related Transformers: ImageRasterizer, NumericRasterizer, RasterNumericCreator, RasterRGBCreator, VectorOnRasterOverlayer"
+43;265a87c8-2b62-4dd4-a58d-fe5c0bf3a036;"Name: RasterTiler
+Category: Rasters
+Description: Name: RasterTiler Category: Rasters Description: ch tile horizontally. Must be greater than 0.
+Number of Rows (cells)
+If tiling byTile Size, the number of cells (pixels) to include in each tile vertically. Must be greater than 0.
+Seed Column
+If tiling byTile Size, specify the starting location to start tiling. Default is (0,0) - (Seed Column, Seed Row) - which is the upper-left corner of the raster.
+Seed Row
+If tiling byTile Size, specify the starting location to start tiling. Default is (0,0) - (Seed Column, Seed Row) - which is the upper-left corner of the raster.
+Number of Horizontal Tiles
+If tiling 
+Related Transformers: Clipper, RasterMosaicker, RasterSubsetter, Tiler, WebMapTiler"
+44;198961c2-dc70-4d4a-a5e9-3481910562ee;"Name: NeighborFinder
+Category: Spatial Analysis
+Description: Name: NeighborFinder Category: Spatial Analysis Description: Features Received
+This is the default behavior. Processing will only occur in this transformer once all input is present.
+When Group Changes (Advanced)
+This transformer will process input groups in order. Changes of the value of theGroup Byparameter on the input stream will trigger processing on the currently accumulating group. This may improve overall speed (particularly with multiple, equally-sized groups), but could cause undesired behavior if input groups are not truly ordered.
+There are two typical reasons for usingWhen Group Changes (Advanced). The first is in
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborPairFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder"
+45;a3cca317-5a71-4a71-9c53-cf53464151b0;"Name: HTTPCaller
+Category: Web, Workflows
+Description: Name: HTTPCaller Category: Web, Workflows Description: LETE, andOPTIONSmethods can be useful when accessing a REST API.
+Additional methods are available.
+Use Authentication
+If enabled, provide authentication details as needed.
+Authentication Method
+Select a method for performing authentication. Choices include:
+Web Connection
+Select or create an FME named Web Connection.
+HTTP Authentication Username
+Provide a username for HTTP authentication methods.
+HTTP Authentication Password
+Provide a password for HTTP authentication methods.
+Query String Parameters
+This table can be used to create additional URL query paramete
+Related Transformers: "
+46;0a7d52d0-0df5-475b-8a5e-3e5a3e8793dc;"Name: RasterCellCoercer
+Category: Rasters
+Description: Name: RasterCellCoercer Category: Rasters Description:  directly in a parameter or constructed using one of the editors - strings and expressions containing String, Math, Date/Time or FME Feature Functions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+String Functions
+Special Characters
+Math Functions
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tables
+
+Transformers with table-style parameters have additional tools for populating and manipulating values.
+Row Reordering
+
+Enabled once yo
+Related Transformers: RasterToPolygonCoercer, SurfaceModeller"
+47;f70abd12-5568-470a-821d-9d3fe04ca025;"Name: VertexNormalGenerator
+Category: 3D, Coordinates, Geometries
+Description: Name: VertexNormalGenerator Category: 3D, Coordinates, Geometries Description: smoother, softer look when rendered.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can inclu
+Related Transformers: MeasureGenerator, VertexCreator, VertexNormalRemover"
+48;62d89601-bb66-4427-a148-5e11fa5b9b10;"Name: RasterBandRemover
+Category: Rasters
+Description: Name: RasterBandRemover Category: Rasters Description: r palettes.
+RasterPaletteNodataSetter
+Identifies the palette key that matches a raster band’s Nodata value, and sets a value on it.
+RasterPaletteRemover
+Removes selected palette(s) from raster features.
+RasterPaletteResolver
+Resolves the palette(s) on a raster by replacing cell values with their corresponding palette values. Palette values with multiple components, such as RGB, are broken down and the individual values assigned to multiple, newly-added bands.
+
+Workflow Control
+
+RasterCheckpointer
+Forces accumulated raster operations to be processed, saving the 
+Related Transformers: RasterBandAdder, RasterBandCombiner, RasterBandKeeper, RasterBandSeparator"
+49;b8b429d3-58e1-4962-8df8-9be5755558ec;"Name: XMLSampleGenerator
+Category: 
+Description: Name: XMLSampleGenerator Category:  Description: s must match the target namespaces of the XSD schemas being used.  For example, to generate a Date element in the AIXM schema, the following path may be used.
+aixm:HoldingPatternTimeSlice/aixm:timeSliceMetadata/gmd:MD_Metadata/gmd:dateStamp/gco:Date
+Elements to Exclude
+This parameter may be used to exclude elements from the generated XML.  Multiple element names may be entered in a space separated list. As in the path parameter, the element names in this parameter must be namespace correct; the element names must use the same namespace prefixes as the XSD
+Related Transformers: "
+50;9c883be9-5c36-43d9-884e-655cd146e3aa;"Name: PointCloudSplitter
+Category: Point Clouds
+Description: Name: PointCloudSplitter Category: Point Clouds Description: Separates point clouds into multiple features based on component values, color, or first/last return.
+Jump to Configuration
+
+Typical Uses
+Related Transformers: PointCloudCombiner, PointCloudFilter, PointCloudMerger, PointCloudSorter"
+51;f76e4ef5-dace-4b44-95b3-217786ce8ec4;"Name: PointCloudThinner
+Category: Point Clouds
+Description: Name: PointCloudThinner Category: Point Clouds Description: Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Arithmetic Editor
+
+Conditional Values
+
+Set values depending on one or more test conditions that either pass or fail.
+Parameter Condition Definition Dialog
+
+Content
+
+Expressions and strings can include a number of functions, characters, parameters, and more.
+When setting values - whether entered directly in a parameter or constructed usin
+Related Transformers: Generalizer, PointCloudSimplifier, Sampler"
+52;3b9b8ff6-236e-4198-b8cb-23f534c6a4ef;"Name: 2DGridCreator
+Category: Geometries
+Description: Name: 2DGridCreator Category: Geometries Description: olygons).
+TilerandRasterTiler
+Do not create actual rectangles, but chop features into a series of rectangular tiles, specified in a similar fashion to the2DGridAccumulator.
+
+Configuration
+Related Transformers: 2DBoxReplacer, 2DGridAccumulator, BoundingBoxAccumulator, BoundingBoxReplacer, BoundsExtractor, Creator, RasterExtentsCoercer, RasterTiler, Tiler"
+53;ee953048-f232-49e0-9da9-55b41d4bd1d1;"Name: StatisticsCalculator
+Category: Calculated Values
+Description: Name: StatisticsCalculator Category: Calculated Values Description: g attributes.
+Mode
+The most frequent of all the values. If the dataset is bimodal (two or more values occur with the highest frequency) one of the values will be returned randomly.
+Histogram
+A count for each unique value encountered for the analyzed attribute. The results are given as a structured list of attributes which represent (value,count) pairs.
+Select All
+This toggle works in conjunction with currently selected rows in theStatistics to Calculatetable and will enable or disable all statistic type choices.
+Add Attributes...
+Provides a pick list of all currently availa
+Related Transformers: "
+54;58827382-8b42-4522-9b6b-16d7ab8a8929;"Name: SystemCaller
+Category: Workflows
+Description: Name: SystemCaller Category: Workflows Description: he value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Arithmetic Editor
+
+Conditional Values
+
+S
+Related Transformers: "
+55;32f04238-52f7-4260-b5cd-b2126db48807;"Name: PointCloudComponentTypeCoercer
+Category: Point Clouds
+Description: Name: PointCloudComponentTypeCoercer Category: Point Clouds Description: Holding
+No
+
+FME Community
+
+TheFME Communityis the place for demos, how-tos, articles, FAQs, and more. Get answers to your questions, learn from other users, and suggest, vote, and comment on new features.
+Search forall results about the PointCloudComponentTypeCoerceron theFME Community.
+
+Examples may contain information licensed under the Open Government Licence – Vancouver and/or the Open Government Licence – Canada.
+Keywords: PointCloudColorScaler
+Related Transformers: PointCloudComponentAdder, PointCloudComponentCopier, PointCloudExpressionEvaluator, PointCloudOnRasterComponentSetter, PointCloudTransformationApplier"
+56;aa1e58e7-d1d9-43b8-b873-65062e3b1044;"Name: RasterExtentsCoercer
+Category: Rasters
+Description: Name: RasterExtentsCoercer Category: Rasters Description: ters, and more.
+When setting values - whether entered directly in a parameter or constructed using one of the editors - strings and expressions containing String, Math, Date/Time or FME Feature Functions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+String Functions
+Special Characters
+Math Functions
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tables
+
+Transformers with table-style parameters have additional tools for populating and ma
+Related Transformers: RasterBandNodataRemover, RasterBandNodataSetter, RasterCellCoercer, RasterToPolygonCoercer"
+57;e22daad6-6131-44bc-9ad4-84b9edb52850;"Name: ConvexityFilter
+Category: Data Quality, Filters and Joins
+Description: Name: ConvexityFilter Category: Data Quality, Filters and Joins Description: Input Ports
+
+Typically these are polygon-based geometries.
+
+Output Ports
+
+If the geometry of the feature is polygon-based (such as a polygon, a donut, or a box) all of the geometry’s composing polygons are tested for convexity. Based on the results of this testing, the appropriate output port is determined.
+If all composing polygons for the geometry of a feature are convex, the feature is written to theConvexoutput port.
+If any composing polygons for the geometry of a feature are not convex, those features are written to theConcaveoutput port.
+Features with no geometry or with geome
+Related Transformers: HullAccumulator, HullReplacer"
+58;3e516175-f73e-4bd4-831f-0a90ea59f1cf;"Name: Tester
+Category: Data Quality, Filters and Joins
+Description: Name: Tester Category: Data Quality, Filters and Joins Description: r FME Feature Functions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+String Functions
+Special Characters
+Math Functions
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tables
+
+Transformers with table-style parameters have additional tools for populating and manipulating values.
+Row Reordering
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, copy
+Related Transformers: AttributeFilter, AttributeRangeFilter, AttributeValidator, GeometryValidator, JSONValidator, TestFilter, XMLValidator"
+59;80cac2aa-f3b1-4caf-965f-5699b10f52d1;"Name: FeatureJoiner
+Category: Filters and Joins
+Description: Name: FeatureJoiner Category: Filters and Joins Description: s in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and short
+Related Transformers: DatabaseDeleter, DatabaseJoiner, DatabaseUpdater, FeatureMerger, ListBasedFeatureMerger, InlineQuerier, SQLCreator, SQLExecutor, Matcher"
+60;3672215b-79f1-42a5-9e2c-9fe4e96cc4f6;"Name: 2DBoxReplacer
+Category: Geometries
+Description: Name: 2DBoxReplacer Category: Geometries Description: Enabled once you have clicked on a row item. Choices include:
+Cut, copy, and paste may be used within a transformer, or between transformers.
+Filter
+
+Import
+
+Reset/Refresh
+
+Generally resets the table to its initial state, and may provide additional options to remove invalid entries. Behavior varies between transformers.
+Note:Not all tools are available in all transformers.
+
+Reference
+
+Processing Behavior
+Feature-Based
+Feature Holding
+No
+
+FME Community
+
+TheFME Communityis the place for demos, how-tos, articles, FAQs, and more. Get answers to your questions, lea
+Related Transformers: 2DGridCreator, 2DGridAccumulator, BoundingBoxAccumulator, BoundingBoxReplacer, BoundsExtractor, Creator, RasterExtentsCoercer"
+61;17b94804-cfc8-4422-9b87-d099cb4bdbf7;"Name: ProjectWiseWSGConnector
+Category: Integrations, Web, Workflows
+Description: Name: ProjectWiseWSGConnector Category: Integrations, Web, Workflows Description: e, Folder or Attribute.
+Download to Folder
+Specify the path to the folder that will store the downloaded document. Valid for Download as File or Folder.
+Include Subfolders
+Choose whether to download subprojects of the ProjectWise Source or not. Valid for Download as Folder only.
+Download to Attribute
+Specify the attribute that will store the contents of the downloaded document. Valid for Download as Attribute only.
+
+ProjectWise Path
+
+Project
+The project to list the contents of. If valid credentials have been provided as a web connection, you may browse to a location.
+
+Output Attributes
+
+
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, S3Connector"
+62;d5f32e2a-9669-4253-8826-9ef6951e94c6;"Name: LeftRightSpatialCalculator
+Category: Calculated Values
+Description: Name: LeftRightSpatialCalculator Category: Calculated Values Description: Computes relative position of Candidate input features relative to Base input features.
+The geometry of aBasefeature is restricted to lines.
+See the example below. TheBaselines are considered to be oriented from the start point to the end point (digitization sense).  ACandidatefeature is:
+Related Transformers: "
+63;13784bb8-aa32-427c-b2ec-c5af122579d1;"Name: GoogleIoTConnector
+Category: Web
+Description: Name: GoogleIoTConnector Category: Web Description: ls are expected to lower throughput.
+The remaining parameters available depend on the value of the Request > Action parameter. Parameters for each Action are detailed below.
+
+Send Options
+
+Payload
+The content of the message. This is often JSON, but can be any string, binary, integer or floating-point value.
+
+Send Options
+
+Payload
+The content of the message. This is often JSON, but can be any string, binary, integer or floating-point value.
+
+Receive Options
+
+Receive Mode
+Two message receiving options are available:
+Batch Size
+InBatchmode, specifies the number
+Related Transformers: AWSIoTConnector, AzureIoTConnector, AzureQueueStorageConnector, GoogleCloudPubSubConnector, IBMIoTConnector, KafkaConnector, MQTTConnector, SQSConnector"
+64;42b3bbd8-22a2-4618-b08a-9a971a4a9583;"Name: BoundingBoxAccumulator
+Category: Spatial Analysis
+Description: Name: BoundingBoxAccumulator Category: Spatial Analysis Description: en transformers.
+Note:Not all tools are available in all transformers.
+
+Reference
+
+Processing Behavior
+Group-Based
+Feature Holding
+Yes
+Dependencies
+None
+Aliases
+
+History
+Related Transformers: 2DBoxReplacer, 2DGridAccumulator, 2DGridCreator, BoundingBoxReplacer, BoundsExtractor, Creator, HullAccumulator, HullReplacer, MinimumSpanningCircleReplacer, RasterExtentsCoercer"
+65;641cf451-1950-4351-8535-dab0a3a30847;"Name: AttributeExposer
+Category: Attributes
+Description: Name: AttributeExposer Category: Attributes Description: Configuration
+Related Transformers: AttributeManager, SchemaMapper"
+66;66d02971-d78c-4e88-8766-6989eab456e9;"Name: DEMGenerator
+Category: 3D, Point Clouds
+Description: Name: DEMGenerator Category: 3D, Point Clouds Description:  Zero or more attributes may be specified.
+Input features with the same attribute values are placed into the same group. The transformer then operates independently on each group of input features.
+If this parameter is left blank, the transformer will treat the entire set of input features as one group.
+Complete Groups
+Select the point in processing at which groups are processed:
+When All Features Received
+This is the default behavior. Processing will only occur in this transformer once all input is present.
+When Group Changes (Advanced)
+This transformer will proce
+Related Transformers: "
+67;b152bb93-1b48-46e2-b355-1cd66354c3f3;"Name: RasterCellValueReplacer
+Category: Rasters
+Description: Name: RasterCellValueReplacer Category: Rasters Description:  the same value in the input raster.
+WebMapTiler
+Creates a series of image tiles that can be utilized by web mapping applications such as Bing™ Maps, Google Maps™, or Web Map Tile Service. This is done by resampling rasters to various different resolutions and then splitting them into tiles.
+
+Working with Bands
+
+RasterBandAdder
+Adds a new band to a raster feature.
+RasterBandCombiner
+Merges coincidental raster features into a single output raster feature, preserving and appending all bands.
+RasterBandInterpretationCoercer
+Alters the interpretation type of individual r
+Related Transformers: RasterCellValueCalculator, RasterCellValueRounder, RasterExpressionEvaluator, RasterSingularCellValueCalculator"
+68;c2400061-d03d-450d-b4e0-3a3a2a8a598e;"Name: MinimumAreaForcer
+Category: Geometries
+Description: Name: MinimumAreaForcer Category: Geometries Description: Ensures that features with polygon geometry have an area that is equal to, or in excess of, the specified minimum area.
+
+Configuration
+Related Transformers: "
+69;66d457c8-3864-4a59-8965-4260e068b8c9;"Name: Snipper
+Category: Data Quality, Geometries
+Description: Name: Snipper Category: Data Quality, Geometries Description: onfiguration
+Related Transformers: "
+70;350b404c-db0e-47f5-a293-74204a3d5df6;"Name: PointCloudComponentTypeCoercer
+Category: Point Clouds
+Description: Name: PointCloudComponentTypeCoercer Category: Point Clouds Description: ues.
+PointCloudSplitter
+Separates point clouds into multiple features based on component values, color, or first/last return.
+PointCloudStatisticsCalculator
+Calculates statistics on point cloud components and adds the results as attributes.
+PointCloudSurfaceBuilder
+Takes an input point cloud and reconstructs it into an output mesh.
+PointCloudThinner
+Reduces the number of points in (thins) a point cloud by keeping points at a fixed interval, a maximum number of points, or a set quantity of first or last points. Remaining points are discarded.
+PointCloudToPointCoercer
+Converts poi
+Related Transformers: PointCloudComponentAdder, PointCloudComponentCopier, PointCloudExpressionEvaluator, PointCloudOnRasterComponentSetter, PointCloudTransformationApplier"
+71;2d44d70e-2c79-4d00-8b69-4a63755a543b;"Name: NetworkCostCalculator
+Category: Calculated Values, Spatial Analysis
+Description: Name: NetworkCostCalculator Category: Calculated Values, Spatial Analysis Description: data is the only definitive way to identify performance gains.
+Weight Type, Forward Weight Attribute, Reverse Weight Attribute
+If Weight Type is set to By Length (Forward Only) or By One Attribute, then the weight of each input line is set to the length of the line or the attribute value specified in the Forward Weight Attribute. In this case, the algorithm will only consider the original orientation of the lines when computing the cost of the shortest path.
+If Weight Type is set to By Length or By Two Attributes, then the shortest path algorithm will consider both directions of the input lin
+Related Transformers: "
+72;29018d52-dbc2-418d-9355-82d8d8143c75;"Name: RasterBandSeparator
+Category: Rasters
+Description: Name: RasterBandSeparator Category: Rasters Description: , maximum or average operations on the cell values of a pair of rasters.
+RasterCellValueReplacer
+Replaces a range of band values in a raster with a new single value.
+RasterCellValueRounder
+Rounds off raster cell values.
+RasterSegmenter
+Partitions a raster image into arbitrarily sized groups of cells from the input image based on intensity differences in the input raster image cells.
+RasterSingularCellValueCalculator
+Performs basic arithmetic operations on the cell values of a raster against a numeric value.
+RasterSlopeCalculator
+Calculates the slope (maximum rate
+Related Transformers: RasterBandAdder, RasterBandCombiner, RasterBandKeeper, RasterBandOrderer, RasterBandRemover"
+73;6e2de596-1056-439e-8c8c-4a2b11af9397;"Name: LineCombiner
+Category: Geometries
+Description: Name: LineCombiner Category: Geometries Description: mid-line:
+End noded
+Only the start and end points will be considered for combining lines, and other vertices will be ignored.
+Vertex noded
+All vertices will be considered when combining lines.
+SeeJunctions, Intersections, and Crossingsabove.
+Accumulation Mode
+Specify how attributes are accumulated on combined lines:
+Drop Incoming Attributes
+The output feature will not preserve any input attributes.
+Merge Incoming Attributes
+The output feature will merge all input attributes.
+Use Attributes From One Feature
+The output feature will receive attributes from only 
+Related Transformers: Intersector, LineBuilder, LineCloser, LineExtender, PathBuilder, Snapper"
+74;3ecd9621-3670-46ae-8be6-4c71b766abee;"Name: ImageFetcher
+Category: Rasters, Workflows
+Description: Name: ImageFetcher Category: Rasters, Workflows Description: uch as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Arithmetic Editor
+
+Conditional Values
+
+Set values depending on one or more test conditions that either pass or fail.
+Parameter Condition Definition Dialog
+
+Content
+
+Expressions and strings can include a number of func
+Related Transformers: "
+75;a84a029d-f996-4ec4-950e-58d64a383bfb;"Name: PointCloudSplitter
+Category: Point Clouds
+Description: Name: PointCloudSplitter Category: Point Clouds Description: rkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data s
+Related Transformers: PointCloudCombiner, PointCloudFilter, PointCloudMerger, PointCloudSorter"
+76;6511095e-0a67-4047-a11f-b6bf1f180a08;"Name: LineOnAreaOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: LineOnAreaOverlayer Category: Filters and Joins, Spatial Analysis Description:  Incoming, this value will prefix attributes that are being added to the original feature from the incoming feature.
+
+Generate List on Output ‘Line’
+When enabled, adds a list attribute to the Line output features, and the attributes of each area containing (or split by) an output line are added to that line's list.
+Note that no intersections between area features are computed.
+‘Line’ List Name
+Enter a name for the list attribute.
+Add To 'Line' List
+All Attributes: All attributes will be added to the output Line features.
+Selected Attributes: Enables the Selected Attributes parameter, where 
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder"
+77;1b18260a-fc66-4482-9091-1e4ba0d31b2d;"Name: S3Connector
+Category: Integrations, Web, Workflows
+Description: Name: S3Connector Category: Integrations, Web, Workflows Description: ons) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Arithmetic Editor
+
+Conditional Values
+
+Set values depending on one or more test conditions that either pass or fail.
+Parameter Condition Definition Dialog
+
+Content
+
+Expressions and strings can 
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, ComprehendConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, RekognitionConnector, SQSConnector"
+78;fac663a9-48c0-401c-98c9-848ecb81e431;"Name: VariableSetter
+Category: Workflows
+Description: Name: VariableSetter Category: Workflows Description: ch as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing va
+Related Transformers: "
+79;1a9e1080-64f7-4e13-97bf-1b1671269cf1;"Name: CoordinateSystemDescriptionConverter
+Category: Coordinates, Strings
+Description: Name: CoordinateSystemDescriptionConverter Category: Coordinates, Strings Description: edit the new attribute name which will hold the results.
+
+The output features have a new attribute,_EPSG, containing the EPSG number.
+
+In this example, we have a TIFF image that does not have a coordinate system. Note that the extents appear to be in range for a UTM coordinate system.
+
+We also have a text file containing a definition formatted as OGC Well-Known Text, describing the coordinate system.
+
+Using the coordinate system will take three steps.
+
+First, the raster is routed into anAttributeFileReader, and the text file is read. Its contents, the definition string, are added to the new a
+Related Transformers: CoordinateSystemExtractor, CoordinateSystemSetter"
+80;e039899d-e482-4cb6-9ccf-6c766341ce9d;"Name: TweetStreamer
+Category: Integrations, Web
+Description: Name: TweetStreamer Category: Integrations, Web Description:  from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Ari
+Related Transformers: JSONFragmenter, JSONExtractor, Tweeter, TweetSearcher, TwitterStatusFetcher"
+81;8cf399d3-a5a6-42a4-a517-8a9aa1ec6114;"Name: AppearanceMerger
+Category: 3D, Rasters
+Description: Name: AppearanceMerger Category: 3D, Rasters Description: y exist.  Existing texture coordinates are left unchanged.
+Texture Mapping Type
+This parameter specifies how the texture defined in an appearance style will be mapped onto the surface. This is only applicable to textures which have raster images.
+Surface Normal:The textures are projected onto the surfaces along their normals. For composite surfaces and meshes, each of the child parts will be treated separately, since the parts can have different normals.
+From Top View:The textures are projected onto the surfaces along a single normal – one that is perpendicular to
+Related Transformers: "
+82;0522c353-48c2-46cc-9687-3ee273721446;"Name: S3Connector
+Category: Integrations, Web, Workflows
+Description: Name: S3Connector Category: Integrations, Web, Workflows Description:  Key
+Available when the credential source isEmbedded. An access key ID and secret access key can be specified directly in the transformer instead of in a web connection.
+Session Token
+Optional. Available when the credential source isEmbedded. If specified, use the temporary security credentials to connect to S3.
+Action
+The type of operation to perform. Choices are:
+The remaining parameters available depend on the value of the Request > Action parameter. Parameters for each Action are detailed below.
+
+Delete Options
+
+Bucket
+The bucket the file or folder is in. If valid credent
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, ComprehendConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, RekognitionConnector, SQSConnector"
+83;1e37f4f0-6555-4afc-a622-b56cf94c3614;"Name: ListBasedFeatureMerger
+Category: Filters and Joins
+Description: Name: ListBasedFeatureMerger Category: Filters and Joins Description: matched Requestors are output onto this port,and all matching Suppliers are merged onto the output features ifIncomplete Requestorsis set toMerge Supplier Information.If a key in theRequestor List Attributeis null, that key will not match any Suppliers, and as a result, the Requestor feature will be output onto this port. For example, if the Requestor keys are:
+list{0}.key = 1
+list{1}.key = <null>
+list{2}.key = 3
+and furthermore there are Suppliers with 'supplierKey' values of 1, <null>, and 3, andIncomplete Requestorsis set toMerge Supplier Information, then the Requestor wi
+Related Transformers: DatabaseJoiner, FeatureJoiner, FeatureMerger, InlineQuerier, ListBuilder, ListConcatenator, ListCopier, ListDuplicateRemover, ListElementCounter, ListExploder, ListExpressionPopulator, ListHistogrammer, ListIndexer, ListPopulator, ListRangeExtractor, ListRenamer, ListSearcher, ListSorter, ListSummer, Matcher, SQLCreator, SQLExecutor"
+84;d58641b3-3e2c-4af6-806a-53e311edb64b;"Name: XMLUpdater
+Category: 
+Description: Name: XMLUpdater Category:  Description:  given in the Value parameter will be inserted as the first child of each element referred to by the XML Path parameter.
+Insert as last child
+The value given in the Value parameter will be inserted as the last child of each element referred to by the XML Path parameter.
+Insert as previous sibling
+The value given in the Value parameter will be inserted into the parent element of each item referred to by the XML Path parameter.  It will appear immediately before the referred item.
+Insert as next sibling
+The value given in the Value parameter will be
+Related Transformers: "
+85;3cb0f13b-7c55-4975-b880-b738124f2316;"Name: RasterBandInterpretationCoercer
+Category: Rasters
+Description: Name: RasterBandInterpretationCoercer Category: Rasters Description:  of the input features and overlaid on a uniform background.
+MapnikRasterizer
+Generates a raster from input vector and raster features, with fine control over symbolization and labeling, using the Mapnik toolkit.
+PointCloudOnRasterComponentSetter
+Sets point cloud component values by overlaying a point cloud on a raster. The component values for each point are interpolated from band values at the point location.
+PointOnRasterValueExtractor
+Extracts the band and palette values from a raster at the location of one or more input points and sets them as attributes on the feature.
+Related Transformers: RasterBandAdder, RasterInterpretationCoercer, RasterPaletteInterpretationCoercer"
+86;61267cb9-46d5-4328-b4b2-387a096ba864;"Name: AngleConverter
+Category: Calculated Values, Geometries, Strings
+Description: Name: AngleConverter Category: Calculated Values, Geometries, Strings Description: ing Angles
+Choose from the list of attributes  containing angles that are to be converted.
+Source Angle Type
+Target Angle Type
+Specify the angle types:
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways t
+Related Transformers: "
+87;34783525-2d69-41c1-91fe-729ce016c388;"Name: HTMLReportGenerator
+Category: Cartography and Reports
+Description: Name: HTMLReportGenerator Category: Cartography and Reports Description:  group will be produced.
+Complete Groups
+Select the point in processing at which groups are processed:
+When All Features Received
+This is the default behavior. Processing will only occur in this transformer once all input is present.
+When Group Changes (Advanced)
+This transformer will process input groups in order. Changes of the value of theGroup Byparameter on the input stream will trigger processing on the currently accumulating group. This may improve overall speed (particularly with multiple, equally-sized groups), but could cause undesired behavior if input groups are not 
+Related Transformers: "
+88;39c0ca9c-1628-4068-9aca-65297bc7b61f;"Name: RasterToPolygonCoercer
+Category: Rasters
+Description: Name: RasterToPolygonCoercer Category: Rasters Description: Creates polygons from input raster features. One polygon is output for each contiguous area of cells with the same value in all bands.
+Jump to Configuration
+
+Typical Uses
+Related Transformers: AttributeRangeFilter, AttributeRangeMapper, Dissolver, RasterCellCoercer"
+89;250e1924-5cbf-4f23-a8da-70ef03a5c083;"Name: CsmapReprojector
+Category: Coordinates, Integrations
+Description: Name: CsmapReprojector Category: Coordinates, Integrations Description: ile to be applied to the Z values.
+FME supports the following vertical grid formats:
+The CsmapReprojector can apply grids in any of these formats via a.gdcfile, which is a text file that list one or more grid files in the formats listed above.  Grids will be tried in order until one is found that provides coverage for the point being transformed.  Grid files may be listed with absolute paths, or by paths relative to the.gdcfile.
+Example .gdc file contents for a grid file in the same folder as the.gdc:
+Some of the.gdcfiles shipped with FME reference grid files that are not inclu
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector"
+90;2585d872-ab12-478a-954a-5eff2b0baef2;"Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: Name: RasterSlopeCalculator Category: 3D, Rasters Description: lope values calculated for each band on each cell. To restrict operation to specific band(s), use aRasterSelectorprior to the RasterSlopeCalculator.
+This transformer supports raster band selection. TheRasterSelectorcan be used to modify this selection.
+
+Z Factor, Scaling and Units
+
+Input rasters’ horizontal (x and y) units are expected to be the same as vertical (z) units.
+If this is not the case - for example, if the horizontal units are in meters with elevation (z) in feet (or any other similar unit type mismatch), you may apply a scale factor (also known as Z Factor
+Related Transformers: RasterAspectCalculator, RasterHillshader, Scaler"
+91;f3bc178d-433e-4342-b21e-319772caed3c;"Name: RasterPaletteRemover
+Category: Rasters
+Description: Name: RasterPaletteRemover Category: Rasters Description: t is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside 
+Related Transformers: RasterPaletteExtractor, RasterPaletteResolver"
+92;d745adbc-68d8-45b2-9460-3b584c792768;"Name: DateTimeRounder
+Category: Calculated Values
+Description: Name: DateTimeRounder Category: Calculated Values Description: values depending on one or more test conditions that either pass or fail.
+Parameter Condition Definition Dialog
+
+Content
+
+Expressions and strings can include a number of functions, characters, parameters, and more.
+When setting values - whether entered directly in a parameter or constructed using one of the editors - strings and expressions containing String, Math, Date/Time or FME Feature Functions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+String Functions
+Sp
+Related Transformers: AttributeRounder, DateTimeCalculator, DateTimeConverter, DateTimeStamper"
+93;3f67b0aa-160a-4e7a-9776-9f86e427c7bc;"Name: RasterCellOriginSetter
+Category: Rasters
+Description: Name: RasterCellOriginSetter Category: Rasters Description:  assist with memory limitations.
+RasterConsumer
+Reads raster features for testing purposes, including any accumulated raster operations. No additional operations are performed, and nothing is done with the features.
+RasterExtractor
+Serializes the geometry of a raster feature into a Blob attribute, encoding the contents according to a choice of common binary raster formats.
+RasterNumericCreator
+Creates a numeric raster of specified size and resolution, with default cell values.
+RasterReplacer
+Decodes a binary attribute containing encoded rasters stored as Blobs, repl
+Related Transformers: RasterCellCoercer, RasterGeoreferencer"
+94;57dac21d-83fd-463d-9fc0-15524373f526;"Name: AttributeValueMapper
+Category: Strings
+Description: Name: AttributeValueMapper Category: Strings Description: Usage Notes
+Related Transformers: AttributeFilter, NullAttributeMapper"
+95;f49a1758-d77d-4253-b51c-2494e470d5bf;"Name: PointCloudConsumer
+Category: Point Clouds
+Description: Name: PointCloudConsumer Category: Point Clouds Description:  and processed.
+This is intended to optimize performance - for example, if a point cloud is both clipped and reprojected, FME will optimize processing by not reprojecting data that falls outside of the clip boundary and is ultimately discarded.
+The PointCloudConsumer transformer forces this read to occur, and any accumulated operations are performed as the features are read. Nothing is done with the read features, and the transformer will not improve performance - it simply emulates the effect that reading the data would have, wherever it is placed.
+It can be used to
+Related Transformers: RasterConsumer"
+96;6ac6cb0a-9fcb-4a18-bed6-1efd57f1340e;"Name: RasterBandSeparator
+Category: Rasters
+Description: Name: RasterBandSeparator Category: Rasters Description: ngle of zero.
+RasterSharpener
+Enhances the features of a raster image. The RasterSharpener enhances the borders, lines, and curves while reducing noise in the flat areas of the raster image.
+RasterSubsetter
+Clips raster features using pixel bounds instead of ground coordinates, and optionally adds cells around the perimeter.
+RasterTiler
+Splits each input raster into a series of tiles by specifying either a tile size in cells/pixels or the number of tiles.
+RasterToPolygonCoercer
+Creates polygons from input raster features. One polygon is output for each contiguous
+Related Transformers: RasterBandAdder, RasterBandCombiner, RasterBandKeeper, RasterBandOrderer, RasterBandRemover"
+97;96cb69c7-ffbf-4bdd-90dd-09e6018fc87b;"Name: CsmapReprojector
+Category: Coordinates, Integrations
+Description: Name: CsmapReprojector Category: Coordinates, Integrations Description: ounding box. Though all the output features will be centered on a common origin (with the exception of features located very near the poles) and appear stacked on top of each other, each one retains the specifics of its reprojection (and so original position), and can be safely reprojected back into a projected or geographic coordinate system.
+Note that Z values are not considered, so areas or distances are best preserved for geometry at an ellipsoid height of 0 meters.
+
+Geographic Transformations
+
+Geographic Transformations control how coordinates are converted between differe
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector"
+98;155f3ef5-f087-4fab-97bc-04a620b99a2e;"Name: FMEFlowResourceConnector
+Category: Integrations, Web, Workflows
+Description: Name: FMEFlowResourceConnector Category: Integrations, Web, Workflows Description: onal tools for populating and manipulating values.
+Row Reordering
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, copy, and paste may be used within a transformer, or between transformers.
+Filter
+
+Import
+
+Reset/Refresh
+
+Generally resets the table to its initial state, and may provide additional options to remove invalid entries. Behavior varies between transformers.
+Note:Not all tools are available in all transformers.
+
+Reference
+
+Processing Behavior
+Feature-Based
+Feature Holding
+No
+
+FM
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, DropboxConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector"
+99;bb947b65-d742-421c-b388-b2283b53b90b;"Name: RasterPaletteAdder
+Category: Rasters
+Description: Name: RasterPaletteAdder Category: Rasters Description: Choosing a Raster Transformer
+
+FME has an extensive selection of transformers for working with raster data. They can be generally categorized as working with whole rasters, bands, cells or palettes, and those designed for workflow control or combining raster with vector data.
+For information on raster geometry and properties, seeRasters (IFMERaster).
+
+Working with Rasters
+
+RasterCellOriginSetter
+Sets the cell origin point within cells in a raster.
+RasterConvolver
+Applies a convolution filter (sometimes called akernelorlens) to raster features and outputs the res
+Related Transformers: AttributeFileReader, RasterBandInterpretationCoercer, RasterPaletteExtractor, RasterPaletteGenerator, RasterPaletteRemover, RasterPaletteResolver"
+100;493a986a-a4ab-4043-9b5e-bc58689e5964;"Name: DatabaseJoiner
+Category: Attributes, Filters and Joins
+Description: Name: DatabaseJoiner Category: Attributes, Filters and Joins Description: ype directly in the corresponding table fields or select from a list by clicking the Browse button.) For the Browse button to list available table fields, all the information needed to read from the table needs to be specified.
+Join Row Tools:
+
+These tools may be used toAdd,Delete,Cut,Copy, andPasterows.
+Fields to Add
+Specify a list of fields from the matching table rows to join onto the incoming feature.
+To select the fields from a list, click the Browse button. A dialog showing the list of possible fields will appear. Place a check next to each field you wish to add, and click 
+Related Transformers: DatabaseDeleter, DatabaseUpdater, FeatureJoiner, FeatureMerger, ListBasedFeatureMerger, InlineQuerier, SQLCreator, SQLExecutor, Matcher"
+101;b785fb73-442b-4adf-aa53-42264cc7c71a;"Name: PointCloudExtractor
+Category: Point Clouds
+Description: Name: PointCloudExtractor Category: Point Clouds Description: Serializes the geometry of a point cloud feature into a Blob attribute, encoding the contents according to a choice of common binary point cloud formats.
+Jump to Configuration
+
+Typical Uses
+
+Storage of point cloud geometry, as a temporary backup within aworkspace
+
+How does it work?
+
+The PointCloudExtractor receives point cloud features and puts a copy of the point cloud geometry into an attribute, as a Blob - a Binary Large OBject.
+The Blob content may be encoded as a variety of common point cloud formats. The name of the chosen format will also be recorded in an attr
+Related Transformers: AttributeFileWriter, GeometryExtractor, GeometryRemover, GeometryReplacer, PointCloudReplacer, RasterExtractor, RasterReplacer"
+102;c38d21b7-ad95-41cb-adc7-e11a4192cd7d;"Name: VertexCreator
+Category: Geometries
+Description: Name: VertexCreator Category: Geometries Description: acer 3DPointReplacer
+Related Transformers: "
+103;924d81f1-6861-45cf-bce4-ddfb1e4cb7b2;"Name: TextDecoder
+Category: Strings
+Description: Name: TextDecoder Category: Strings Description:  ∞.  The TextDecoder will convert an HTML encoded string, such asthis &plusm; thatinto its plain text representation,this ± that.
+
+Base64
+
+Base64
+encoding is a method of storing arbitrary data as an ASCII string.  The TextDecoder will convert Base64 encoded data into a text string. The Base64 data will be decoded into a sequence of bytes, which will then be interpreted using the character encoding given in the Character Encoding for Binary Data parameter.
+
+HEX
+
+HEX encoding is another method used to store arbitrary data as an ASCII string. HEX encoded dat
+Related Transformers: "
+104;401f23c2-f03e-411e-bff0-bf1e445b2077;"Name: PlanarityFilter
+Category: 3D, Data Quality, Filters and Joins
+Description: Name: PlanarityFilter Category: 3D, Data Quality, Filters and Joins Description: Filters features based on their planarity. To be planar, a geometry must have all its points situated in the same plane.
+This transformer works only on the following geometries:
+
+Configuration
+Related Transformers: FaceReplacer"
+105;1a15a6ee-c17a-44b1-9e65-3394e76b45fd;"Name: RasterReplacer
+Category: Rasters
+Description: Name: RasterReplacer Category: Rasters Description:  cell values.
+RasterReplacer
+Decodes a binary attribute containing encoded rasters stored as Blobs, replacing the feature’s geometry with the decoded raster.
+RasterRGBCreator
+Creates a color raster feature of specified size, resolution, and interpretation type, with default cell values.
+RasterSelector
+Selects specific bands and palettes of a raster for subsequent transformer operations.
+
+Vectors and Rasters
+
+ImageRasterizer
+Creates a raster representation of vector or point cloud input features, using the fme_color attribute over a solid background fill for 
+Related Transformers: AttributeFileReader, GeometryExtractor, GeometryRemover, GeometryReplacer, PointCloudExtractor, PointCloudReplacer, RasterExtractor"
+106;11972d44-a33c-462f-8bb7-4de259d44a98;"Name: MeshSimplifier
+Category: 3D, Geometries
+Description: Name: MeshSimplifier Category: 3D, Geometries Description: Input Ports
+
+Features that contain meshes. The meshes are not required to be triangular.
+
+Output Ports
+
+Features that contain simplified meshes. The output meshes will have been triangulated.
+Features with invalid geometries, including non-manifold meshes, are rejected and output via this port.
+Rejected Feature Handling:can be set to either terminate the translation or continue running when it encounters a rejected feature. This setting is available both as a defaultFME optionand as aworkspace parameter.
+
+Parameters
+
+Mode
+The simplification process will continue un
+Related Transformers: MeshMerger, PointCloudSurfaceBuilder"
+107;1a15b203-c7f3-40b1-8343-caf93c463015;"Name: Inspector
+Category: Data Quality, Workflows
+Description: Name: Inspector Category: Data Quality, Workflows Description: different methods to speed up the inspection of rasters:
+Subset Start Column
+Applicable when Subset is selected for the Reduction Type parameter. These parameters identify the position in the input raster from which the subset will be taken, as well as the size of the subset.
+Subset Number of Columns (cells)
+Applicable when Subset is selected for the Reduction Type parameter. These parameters identify the position in the input raster from which the subset will be taken, as well as the size of the subset.
+Subset Start Row
+Applicable when Subset is selected for the Reduc
+Related Transformers: "
+108;cb3040c3-e270-47de-a609-e4879db2d91e;"Name: IBMIoTConnector
+Category: Web
+Description: Name: IBMIoTConnector Category: Web Description: Input Ports
+
+This transformer accepts any feature.
+
+Output Ports
+
+The output of this transformer will vary depending on the action performed. Message data and metadata are presented as feature attributes.
+The incoming feature is output through this port.
+Features that cause the operation to fail are output through this port. Anfme_rejection_codeattribute, having the valueERROR_DURING_PROCESSING, will be added, along with a more descriptivefme_rejection_messageattribute which contains more specific details as to the reason for the failure.
+Rejected Feature
+Related Transformers: AWSIoTConnector, AzureIoTConnector, AzureQueueStorageConnector, GoogleIoTConnector, GoogleCloudPubSubConnector, KafkaConnector, MQTTConnector, SQSConnector"
+109;b6fb9db3-ef8d-4ed6-8035-154ab76295c3;"Name: PointCloudMerger
+Category: Filters and Joins, Point Clouds
+Description: Name: PointCloudMerger Category: Filters and Joins, Point Clouds Description: arding all others.
+PointCloudComponentRemover
+Removes specified components from a point cloud.
+PointCloudComponentRenamer
+Renames an existing component.
+PointCloudComponentTypeCoercer
+Alters the data type of point cloud components, and converts component values if required.
+PointCloudConsumer
+Reads point cloud features for testing purposes, including any accumulated point cloud operations. No additional operations are performed, and nothing is done with the features.
+PointCloudCreator
+Creates a point cloud of specified size and density, with default component values.
+PointCloudExpres
+Related Transformers: ChangeDetector, FeatureMerger, ListBasedFeatureMerger, PointCloudCombiner, PointCloudComponentCopier, TraitMerger"
+110;6ea059fa-0c28-41cc-90b1-305d9d7530f7;"Name: FeatureMerger
+Category: Filters and Joins
+Description: Name: FeatureMerger Category: Filters and Joins Description: nabled, the transformer will assume that all Suppliers will enter the transformer before any Requestors. Once the first Requestor arrives, it will process and output Requestors as they come in. The Suppliers will be output after all the Requestors have been processed.
+Requestor
+Specify an expression from theRequestorfeature to match with theSupplierfeature expression.
+An expression can be a constant, attribute value, function or mixture. Leading and trailing space characters are trimmed from the evaluated expressions. Matches are made when the trimmed values of all t
+Related Transformers: DatabaseJoiner, FeatureJoiner, InlineQuerier, ListBasedFeatureMerger, SQLCreator, SQLExecutor, Matcher"
+111;5377f3b6-81da-40d3-a96a-004cbb93513f;"Name: Tweeter
+Category: Integrations, Web
+Description: Name: Tweeter Category: Integrations, Web Description:  from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a paramete
+Related Transformers: JSONFragmenter, JSONExtractor, TweetSearcher, TweetStreamer, TwitterStatusFetcher"
+112;f4f5f95d-02de-4d95-a109-0b848a300f64;"Name: Rotator
+Category: Geometries
+Description: Name: Rotator Category: Geometries Description: op-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Ar
+Related Transformers: "
+113;50b59c77-891d-46a5-b3e5-2e4efcd3f4f6;"Name: RasterPaletteGenerator
+Category: Rasters
+Description: Name: RasterPaletteGenerator Category: Rasters Description: parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andwo
+Related Transformers: RasterPaletteAdder, RasterPaletteExtractor, RasterPaletteResolver"
+114;ff1ebb9a-9597-4c57-ad57-f427abc6ede0;"Name: AreaOnAreaOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: AreaOnAreaOverlayer Category: Filters and Joins, Spatial Analysis Description: e
+Specifies how attributes should be accumulated.
+Drop Incoming Attributes:All incoming attributes are removed from the features
+Merge Incoming Attributes:Merges all attributes from overlapping areas
+Use Attributes From One Feature:Takes all attributes from one representative feature
+When enabled, adds a list attribute to the output features, retaining attribute values for multiple overlay matches. This allows later inspection of overlapping area attributes.
+List Name
+Enter a name for the list attribute.
+Add To List
+All Attributes:All attributes will be added to the output Area features.
+Se
+Related Transformers: Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder"
+115;71b55a51-2cd0-4e85-8e94-ea321559b717;"Name: Category: Data Quality
+Category: 
+Description: 
+Related Transformers: "
+116;c7455929-2e39-4318-ab31-1bfece60aa50;"Name: GoogleIoTConnector
+Category: Web
+Description: Name: GoogleIoTConnector Category: Web Description: ndling:can be set to either terminate the translation or continue running when it encounters a rejected feature. This setting is available both as a defaultFME optionand as aworkspace parameter.
+
+Parameters
+
+Credential Source
+Using a web connection integrates best with FME, but in some cases, you may wish to use one of the other sources.
+Account
+Available when the credential source isWeb Connection. To create a Google IoT connection, click the 'Account' drop-down box and select 'Add Web Connection...'.
+The connection can then be managed via Tools -> FME Opti
+Related Transformers: AWSIoTConnector, AzureIoTConnector, AzureQueueStorageConnector, GoogleCloudPubSubConnector, IBMIoTConnector, KafkaConnector, MQTTConnector, SQSConnector"
+117;805ee623-bc5e-462e-b2ed-05cb26d55601;"Name: KMLRegionSetter
+Category: Cartography and Reports
+Description: Name: KMLRegionSetter Category: Cartography and Reports Description: nate system, that define the boundary of the region's bounding box.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply t
+Related Transformers: "
+118;2a8f0d5f-86b8-4202-b330-24ff9d5402c0;"Name: RasterPaletteResolver
+Category: Rasters
+Description: Name: RasterPaletteResolver Category: Rasters Description: ixels with the same value in the input raster.
+WebMapTiler
+Creates a series of image tiles that can be utilized by web mapping applications such as Bing™ Maps, Google Maps™, or Web Map Tile Service. This is done by resampling rasters to various different resolutions and then splitting them into tiles.
+
+Working with Bands
+
+RasterBandAdder
+Adds a new band to a raster feature.
+RasterBandCombiner
+Merges coincidental raster features into a single output raster feature, preserving and appending all bands.
+RasterBandInterpretationCoercer
+Alters the interpretation type of 
+Related Transformers: RasterPaletteAdder, RasterPaletteExtractor, RasterPaletteGenerator, RasterPaletteRemover"
+119;c97fc9b9-b7c6-48b8-b6b5-cda95b4572a1;"Name: HTTPCaller
+Category: Web, Workflows
+Description: Name: HTTPCaller Category: Web, Workflows Description: ute, to a file specified by the user, or to a new file in a directory specified by the user.
+Save Response Body To Attribute
+When this option is selected, each HTTP response body will be saved to an attribute of the feature which made the request. The following parameters are enabled for this option.
+Response Body Attribute
+This parameter names the attribute which will be used to store the response body. The default attribute name is_response_body. When performing a HTTP HEAD request, this attribute will be empty. This attribute may also be empty if the HTTP re
+Related Transformers: "
+120;d03db28b-754e-4500-951a-6915ceaa3b2b;"Name: AttributeValidator
+Category: Data Quality, Strings
+Description: Name: AttributeValidator Category: Data Quality, Strings Description: Validates any number of attributes against user-defined test conditions, routing the feature according to the outcome of the test(s) and identifying any tests it has failed.
+Jump to Configuration
+
+Typical Uses
+Related Transformers: AttributeEncoder, DuplicateFilter, GeometryValidator, JSONValidator, StringCaseChanger, StringLengthCalculator, Tester, TestFilter, XMLValidator"
+121;42413037-64ed-4d8a-80e4-d901cb0f3062;"Name: RasterObjectDetectorSampleGenerator
+Category: Rasters
+Description: Name: RasterObjectDetectorSampleGenerator Category: Rasters Description: unctions
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tables
+
+Transformers with table-style parameters have additional tools for populating and manipulating values.
+Row Reordering
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, copy, and paste may be used within a transformer, or between transformers.
+Filter
+
+Import
+
+Reset/Refresh
+
+Generally resets the table to its initial state, and may provide additional options to remove invalid entries. Behavior va
+Related Transformers: RasterObjectDetectionModelTrainer, RasterObjectDetector, RasterObjectDetectorSamplePreparer"
+122;1604ec80-0895-44c7-b081-88826253a4d3;"Name: ConvexityFilter
+Category: Data Quality, Filters and Joins
+Description: Name: ConvexityFilter Category: Data Quality, Filters and Joins Description:  have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, copy, and paste may be used within a transformer, or between transformers.
+Filter
+
+Import
+
+Reset/Refresh
+
+Generally resets the table to its initial state, and may provide additional options to remove invalid entries. Behavior varies between transformers.
+Note:Not all tools are available in all transformers.
+
+FME Community
+
+TheFME Communityis the place for demos, how-tos, articles, FAQs, and more. Get answers to your questions, learn from other users,
+Related Transformers: HullAccumulator, HullReplacer"
+123;2cf9fe1c-52f7-4e25-aa5f-300f5bbbe95f;"Name: RasterObjectDetectorSamplePreparer
+Category: Rasters
+Description: Name: RasterObjectDetectorSamplePreparer Category: Rasters Description: Input Ports
+
+The transformer accepts any feature but all contents (except parameters) will be ignored and preserved with the output feature.
+
+Output Ports
+
+The Output port returns the original feature and the following attributes:
+This port returns a feature with all its original contents and anfme_rejection_messagecontaining the error message if any occur.
+Rejected Feature Handling:can be set to either terminate the translation or continue running when it encounters a rejected feature. This setting is available both as a defaultFME optionand as aworkspace parameter.
+
+Parameter
+Related Transformers: RasterObjectDetectionModelTrainer, RasterObjectDetector, RasterObjectDetectorSampleGenerator"
+124;c1145e98-69f8-439c-994f-c295b8f2c933;"Name: Dissolver
+Category: Geometries, Spatial Analysis
+Description: Name: Dissolver Category: Geometries, Spatial Analysis Description: e data needs ordering, it can be sorted in theworkspace(though the added processing overhead may negate any gains).
+Sorting becomes more difficult according to the number of data streams. Multiple streams of data could be almost impossible to sort into the correct order, since all features matching aGroup Byvalue need to arrive before any features (of any feature type or dataset) belonging to the next group. In this case, usingGroup BywithWhen All Features Receivedmay be the equivalent and simpler approach.
+As with many scenarios, testing different approaches in yourworkspa
+Related Transformers: "
+125;33652e69-f6d5-4bab-8db4-4ce2ef187648;"Name: ShortestPathFinder
+Category: Spatial Analysis
+Description: Name: ShortestPathFinder Category: Spatial Analysis Description: s. Multiple streams of data could be almost impossible to sort into the correct order, since all features matching aGroup Byvalue need to arrive before any features (of any feature type or dataset) belonging to the next group. In this case, usingGroup BywithWhen All Features Receivedmay be the equivalent and simpler approach.
+As with many scenarios, testing different approaches in yourworkspacewith your data is the only definitive way to identify performance gains.
+Dimension
+Select the type of coordinates to use when identifying topological connections:
+2D:Usexandycoordi
+Related Transformers: NetworkFlowOrientor, NetworkTopologyCalculator, StreamOrderCalculator, StreamPriorityCalculator"
+126;05ce0bcb-0e9e-4709-a850-1a9d759e3885;"Name: PointCloudCreator
+Category: Point Clouds
+Description: Name: PointCloudCreator Category: Point Clouds Description: ion gradient.
+
+Trigonometric
+Z values are assigned in a trigonometric pattern, producing waves that range between theZ MinimumandZ Maximumvalues.
+TheZ Component Typemust be floating-point - eitherReal32orReal64.
+
+Oblique view:
+
+None
+The point cloud will not have a z component - only x and y components.
+Related Transformers: 2DGridCreator, Creator, RasterNumericCreator, RasterRGBCreator"
+127;5867f344-5c07-48ed-aab5-06f482b2e3cb;"Name: WebMapTiler
+Category: Cartography and Reports
+Description: Name: WebMapTiler Category: Cartography and Reports Description: eAdder
+Creates a palette from an attribute, and adds this palette to all selected bands on a raster.
+RasterPaletteExtractor
+Creates a string representation of an existing palette on a raster and saves it to an attribute.
+RasterPaletteGenerator
+Generates a palette out of the selected band(s) of a raster. The output raster will have the selected band(s) replaced by a new band with a palette.
+RasterPaletteInterpretationCoercer
+Alters the interpretation type of raster palettes.
+RasterPaletteNodataSetter
+Identifies the palette key that matches a raster band’s Nodata value, an
+Related Transformers: Clipper, RasterMosaicker, RasterPyramider, RasterSubsetter, Tiler"
+128;5f85d60a-e7d5-45c9-81c0-5676585e2144;"Name: KMLPropertySetter
+Category: Cartography and Reports
+Description: Name: KMLPropertySetter Category: Cartography and Reports Description:  will not display extruded geometry unless the Altitude Mode is Absolute, Relative To Ground, or Relative to Sea Floor.
+Follow Terrain
+This option only applies to linear geometries, not points or polygons.
+While the Altitude Mode parameter sets the behavior of the line vertices, this parameter sets the behavior of the line segments between the vertices.  If Follow Terrain is set to Yes, the line segments between vertices will conform to the terrain.  If Follow Terrain is set to No, the line segments will be a straight line from one vertex to the next.  This will cause the line
+Related Transformers: "
+129;33057049-cab2-49b4-9be7-a147d309870e;"Name: EllipsePropertySetter
+Category: Geometries
+Description: Name: EllipsePropertySetter Category: Geometries Description: tions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+String Functions
+Special Characters
+Math Functions
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tables
+
+Transformers with table-style parameters have additional tools for populating and manipulating values.
+Row Reordering
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, copy, and paste 
+Related Transformers: 2DArcReplacer, 2DEllipseReplacer, ArcEstimator, ArcPropertyExtractor, ArcPropertySetter, Creator, EllipsePropertyExtractor"
+130;d376b12c-0c84-4dad-8fc3-67706a0ea90e;"Name: RasterRegisterer
+Category: Rasters
+Description: Name: RasterRegisterer Category: Rasters Description: ates.
+RasterGeoreferencer
+Georeferences a raster by either known corner coordinates or origin, cell size, and rotation.
+RasterHillshader
+Generates a grayscale shaded relief representation of terrain, based on elevation values.
+RasterInterpretationCoercer
+Alters the interpretation type of rasters, including all bands, and converts cell values if necessary.
+RasterMosaicker
+Merges multiple raster features into a single raster feature.
+RasterPropertyExtractor
+Extracts the geometry properties of a raster feature and exposes them as attributes.
+RasterPyramider
+Resam
+Related Transformers: RasterExpressionEvaluator, RasterStatisticsCalculator, RasterSharpener, RasterSegmenter"
+131;1f8f5631-5188-45e7-8039-9a3ff8676407;"Name: JSONUpdater
+Category: 
+Description: Name: JSONUpdater Category:  Description: roups (and is already so ordered). In this case, the structure dictatesGroup Byusage - not performance considerations.
+The second possible reason is potential performance gains.
+Performance gains are most likely when the data is already sorted (or read using aSQL ORDER BYstatement) since less work is required of FME. If the data needs ordering, it can be sorted in theworkspace(though the added processing overhead may negate any gains).
+Sorting becomes more difficult according to the number of data streams. Multiple streams of data could be almost i
+Related Transformers: "
+132;f2d31cb5-9aee-48bf-a1db-c80b924fb62b;"Name: FeatureJoiner
+Category: Filters and Joins
+Description: Name: FeatureJoiner Category: Filters and Joins Description: Features (both Left and Right) that do not find a match are handled according to theJoin Mode(Inner,Left, orFull). Both the Left and Full modes will result in some or all unmatched features being output via the Joined port, depending on Mode:
+Join Mode
+Unmatched Left features output
+Unmatched Right features output
+
+Examples
+
+In this example, we have a small dataset of Fire Halls, which have a street address, but do not have a complete postal address. The FeatureJoiner will perform a join to a dataset of addresses, and merge those attributes on to the Fire Halls.
+The 
+Related Transformers: DatabaseDeleter, DatabaseJoiner, DatabaseUpdater, FeatureMerger, ListBasedFeatureMerger, InlineQuerier, SQLCreator, SQLExecutor, Matcher"
+133;0386623d-c033-4aad-8e8c-a93f9d56fe29;"Name: TestFilter
+Category: Data Quality, Filters and Joins
+Description: Name: TestFilter Category: Data Quality, Filters and Joins Description: Output Ports
+
+Output port names are specified in the parameters dialog, Port Definitions.
+The feature is output via the<Unfiltered>port if the feature does not satisfy any of the test conditions. The name of this port can be changed by editing the parameters.
+
+Parameters
+
+Repeat these steps for each test condition that you want to add to the TestFilter. The buttons on the side of the dialog box allow you to add and remove rows from the table, and set the order in which to perform the tests:
+
+Unfiltered Port Name
+The feature is output via this port if the feature does not satisf
+Related Transformers: Tester"
+134;ef1f0314-d73b-444e-9ee3-17a44ca60842;"Name: FeatureMerger
+Category: Filters and Joins
+Description: Name: FeatureMerger Category: Filters and Joins Description:  may contain information licensed under the Open Government Licence – Vancouver and/or the Open Government Licence – Canada.
+Related Transformers: DatabaseJoiner, FeatureJoiner, InlineQuerier, ListBasedFeatureMerger, SQLCreator, SQLExecutor, Matcher"
+135;60345613-abf8-407d-b78b-5637d77056a2;"Name: TopologyBuilder
+Category: Spatial Analysis
+Description: Name: TopologyBuilder Category: Spatial Analysis Description: tive methods, guided by geometry.
+
+Configuration
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator"
+136;89630a70-47f3-4c2d-8dbc-3a7a73cbc03a;"Name: LineCombiner
+Category: Geometries
+Description: Name: LineCombiner Category: Geometries Description: y point within the specified point tolerance, and attributes may be shared between related points and lines (spatial join).
+
+Configuration
+Related Transformers: Intersector, LineBuilder, LineCloser, LineExtender, PathBuilder, Snapper"
+137;32ea1529-bf45-4f03-a022-772937d394b5;"Name: LineExtender
+Category: Geometries
+Description: Name: LineExtender Category: Geometries Description: 
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Arithmetic Editor
+
+Conditional Values
+
+Set values depending on one or more test 
+Related Transformers: "
+138;8e1e644d-b6fa-44cf-8976-ba0bee782fc8;"Name: AttributeTrimmer
+Category: Strings
+Description: Name: AttributeTrimmer Category: Strings Description: Input Ports
+
+Features with attributes you wish to trim.
+
+Output Ports
+
+Features with the selected attribute(s) trimmed according to your parameter selections, and all other attributes unmodified.
+
+Parameters
+
+Attributes to Trim
+Select the attribute(s) to be trimmed.
+Trim Type
+Characters may be trimmed from the right, left, or from both sides.
+Trim Characters
+Enter individual characters to be trimmed. Characters will be trimmed from beginning, end, or both the beginning and the end, depending on theTrim Typeselection. The trimmed characters are case sensitive.
+
+Related Transformers: StringReplacer"
+139;b2ddb858-c6b1-4749-9ef7-8a06faa83c48;"Name: RasterPaletteResolver
+Category: Rasters
+Description: Name: RasterPaletteResolver Category: Rasters Description:  each cell of a raster.
+
+Working with Palettes
+
+RasterPaletteAdder
+Creates a palette from an attribute, and adds this palette to all selected bands on a raster.
+RasterPaletteExtractor
+Creates a string representation of an existing palette on a raster and saves it to an attribute.
+RasterPaletteGenerator
+Generates a palette out of the selected band(s) of a raster. The output raster will have the selected band(s) replaced by a new band with a palette.
+RasterPaletteInterpretationCoercer
+Alters the interpretation type of raster palettes.
+RasterPaletteNodataSetter
+Identi
+Related Transformers: RasterPaletteAdder, RasterPaletteExtractor, RasterPaletteGenerator, RasterPaletteRemover"
+140;42dca7c0-e428-45df-9334-2135e83fb99f;"Name: PointCloudConsumer
+Category: Point Clouds
+Description: Name: PointCloudConsumer Category: Point Clouds Description: ional tools for populating and manipulating values.
+Row Reordering
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, copy, and paste may be used within a transformer, or between transformers.
+Filter
+
+Import
+
+Reset/Refresh
+
+Generally resets the table to its initial state, and may provide additional options to remove invalid entries. Behavior varies between transformers.
+Note:Not all tools are available in all transformers.
+
+Reference
+
+Processing Behavior
+Feature-Based
+Related Transformers: RasterConsumer"
+141;a5d130a5-73d6-4b20-a9f1-6f310c8cdf33;"Name: SummaryReporter
+Category: Data Quality, Workflows
+Description: Name: SummaryReporter Category: Data Quality, Workflows Description: th, Date/Time or FME Feature Functions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+String Functions
+Special Characters
+Math Functions
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tables
+
+Transformers with table-style parameters have additional tools for populating and manipulating values.
+Row Reordering
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices incl
+Related Transformers: "
+142;facb2d95-b611-4cbc-9a44-80871c9ae77e;"Name: SchemaMapper
+Category: Workflows
+Description: Name: SchemaMapper Category: Workflows Description: butes:
+
+One or more attributes on the feature are mapped by renaming their existing attribute name (s) to a new one. For example:
+Name_of_Road	→ 	RoadName
+
+Set New Attributes:
+
+A new attribute is created whose name and value are defined in a lookup table.
+
+Output Ports
+
+Features that have an action carried out on them are output via theMappedport. Otherwise, they are output via theUnmappedport.
+In addition to the feature type, the geometry of each feature is left untouched.
+Features output through theMappedport will receive a new attribute that specifies whi
+Related Transformers: "
+143;e45bbeb3-cfc9-418f-a2b7-7f62bc578520;"Name: RasterExpressionEvaluator
+Category: Calculated Values, Rasters
+Description: Name: RasterExpressionEvaluator Category: Calculated Values, Rasters Description: If Raster A band zero minus Raster B band zero equals 255, then set the current cell to 0, else set it to the value of Raster A band zero divided by five.
+
+Attributes can be referenced using @Value and either A: or B: to refer to the attribute name:
+A[0]*@Value(A:myattr)
+Multiply Raster A band zero by the attribute myattr on raster A.
+
+Examples
+Expression
+Result
+255-A[0]
+Inverts an 8-bit band. For a 24-bit RGB image, repeat for A[1] and A[2] to invert the full image. Repeat for A[3] too if it is a 32-bit RGBA image.
+if ((A[0]+A[1]+A[2])==0, 255, A[0])
+Convert black values into white in a
+Related Transformers: ExpressionEvaluator, PointCloudExpressionEvaluator, RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterSingularCellValueCalculator, RasterStatisticsCalculator"
+144;014e934d-eeb6-482a-970d-73252cb63398;"Name: AWSIoTConnector
+Category: Web
+Description: Name: AWSIoTConnector Category: Web Description: Configuration
+Related Transformers: AzureIoTConnector, AzureQueueStorageConnector, GoogleCloudPubSubConnector, GoogleIoTConnector, IBMIoTConnector, KafkaConnector, MQTTConnector, SQSConnector"
+145;04dc9360-59a9-4fa3-acde-5c4885aad715;"Name: RasterTiler
+Category: Rasters
+Description: Name: RasterTiler Category: Rasters Description: RAMETER_NUMBER_OF_VERTICAL_TILES
+Rejected Feature Handling:can be set to either terminate the translation or continue running when it encounters a rejected feature. This setting is available both as a defaultFME optionand as aworkspace parameter.
+
+Parameters
+
+Tile Size or Number of Tiles
+Choose how the input raster should be split:
+Tile Size:define the size in vertical and horizontal number of pixels
+Number of Tiles:Divide the raster into a fixed number of tiles
+Number of Columns (cells)
+If tiling byTile Size, the number of cells (pixels) to include in ea
+Related Transformers: Clipper, RasterMosaicker, RasterSubsetter, Tiler, WebMapTiler"
+146;35cce151-cd1d-46b4-b36c-fe2148dc494a;"Name: MeasureGenerator
+Category: Calculated Values
+Description: Name: MeasureGenerator Category: Calculated Values Description: , how-tos, articles, FAQs, and more. Get answers to your questions, learn from other users, and suggest, vote, and comment on new features.
+Search forall results about the MeasureGeneratoron theFME Community.
+Keywords: chainage
+Related Transformers: "
+147;7bf0e1ca-a6ce-4a68-8ad9-f3b70590f2e0;"Name: KMLTourBuilder
+Category: Cartography and Reports
+Description: Name: KMLTourBuilder Category: Cartography and Reports Description: Format Specific
+Generates a KML Tour from input features. The tour consists of tour stops that correspond to each input feature.
+The location of the tour stop corresponds to the center point of the input feature. For features where the geometry is a line geometry, a series of tour stops will be generated, where each vertex in the line becomes a tour stop.
+
+Usage Notes
+
+For more information regarding KML Touring and View parameters, see the documentation for KML Tours:
+https://developers.google.com/kml/documentation/touring
+Related Transformers: "
+148;74c5fac8-a7cc-4fda-8fb0-d08a306150b6;"Name: RasterBandRemover
+Category: Rasters
+Description: Name: RasterBandRemover Category: Rasters Description: contiguous area of pixels with the same value in the input raster.
+WebMapTiler
+Creates a series of image tiles that can be utilized by web mapping applications such as Bing™ Maps, Google Maps™, or Web Map Tile Service. This is done by resampling rasters to various different resolutions and then splitting them into tiles.
+
+Working with Bands
+
+RasterBandAdder
+Adds a new band to a raster feature.
+RasterBandCombiner
+Merges coincidental raster features into a single output raster feature, preserving and appending all bands.
+RasterBandInterpretationCoercer
+Alters the
+Related Transformers: RasterBandAdder, RasterBandCombiner, RasterBandKeeper, RasterBandSeparator"
+149;9c4c4092-77e4-4409-abe7-ed17314e24bb;"Name: Creator
+Category: 3D, Workflows
+Description: Name: Creator Category: 3D, Workflows Description:  fields are required (including start and sweep angles), except rotation. The three coordinates given must match the arcs (sweep and start angles) or else the Creator will produce an invalid feature. An optionaltransformation matrixcan be specified.
+For more information, seeArcs.
+Arc by 3 points
+Creates an arc using the specified start point, mid point and end point. An optionaltransformation matrixcan be specified. For more information, seeArcBy3Points.
+Arc by bulge
+Creates an arc using the specified start point, end point and bulge value. An optionaltrans
+Related Transformers: 2DGridCreator, PointCloudCreator, RasterNumericCreator, RasterRGBCreator"
+150;7c76734d-b490-47b1-85dd-c7c36a800137;"Name: RasterBandNameSetter
+Category: Rasters
+Description: Name: RasterBandNameSetter Category: Rasters Description: ointOnRasterValueExtractor
+Extracts the band and palette values from a raster at the location of one or more input points and sets them as attributes on the feature.
+RasterDEMGenerator
+Produces a raster digital elevation model (DEM) by uniformly sampling a Delaunay triangulation generated from input points and breaklines.
+VectorOnRasterOverlayer
+Rasterizes vector or point cloud features onto an existing raster. For vector features the fme_color attribute sets pixel color, and point clouds may be rendered using their color or intensity components.
+
+Configuration
+Related Transformers: RasterBandAdder, RasterBandPropertyExtractor"
+151;5b163da5-1d71-439a-8071-92a3154b0296;"Name: EsriReprojector
+Category: Coordinates
+Description: Name: EsriReprojector Category: Coordinates Description: ting reprojected cell locations.
+Using the default value of 0.0, every cell will be reprojected.
+If a value greater than 0.0 is specified, some cell locations will be approximated. The difference between an approximated cell location and the true cell location should be at most the tolerance value.
+For example, if a value of 0.5 is specified, each approximated cell location should be maximum one-half of a pixel away from its true location. Increasing the Tolerance value may improve performance.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transfo
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector"
+152;d5e7955d-ebdc-4813-8ebb-ab75a7480ee0;"Name: ChangeDetector
+Category: Data Quality, Filters and Joins
+Description: Name: ChangeDetector Category: Data Quality, Filters and Joins Description: ions, and the order of holes in Donuts will be ignored.
+When comparing raster geometries, only the extents are compared.
+Check Coordinate Systems
+No: The Coordinate Systems are ignored
+Yes: The name of the Coordinate System must be the same for both features
+Vector Tolerance
+Enter a value, in ground units. Allows two geometries to have spatial variation and still be considered a match if they are within the specified tolerance.
+It only applies to vector based geometries (points, curves, areas).
+Default tolerance is zero (0). Unexpectedly high tolerance values can produce unpredicta
+Related Transformers: "
+153;b2fc8f86-b468-4384-9114-18d09e8519da;"Name: PointCloudStatisticsCalculator
+Category: Calculated Values, Point Clouds
+Description: Name: PointCloudStatisticsCalculator Category: Calculated Values, Point Clouds Description: Calculates statistics on point cloud components and adds the results as attributes.
+Jump to Configuration
+
+Typical Uses
+Related Transformers: PointCloudExpressionEvaluator, PointCloudPropertyExtractor, PointCloudSorter, RasterBandMinMaxExtractor, RasterStatisticsCalculator, StatisticsCalculator"
+154;4f40ce92-8c12-4aab-b8eb-9f4569e4d220;"Name: ListHistogrammer
+Category: Calculated Values, Data Quality
+Description: Name: ListHistogrammer Category: Calculated Values, Data Quality Description: Parameters
+
+Source List Attribute
+The source list from which the histogram will be computed.
+Histogram List Name
+The name of the new list attribute that will contain the output histogram. The new list will be sorted so 
+ that the value with the most occurrences will be first.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside
+Related Transformers: "
+155;008c0346-b139-4ee8-b1f8-52704427b2d0;"Name: RasterToPolygonCoercer
+Category: Rasters
+Description: Name: RasterToPolygonCoercer Category: Rasters Description: rce data, the elevation intervals are one meter, producing a large number of small polygons. These polygons can be grouped together and dissolved, using anAttributeRangeMapperand aDissolverto produce generalized polygons, as shown. The ranges used here are 10 meters each.
+Related Transformers: AttributeRangeFilter, AttributeRangeMapper, Dissolver, RasterCellCoercer"
+156;0e74026c-9041-40c6-9ad5-7522477ce988;"Name: ArcPropertySetter
+Category: Geometries
+Description: Name: ArcPropertySetter Category: Geometries Description: y the new y coordinate of the arc’s center point.
+Center Z
+Specify the new z coordinate of the arc’s center point.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a v
+Related Transformers: 2DEllipseReplacer, 2DArcReplacer, 3DArcReplacer, ArcEstimator, ArcPropertyExtractor, ArcStroker, Creator, Curvefitter, EllipsePropertyExtractor, EllipsePropertySetter"
+157;aeda1d3e-3860-45e7-acdc-88021d4948ca;"Name: XMLXQueryUpdater
+Category: 
+Description: Name: XMLXQueryUpdater Category:  Description: e a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters
+Related Transformers: "
+158;9443ac11-ed18-4eac-8745-552ccc079673;"Name: ModuloCounter
+Category: Calculated Values
+Description: Name: ModuloCounter Category: Calculated Values Description: Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, copy, and paste may be used within a transformer, or between transformers.
+Filter
+
+Import
+
+Reset/Refresh
+
+Generally resets the table to its initial state, and may provide additional options to remove invalid entries. Behavior varies between transformers.
+Note:Not all tools are available in all transformers.
+
+FME Community
+
+TheFME Communityis the place for demos, how-tos, articles, FAQs, and more. Get answers to your questions, learn from other users, and suggest,
+Related Transformers: "
+159;7315310b-21b5-4537-a994-507596be6c7c;"Name: TestFilter
+Category: Data Quality, Filters and Joins
+Description: Name: TestFilter Category: Data Quality, Filters and Joins Description: Filters features by test conditions to one or more output ports.
+This transformer is equivalent to a connected string ofTestertransformers, and can be used to reduce aworkspacethat is filled with Testers.
+A test condition consists of one or more test clauses and a specified comparison method (AND, OR, or COMPOSITE).
+
+Usage Notes
+Related Transformers: Tester"
+160;92b33a1e-6fac-427f-b173-40a25f0fc68b;"Name: RasterRegisterer
+Category: Rasters
+Description: Name: RasterRegisterer Category: Rasters Description:  Parameters
+Initial Search Radius
+Set the initial search radius.
+The Search radius determines how different transformation parameter solutions can be in between steps.
+Subsequent iterations will alter the search radius.
+Increasing this parameter reduces computation time at the cost of accuracy.
+Non negative floating-point value. Default: 0.1.
+Required
+Minimum Search Radius
+Choose transformation parameter solutions further than this value.
+Increasing will speed up convergence, but increases the risk of failing to converge.
+Non negative floating-point value. Def
+Related Transformers: RasterExpressionEvaluator, RasterStatisticsCalculator, RasterSharpener, RasterSegmenter"
+161;78653e3f-3995-46bf-936b-18ddc7bccbaf;"Name: ReprojectLengthCalculator
+Category: Calculated Values, Coordinates
+Description: Name: ReprojectLengthCalculator Category: Calculated Values, Coordinates Description:  parameter is only used for calculation of theReprojected Length Attribute.
+Reprojected Length
+Name the attribute to contain the reprojected length value.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways t
+Related Transformers: AttributeReprojector, LengthCalculator, ReprojectAngleCalculator, Reprojector"
+162;aac95755-2969-469b-ac92-b0f399ec7480;"Name: AttributeValueMapper
+Category: Strings
+Description: Name: AttributeValueMapper Category: Strings Description: e mapped to a output value.
+Output Value: The source value will be mapped to a null output value.
+The reverse is true ifMapping Directionis set toReverse (Output to Input).
+No Action
+No action will be taken. When mapping in-place (that is, if the new value is overwriting the input value), the input attribute value will be preserved.
+Otherwise, no output attribute will be created for the input value specified.
+
+Support for Null, Missing, and Empty String Values
+
+When mapping from input to output, there are three attribute values that arenotsupported by theDefault O
+Related Transformers: AttributeFilter, NullAttributeMapper"
+163;6aa34a4b-4db9-4b58-9b89-a0f75aab4e4e;"Name: TempPathnameCreator
+Category: Calculated Values, Workflows
+Description: Name: TempPathnameCreator Category: Calculated Values, Workflows Description:  Community.
+Related Transformers: "
+164;2d56ce4a-fad3-4895-9059-33e57b0b5384;"Name: LatLongToMGRSConverter
+Category: Coordinates
+Description: Name: LatLongToMGRSConverter Category: Coordinates Description: Calculates a Military Grid Reference System (MGRS) code based on latitude and longitude values.
+Jump to Configuration
+
+Typical Uses
+
+Determining which standard MGRS boundary contains a given point.
+
+How does it work?
+
+The LatLongToMGRSConverter accepts any feature. The user specifies attributes, expressions, or user parameters containing latitude and longitude coordinates, along with theEllipsoidand desiredLettering Type.
+The standard MGRS code is generated to the specifiedPrecision, and stored as an attribute.
+Precisionis an integer from 0 to 5 (inclusive). A precision
+Related Transformers: GeometryExtractor, GeometryReplacer, MGRSToLatLongConverter"
+165;642c8c47-edfb-4f96-95d3-bc6875dcbf86;"Name: PROJReprojector
+Category: Coordinates, Integrations
+Description: Name: PROJReprojector Category: Coordinates, Integrations Description: Library (External Links)
+CsmapAttributeReprojector
+Reprojects x, y, and optionally z coordinates stored as attributes from one coordinate system to another using the CS-MAP library.
+CS-Map
+CsmapReprojector
+Reprojects feature x, y, and optionally z coordinates from one coordinate system to another using the CS-Map library.
+CS-Map
+EsriReprojector
+Reprojects feature coordinates from one coordinate system to another using the Esri reprojection library.
+Esri
+GridInQuestIIReprojector
+Great Britain
+Northern Ireland
+Republic of Ireland
+Reprojects feature coordinates from one coordinat
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector"
+166;f00952f9-91cf-4c68-a295-64075a39c3c6;"Name: MapInfoStyler
+Category: Cartography and Reports
+Description: Name: MapInfoStyler Category: Cartography and Reports Description: editors - strings and expressions containing String, Math, Date/Time or FME Feature Functions will have those functions evaluated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+String Functions
+Special Characters
+Math Functions
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tables
+
+Transformers with table-style parameters have additional tools for populating and manipulating values.
+Row Reordering
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+
+Related Transformers: "
+167;e2dba99e-3d28-4e0f-91ce-d8bb745aeac2;"Name: PowerPointStyler
+Category: Cartography and Reports
+Description: Name: PowerPointStyler Category: Cartography and Reports Description: Parameters
+
+Slide Type
+Custom (Advanced)allows the user full freedom of what layout to use, and how multiple features coming through the feature correlate to aspects of that slide. To use this option, the user must be willing to setup some layouts beforehand through PowerPoint. SeeUsing Custom Slide Layoutsfor more information.
+The types correspond to the following layouts that are present to every PowerPoint presentation:
+FME preset type
+PowerPoint layout
+Title Slide
+“Title Slide”
+Title With Body
+“Title and Content”
+Table Slide
+“Title and Content”
+Map Slide
+“Blank” or “Title
+Related Transformers: "
+168;e8cb9039-20cc-4017-b81a-20c28b62ca5d;"Name: RasterSlopeCalculator
+Category: 3D, Rasters
+Description: Name: RasterSlopeCalculator Category: 3D, Rasters Description: Input Ports
+
+Raster features with cells to calculate slope values on. Horizontal (x and y) units should be the same as vertical (z) units.
+
+Output Ports
+
+Raster features with calculated slope values, stored in the same band they were provided in, converted to interpretation type real64.
+Non-raster features will be routed to the <Rejected> port, as well as invalid rasters.
+Rejected features will have an fme_rejection_code attribute with one of the following values:
+INVALID_GEOMETRY_TYPEINVALID_RASTER_CANNOT_CALCULATE_SLOPE
+Rejected Feature Handling:can be set to either 
+Related Transformers: RasterAspectCalculator, RasterHillshader, Scaler"
+169;613decb8-dcc9-456f-ac56-f38a6ebd18dc;"Name: FaceReplacer
+Category: 3D, Geometries
+Description: Name: FaceReplacer Category: 3D, Geometries Description:  various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic E
+Related Transformers: "
+170;e09eb858-33a2-4699-95f5-a9412cadd161;"Name: PointCloudSimplifier
+Category: Point Clouds
+Description: Name: PointCloudSimplifier Category: Point Clouds Description: Reduces the number of points in a point cloud by selectively keeping points based on the shape of the point cloud. The simplified and removed points are output as two discrete point clouds.
+Jump to Configuration
+
+Typical Uses
+Related Transformers: Generalizer, MeshSimplifier, PointCloudThinner, Sampler"
+171;98480ef1-0d08-4d8c-afc3-57ff7c8452e9;"Name: PROJAttributeReprojector
+Category: Coordinates, Integrations
+Description: Name: PROJAttributeReprojector Category: Coordinates, Integrations Description: ’sDownloadpage includes grids, in archives namedproj-data*.*To use them:
+Download aproj-dataarchive. TheCurrent Releaseversion is generally appropriate. Donotuse the olderproj-datumgrid*.*archives.
+Extract the archive’s contents to theProjDatadirectory (or a subdirectory thereof) in the FME user directory, per operating system:~/.fme/ProjDataon Linux~/Library/Application Support/FME/ProjDataon macOSDocuments/FME/ProjDataon Windows
+Grids added in this way will be considered before online grids (if enabled). They will also be considered first in order of preference, unless an absolute or
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector"
+172;c8f429c7-e9b4-40dc-9c69-b633c617dd80;"Name: EthereumConnector
+Category: Web
+Description: Name: EthereumConnector Category: Web Description: _block_hash
+The block hash of the transaction.
+_block_number
+The block number of the transaction.
+_gas
+The gas used to send the transaction.
+_gas_price
+The gas price when the transaction was sent.
+_from_address
+Address the transaction was from.
+_hash
+The hash of the transaction.
+_input
+The data on the transaction.
+_to_address
+Address the transaction is to.
+_transaction_index
+The integer transaction index in the block.
+_value
+Ether value of the transaction.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned b
+Related Transformers: SalesforceConnector, SlackConnector, TrelloConnector"
+173;d932e7a9-a94e-4b3d-9cbc-7b5c4dd47b87;"Name: Matcher
+Category: Data Quality
+Description: Name: Matcher Category: Data Quality Description: results. If there is more than one way to do it (which is frequently the case), time spent on performance testing alternate methods may be worthwhile. Performance may vary greatly depending on the existence of key indexes when reading external tables (as opposed to features already in theworkspace).
+Transformer
+Match By
+Uses SQL Statements
+Can Create List
+Input Type
+Notable
+Description
+Detects features that are matches of each other. Features are declared to match when they have matching geometry, matching attribute values, or both.  A list of attributes w
+Related Transformers: ChangeDetector, DatabaseJoiner, DuplicateFilter, FeatureJoiner, InlineQuerier, ListBasedFeatureMerger, SQLCreator, SQLExecutor"
+174;b9e15651-45c7-45c0-814e-9333ce52ec34;"Name: RasterResampler
+Category: Rasters
+Description: Name: RasterResampler Category: Rasters Description: How does it work?
+
+The RasterResampler accepts raster features and alters the number of rows/columns and resizes cell (pixel) size according to the parameter selections. One raster feature is output for each input feature.
+Output raster resolution may be specified by set dimensions (columns and rows), cell size in ground units, or percentage of original resolution.
+A variety of methods are available for output cell value interpolation.
+This transformer is unaffected by raster band and palette selection.
+
+A: Original resolution
+B: Desired resolution
+C: Desired
+Related Transformers: RasterPyramider, RasterSubsetter, RasterTiler, WebMapTiler"
+175;f9f59e01-85ec-429a-83de-21b6b695a116;"Name: RasterBandSeparator
+Category: Rasters
+Description: Name: RasterBandSeparator Category: Rasters Description:  per input feature, containing one band for every unique combination of band and palette. A band with multiple palettes will be output multiple times, once for each palette.
+Each output raster feature may have multiple bands but will have no more than one palette per band.
+When usingSplit By-Band OnlyorBand and Palette, attributes may be added to the output raster to specify which raster, band, and palette it originated from.
+Default attribute names are provided. If an attribute name is blank, it will not be added to the output features.
+Raster Index
+Name the att
+Related Transformers: RasterBandAdder, RasterBandCombiner, RasterBandKeeper, RasterBandOrderer, RasterBandRemover"
+176;ae5161a1-6a4f-408e-9272-51c1719fe1f6;"Name: CoordinateSwapper
+Category: Coordinates, Geometries
+Description: Name: CoordinateSwapper Category: Coordinates, Geometries Description: ly designated. Examining one point, we see that x appears to be a latitude value and y a longitude value - they should be the reverse.
+
+The points are routed into a CoordinateSwapper.
+
+In the parameters dialog,Swap Typeis set toX <-> Y.
+
+The output features have their x and y coordinates corrected.
+Related Transformers: CoordinateConcatenator, CoordinateExtractor"
+177;4e7d5892-c859-4724-b9e4-291b99ec994e;"Name: BoundingBoxAccumulator
+Category: Spatial Analysis
+Description: Name: BoundingBoxAccumulator Category: Spatial Analysis Description: e equivalent and simpler approach.
+As with many scenarios, testing different approaches in yourworkspacewith your data is the only definitive way to identify performance gains.
+Accumulation Mode
+Drop Incoming Attributes:  The bounding box receives no attributes.
+Merge Incoming Attributes: The bounding box receives all attributes from input features.
+Use Attributes From One Feature: The bounding box receives all attributes from one representative feature.
+Generate List
+When enabled, adds alist attributeto the output bounding box with values from multiple input features.
+List 
+Related Transformers: 2DBoxReplacer, 2DGridAccumulator, 2DGridCreator, BoundingBoxReplacer, BoundsExtractor, Creator, HullAccumulator, HullReplacer, MinimumSpanningCircleReplacer, RasterExtentsCoercer"
+178;c20d1af1-3855-47d9-b0f8-1a8d6cd801fa;"Name: RasterExpressionEvaluator
+Category: Calculated Values, Rasters
+Description: Name: RasterExpressionEvaluator Category: Calculated Values, Rasters Description: e required order of bands in a raster. Bands are reordered according 
+ to the input band indices.
+RasterBandPropertyExtractor
+Extracts the band and palette properties of a raster feature and exposes them as attributes.
+RasterBandRemover
+Removes any selected bands from a raster feature.
+RasterBandSeparator
+Separates bands or unique band and palette combinations, and outputs either individual raster features or a single new raster feature containing all combinations.
+RasterStatisticsCalculator
+Calculates statistics on raster bands and adds the results as attributes.
+
+Working with Cells
+
+Ra
+Related Transformers: ExpressionEvaluator, PointCloudExpressionEvaluator, RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterSingularCellValueCalculator, RasterStatisticsCalculator"
+179;fd4776e9-4737-42eb-91f6-79cc9fb23f17;"Name: PointCloudSplitter
+Category: Point Clouds
+Description: Name: PointCloudSplitter Category: Point Clouds Description: que, this table optionally specifies which values should produce output features.
+Unique Values to Keep
+Optional:Enter specific values to produce output point cloud features. All non-matching points will be discarded.
+Limiting a splitting operation to only desired values may improve performance.
+If blank, all unique values will be identified and each will produce a new output feature.
+Output
+Name an attribute to be added to all output point clouds, which will identify the value that created it.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer
+Related Transformers: PointCloudCombiner, PointCloudFilter, PointCloudMerger, PointCloudSorter"
+180;f29d8e2f-222e-4264-a0f2-4313238354e1;"Name: SurfaceModeller
+Category: 3D, Point Clouds
+Description: Name: SurfaceModeller Category: 3D, Point Clouds Description: h contour is 2D or 3D depending onOutput Contour Dimension, and stores its elevation in the_elevationattribute. If contours are 3D, then their z values are equivalent to their elevation attribute values.
+This output port samples the underlying surface model according to the sampling rates specified inOutput DEM X Cell Spacing, andOutput DEM Y Cell Spacing, and produces a set of evenly spaced 3D points.
+This output port samples the underlying surface model according to the sampling rates specified inOutput DEM X Cell Spacing, andOutput DEM Y Cell Spacing, and produces 
+Related Transformers: "
+181;cd2c65ce-4500-4911-b42f-d6c13eeade31;"Name: LineOnAreaOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: LineOnAreaOverlayer Category: Filters and Joins, Spatial Analysis Description: k.
+If performance is an issue in yourworkspace, look for alternative methods, guided by geometry.
+
+Configuration
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder"
+182;e868f1df-5301-499c-a697-62bee6714ef7;"Name: StringConcatenator
+Category: Strings
+Description: Name: StringConcatenator Category: Strings Description: dvanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist
+Related Transformers: AttributeCreator, AttributeManager, ExpressionEvaluator, ListConcatenator, CoordinateConcatenator"
+183;7ee7a57f-58c5-4a7e-a772-aa6aa2a9e5cc;"Name: BoundingBoxAccumulator
+Category: Spatial Analysis
+Description: Name: BoundingBoxAccumulator Category: Spatial Analysis Description: nput features may be partitioned into groups based on attribute values.
+One bounding box is output for each group.
+IfGroup Byis not specified, all input features will be processed together and a single bounding box will be output.
+Complete Groups
+
+Select the point in processing at which groups are processed:
+When All Features Received
+This is the default behavior. Processing will only occur in this transformer once all input is present.
+When Group Changes (Advanced)
+This transformer will process input groups in order. Changes of the value of theGroup Byparameter on the input
+Related Transformers: 2DBoxReplacer, 2DGridAccumulator, 2DGridCreator, BoundingBoxReplacer, BoundsExtractor, Creator, HullAccumulator, HullReplacer, MinimumSpanningCircleReplacer, RasterExtentsCoercer"
+184;2d254390-ebe6-4b8e-9fa1-56496fb142d5;"Name: ContourGenerator
+Category: Spatial Analysis
+Description: Name: ContourGenerator Category: Spatial Analysis Description:  follows. For each vertex that is being added to the model:
+Output Contour Interval
+This parameter specifies the elevation separation of the output contours.
+Output Contour Dimension
+This parameter specifies whether the output contours are 2D or 3D. 2D contours are equivalent to 3D contours, except that the z coordinates are dropped.
+Tip:When the input dataset is large enough, setting this parameter to 2D will result in a visible performance improvement.
+Conflict Resolution
+This parameter controls whether input points on the contour interval are dropped, or perturbed. 
+Related Transformers: "
+185;77875498-8e89-4d5f-8597-a0e36a4e888a;"Name: SQLCreator
+Category: Workflows
+Description: Name: SQLCreator Category: Workflows Description: o the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using the Arithmetic Editor
+
+The Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Arithmetic Editor
+
+Conditional Valu
+Related Transformers: DatabaseDeleter, DatabaseJoiner, DatabaseUpdater, FeatureJoiner, FeatureMerger, InlineQuerier, ListBasedFeatureMerger, Matcher, SchemaScanner, SQLExecutor"
+186;269f4c55-172e-4e3a-8a33-ae573a3643a1;"Name: KMLStyler
+Category: Cartography and Reports
+Description: Name: KMLStyler Category: Cartography and Reports Description: rth will apply to the icon when it is displayed. This works best with white icons. Results may vary for icons which are already colored.
+Opacity
+This parameter specifies the opacity of the icon. A value of 1.0 is fully opaque, while a value of 0.0 is completely transparent.
+Line Width
+Line Width specifies the width  of line geometries and boundaries of area geometries.
+Line Width Units
+Specifies the units for the previous parameter value.  If the value of the parameter is ‘Pixels’, the line geometry will be a constant width at all zoom levels.  As a result, it will app
+Related Transformers: "
+187;c5baa728-b481-4e28-ae65-dc6f059e53d5;"Name: PointOnLineOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: PointOnLineOverlayer Category: Filters and Joins, Spatial Analysis Description: ing values.
+String Functions
+Special Characters
+Math Functions
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tables
+
+Transformers with table-style parameters have additional tools for populating and manipulating values.
+Row Reordering
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, copy, and paste may be used within a transformer, or between transformers.
+Filter
+
+Import
+
+Reset/Refresh
+
+Generally resets the table to its initial state, and may provide additional optio
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnPointOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder"
+188;08fc99fe-487f-4b7c-b256-d26ae1dea575;"Name: MSWordStyler
+Category: Cartography and Reports
+Description: Name: MSWordStyler Category: Cartography and Reports Description: left of the list item. In Microsoft Word, this correlates to starting a list, then pressing tab either zero, one, or two times. The positions of each indent level are customizable in Word if you have Ruler enabled through View on Microsoft Word’s ribbon.
+If the list is a numbered list, and the indent level changes, then the list item counter will reset to 1.
+Format attribute set:msword_bullet_indent
+List Type
+A list can either beNumbered, orBulleted. A bulleted list always has a black dot to the left of each list item. A numbered list counts 1,2,3,… to the left of each li
+Related Transformers: "
+189;44c323f4-cf89-440c-bd78-a7ac126d3476;"Name: RasterPaletteRemover
+Category: Rasters
+Description: Name: RasterPaletteRemover Category: Rasters Description: cles, FAQs, and more. Get answers to your questions, learn from other users, and suggest, vote, and comment on new features.
+Search forall results about the RasterPaletteRemoveron theFME Community.
+
+Examples may contain information licensed under the Open Government Licence – Vancouver and/or the Open Government Licence – Canada.
+Related Transformers: RasterPaletteExtractor, RasterPaletteResolver"
+190;fd8f22e7-267b-4768-9eb1-ef3ad498218a;"Name: PointOnRasterValueExtractor
+Category: Rasters, Spatial Analysis
+Description: Name: PointOnRasterValueExtractor Category: Rasters, Spatial Analysis Description: ed). The first is incoming data that is intended to be processed in groups (and is already so ordered). In this case, the structure dictatesGroup Byusage - not performance considerations.
+The second possible reason is potential performance gains.
+Performance gains are most likely when the data is already sorted (or read using aSQL ORDER BYstatement) since less work is required of FME. If the data needs ordering, it can be sorted in theworkspace(though the added processing overhead may negate any gains).
+Sorting becomes more difficult according to the number of data streams. Multiple strea
+Related Transformers: PointCloudOnRasterComponentSetter, PointOnAreaOverlayer, RasterCellCoercer, RasterToPolygonCoercer, VectorOnRasterOverlayer"
+191;5b50b3c2-ee91-4cb4-ab91-f00b05e463f9;"Name: TextureCoordinateSetter
+Category: Calculated Values, Coordinates
+Description: Name: TextureCoordinateSetter Category: Calculated Values, Coordinates Description: es
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, 
+Related Transformers: "
+192;3b14d47c-fcdd-4a4b-9488-b45f69ee6324;"Name: TimeWindower
+Category: Workflows
+Description: Name: TimeWindower Category: Workflows Description: seconds, Unix time).
+
+Configuration
+Related Transformers: "
+193;e5a63aa2-f3d6-4ed3-998d-604ed1037dc4;"Name: RasterExtractor
+Category: Rasters
+Description: Name: RasterExtractor Category: Rasters Description: Serializes the geometry of a raster feature into a Blob attribute, encoding the contents according to a choice of common binary raster formats.
+Jump to Configuration
+
+Typical Uses
+Related Transformers: AttributeFileWriter, GeometryExtractor, GeometryRemover, GeometryReplacer, PointCloudExtractor, PointCloudReplacer, RasterReplacer"
+194;e66402c7-af65-4b77-9757-f76dde95934f;"Name: LengthToPointCalculator
+Category: Calculated Values
+Description: Name: LengthToPointCalculator Category: Calculated Values Description:  in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the result is used directly inside a parameter.
+Text Editor
+
+Using 
+Related Transformers: "
+195;eef36f9a-5bad-4b09-ab4e-22e4ee252515;"Name: RasterSubsetter
+Category: Rasters
+Description: Name: RasterSubsetter Category: Rasters Description: fected by raster band and palette selection.
+
+Examples
+
+In this example, we will extract a portion of a raster image, and add a frame of empty cells around it. Note that the original image is 1600 x 1000 pixels.
+
+The raster is routed into a RasterSubsetter.
+
+The subset will start at Column 300, Row 300, and will be 500 pixels square. We are also adding cell padding - 100 pixels on the left, top, and right, with a wider 300 pixel padding at the bottom.
+
+The output feature is the raster subset, including the padding. Note the new dimensions include both the 500
+Related Transformers: Clipper, RasterTiler, WebMapTiler"
+196;a95aa386-0d39-41e1-ba9b-f705e3486496;"Name: PointOnPointOverlayer
+Category: Filters and Joins, Spatial Analysis
+Description: Name: PointOnPointOverlayer Category: Filters and Joins, Spatial Analysis Description: Usage Notes
+Related Transformers: AreaOnAreaOverlayer, Bufferer, Clipper, Intersector, LineOnAreaOverlayer, LineOnLineOverlayer, NeighborFinder, PointOnAreaOverlayer, PointOnLineOverlayer, SpatialFilter, SpatialRelator, TopologyBuilder"
+197;36d9a290-0775-4581-904a-c4fd23a3711e;"Name: AzureEventHubsConnector
+Category: Web
+Description: Name: AzureEventHubsConnector Category: Web Description: Input Ports
+
+This transformer accepts any feature.
+
+Output Ports
+
+The output of this transformer will vary depending on the action performed. Message data and metadata are presented as feature attributes.
+The incoming feature is output through this port.
+Features that cause the operation to fail are output through this port. Anfme_rejection_codeattribute, having the valueERROR_DURING_PROCESSING, will be added, along with a more descriptivefme_rejection_messageattribute which contains more specific details as to the reason for the failure.
+Rejected Feature Handlin
+Related Transformers: AzureIoTConnector, AzureQueueStorageConnector, GoogleCloudPubSubConnector, KafkaConnector, SQSConnector"
+198;4e658a3c-93d5-45f0-bd8e-90afadd122a2;"Name: RasterNumericCreator
+Category: Rasters
+Description: Name: RasterNumericCreator Category: Rasters Description:  in z) for each cell of a raster.
+
+Working with Palettes
+
+RasterPaletteAdder
+Creates a palette from an attribute, and adds this palette to all selected bands on a raster.
+RasterPaletteExtractor
+Creates a string representation of an existing palette on a raster and saves it to an attribute.
+RasterPaletteGenerator
+Generates a palette out of the selected band(s) of a raster. The output raster will have the selected band(s) replaced by a new band with a palette.
+RasterPaletteInterpretationCoercer
+Alters the interpretation type of raster palettes.
+RasterPaletteNodataSe
+Related Transformers: 2DGridCreator, Creator, PointCloudCreator, RasterRGBCreator"
+199;0c001525-fc8f-49a7-9a8f-1dbbf555b36f;"Name: RubberSheeter
+Category: Coordinates, Geometries
+Description: Name: RubberSheeter Category: Coordinates, Geometries Description: ated. Therefore, the names of these functions (in the form @<function_name>) should not be used as literal string values.
+String Functions
+Special Characters
+Math Functions
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tables
+
+Transformers with table-style parameters have additional tools for populating and manipulating values.
+Row Reordering
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, copy, and paste may be used within a transformer, or betwe
+Related Transformers: 3DAffiner, Affiner, AffineWarper, RasterGCPSetter, RasterGeoreferencer, LocalCoordinateSystemSetter, Offsetter, Scaler, Rotator"
+200;03b750e8-6858-43d1-b35f-0a1dc66ae21a;"Name: RasterSingularCellValueCalculator
+Category: Calculated Values, Rasters
+Description: Name: RasterSingularCellValueCalculator Category: Calculated Values, Rasters Description: y were calculated from.Preserve Interpretationdetermines whether or not the band is converted to a different type on output - for example, the division of two integers may produce a floating-point decimal result, converting the output band to interpretation type real64.
+This transformer supports raster band selection. TheRasterSelectorcan be used to modify the selection. Palettes are not supported.
+
+Examples
+
+In this example, we will convert the elevation values on a DEM dataset. The values are stored in Band 0, in meters, and we want them to be measured in feet. Note that the interpretation typ
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterExpressionEvaluator, RasterStatisticsCalculator"
+201;4dc6be10-cb72-441f-806b-6c923dbe43d4;"Name: XMLNamespaceDeclarer
+Category: 
+Description: Name: XMLNamespaceDeclarer Category:  Description: d to the features. If the default _xml_error is the list name, the elements of the list attribute contain the following:
+Pretty Print
+The parameter specifies if the XML output should be pretty-printed with indentation.
+Indent Size
+This parameter specifies the size of a single indentation.
+Replace Tabs with Spaces
+By default, the tab character is used for pretty printing, use this parameter to replace the tabs with spaces.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in the
+Related Transformers: "
+202;263b85c2-2877-42da-a584-6d445fa8dbfe;"Name: DonutHoleExtractor
+Category: Geometries
+Description: Name: DonutHoleExtractor Category: Geometries Description: Output Ports
+
+The 
+ outer boundary polygon is separated from the holes and output to this port. If an area had no holes, it is output untouched.
+The individual 
+ holes are output as polygons.
+Features with invalid geometry will be output through this port. Valid geometries are polygon, ellipse, donut, multiarea, or aggregates containing at least one of these types.
+Rejected features will have anfme_rejection_codeattribute with the valueINVALID_GEOMETRY_TYPE.
+Each output feature has all the attributes of the original area feature.
+
+Parameters
+
+Aggregate Handling
+Cho
+Related Transformers: "
+203;47d85ede-cfcd-4fb9-a934-e4fe6bc6f7a4;"Name: TrelloConnector
+Category: Integrations, Web, Workflows
+Description: Name: TrelloConnector Category: Integrations, Web, Workflows Description: board is added to.
+_description
+Available when the Trello type isBoardorCard. The description of the Trello object.
+_member_ids{}
+Available when the Trello type isBoardorCard. The ids of the members of the Trello object.
+_member_names
+Available when the Trello type isBoardorCard. The names of the members of the Trello object.
+_due_date
+Available when the Trello type isCard. The due date and time for the Trello card, in UTC time zone and ISO format.
+_comments{}
+Available when the Trello type isCard. The comments on the Trello card.
+_attachment_urls{}
+Available when the Trello type
+Related Transformers: EthereumConnector, SalesforceConnector, SlackConnector"
+204;f563fb2e-ec31-4957-ab7b-d8740776652d;"Name: SurfaceFootprintReplacer
+Category: 3D, Geometries
+Description: Name: SurfaceFootprintReplacer Category: 3D, Geometries Description: arch forall results about the SurfaceFootprintReplaceron theFME Community.
+Keywords: SurfaceFootprintGenerator
+Related Transformers: "
+205;dd6b14df-21c0-4174-8d5f-0afebeb38ab7;"Name: TCPIPReceiver
+Category: Integrations, Web, Workflows
+Description: Name: TCPIPReceiver Category: Integrations, Web, Workflows Description:  a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text
+Related Transformers: TCPIPSender"
+206;991d4c23-7a8a-479f-9ce6-9aa21225b4c8;"Name: DWGStyler
+Category: Cartography and Reports
+Description: Name: DWGStyler Category: Cartography and Reports Description: attributes set:autocad_anno_scale{}.name,autocad_anno_scale{}.paper_units, andautocad_anno_scale{}.drawing_units
+Force Visible (RealDWG only)
+This is a flag which may be set on a text or multi-text entity to override the destination drawing ANNOALLVISIBLE system variable. When set to true, this forces the object to be displayed regardless of the current scale.
+Format attributes set:autocad_anno_force_visible
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced f
+Related Transformers: "
+207;54b26f68-b4c2-430f-8c99-5c4c45fa6b3f;"Name: PROJAttributeReprojector
+Category: Coordinates, Integrations
+Description: Name: PROJAttributeReprojector Category: Coordinates, Integrations Description: string (excluding pipelines).
+Destination Coordinate System
+IfTransformation TypeisAutomatic Transformation, specify the coordinate system to be reprojected to.
+Coordinate systems may be explicitly selected from the Coordinate System Gallery, entered directly, or provided via an attribute value or user parameter.
+Acceptable forms include  EPSG number, WKT2 string, or PROJ string (excluding pipelines).
+Note that FME will attempt to determine what the destination coordinate system’s corresponding FME coordinate system is, and tag the output features with it, unless an override is specifi
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, CsmapReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector"
+208;e35ef8a3-79aa-4aa7-bb6b-461a6f137f3d;"Name: VertexCreator
+Category: Geometries
+Description: Name: VertexCreator Category: Geometries Description: cifies whether to add a coordinate if it is the same as the existing last coordinate of the feature geometry.
+IfYes, existing consecutive duplicate coordinates are removed when closing a line into a polygon.
+IfNo, existing consecutive duplicate coordinates are not removed when closing a line into a polygon.
+Closed Line Handling
+InAdd Pointmode, this parameter specifies whether to attempt to close lines into polygons or to keep them as lines.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing othe
+Related Transformers: "
+209;ca60a8d2-fc43-4955-8ce8-60ac3389b4a9;"Name: Densifier
+Category: Geometries
+Description: Name: Densifier Category: Geometries Description: ssigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspacepa
+Related Transformers: "
+210;02cd23f2-58ba-4ccc-90a8-b142ce3218fe;"Name: RasterSubsetter
+Category: Rasters
+Description: Name: RasterSubsetter Category: Rasters Description: Input Ports
+
+This transformer accepts only raster features.
+
+Output Ports
+
+One subsetted raster per input raster feature.
+Non-raster features will be routed to the <Rejected> port, as well as invalid rasters.
+Rejected features will have an fme_rejection_code attribute with one of the following values:
+INVALID_GEOMETRY_TYPEINVALID_RASTER_NO_BANDSINVALID_RASTER_CANNOT_SUBSET
+Rejected Feature Handling:can be set to either terminate the translation or continue running when it encounters a rejected feature. This setting is available both as a defaultFME optionand 
+Related Transformers: Clipper, RasterTiler, WebMapTiler"
+211;7f07539c-adab-4c95-a7ae-317d233f0795;"Name: CoordinateSystemExtractor
+Category: Coordinates
+Description: Name: CoordinateSystemExtractor Category: Coordinates Description: rence
+
+Processing Behavior
+Feature-Based
+Feature Holding
+No
+
+FME Community
+
+TheFME Communityis the place for demos, how-tos, articles, FAQs, and more. Get answers to your questions, learn from other users, and suggest, vote, and comment on new features.
+Search forall results about the CoordinateSystemExtractoron theFME Community.
+
+Examples may contain information licensed under the Open Government Licence – Vancouver and/or the Open Government Licence – Canada.
+Related Transformers: CoordinateSystemDescriptionConverter, CoordinateSystemRemover, CoordinateSystemSetter, LocalCoordinateSystemSetter"
+212;be5900e5-edb4-487c-8fc9-aa42f0d32531;"Name: GoogleLanguageConnector
+Category: Web
+Description: Name: GoogleLanguageConnector Category: Web Description: How does it work?
+
+The GoogleLanguageConnector uses your Google Cloud account credentials to access Google’s Natural Language and Cloud Translation services.
+It will submit text to the respective services, and return features with attributes about that text. Each input text may result in several output features.
+For more information, see Google’s documentation:
+Natural Language
+Translation
+
+Configuration
+Related Transformers: AzureComputerVisionConnector, AzureTextAnalyticsConnector, ComprehendConnector, GoogleBigQueryConnector, GoogleCloudPubSubConnector, GoogleCloudStorageConnector, GoogleDriveConnector, GoogleVisionConnector, RekognitionConnector"
+213;0454e2c8-1cad-4c76-a22e-22eed3fb98a3;"Name: DonutBuilder
+Category: Geometries
+Description: Name: DonutBuilder Category: Geometries Description: 
+Configuration
+Related Transformers: "
+214;2acaf2ae-462e-4f58-8da4-610317bae982;"Name: CsmapReprojector
+Category: Coordinates, Integrations
+Description: Name: CsmapReprojector Category: Coordinates, Integrations Description: ence
+
+Processing Behavior
+Feature-Based
+Feature Holding
+No
+
+FME Community
+
+TheFME Communityis the place for demos, how-tos, articles, FAQs, and more. Get answers to your questions, learn from other users, and suggest, vote, and comment on new features.
+Search forall results about the CsmapReprojectoron theFME Community.
+
+Examples may contain information licensed under the Open Government Licence – Vancouver and/or the Open Government Licence – Canada.
+Related Transformers: AttributeReprojector, CommonLocalReprojector, CsmapAttributeReprojector, EsriReprojector, GridInQuestIIReprojector, GtransAttributeReprojector, GtransReprojector, PROJAttributeReprojector, PROJReprojector, ReframeReprojector, ReprojectAngleCalculator, ReprojectLengthCalculator, Reprojector"
+215;7187fa06-d9ec-4c85-8072-6a034510ca18;"Name: NLPClassifier
+Category: Filters and Joins, Strings
+Description: Name: NLPClassifier Category: Filters and Joins, Strings Description: nced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available fro
+Related Transformers: AzureTextAnalyticsConnector, NLPTrainer"
+216;390f642b-8fa8-40ed-9e61-322265f4ce13;"Name: KMLStyler
+Category: Cartography and Reports
+Description: Name: KMLStyler Category: Cartography and Reports Description: ear narrower, relative to the ground when the view is zoomed in and wider when the view is zoomed out.  If the value is ‘Meters’ the line width will be constant relative to the ground.  As a result, it will be wider when the view is zoomed in, and narrower when the view is zoomed out.
+Create Labels on Lines
+If this parameter is set to ‘Yes’, the name of a KML feature (taken from the kml_name format attribute) will be displayed as a label along the length of the line.
+Scale
+Label Style Scale specifies a unitless scaling factor that the KML Viewer applies to the default 
+Related Transformers: "
+217;65b44661-e8ab-4b2b-ad32-5c2cefc2fc89;"Name: Snipper
+Category: Data Quality, Geometries
+Description: Name: Snipper Category: Data Quality, Geometries Description:  specified as a numeric index, with ""0"" being the first vertex of the line.
+Negative numbers measure vertices relative to the last point in the line, with the value ""-1"" used to specify the vertex which is the last vertex of the line's geometry, ""-2"" the second last vertex, and so on. If the input vertex number is smaller than the negative absolute value of the total number of vertices, then it will be interpreted as the starting vertex of the original line and if it is larger than the total number of vertices, it will be interpreted as the ending vertex.
+Each of thes
+Related Transformers: "
+218;585076a7-f89d-4ab7-9ba9-dd80c078f60a;"Name: MeasureRemover
+Category: Geometries
+Description: Name: MeasureRemover Category: Geometries Description:  from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Arithmetic Editor
+
+Conditional Values
+
+Set values depending on one or more test conditions that either pass or fail.
+Parameter Condition Definition Dialog
+
+Content
+
+Expressions and strings can include a number of functions, characters, parameters, and more.
+When setting values - whether entered directly in a parameter or constructed using one of the editors - strings and expressions containing String, Math, Date/Time or FME Fe
+Related Transformers: "
+219;2e69a158-34a6-4574-99b7-fd970a416be7;"Name: RasterBandMinMaxExtractor
+Category: Calculated Values, Rasters
+Description: Name: RasterBandMinMaxExtractor Category: Calculated Values, Rasters Description: gnored in the minimum and maximum value calculations.
+This transformer is unaffected by raster band and palette selection.
+
+Examples
+
+In this example, we will extract the minimum and maximum elevation values from  a DEM raster. Note that the original raster feature has one band, containing elevation values in meters.
+
+The raster is routed into a RasterBandMinMaxExtractor.
+
+The transformer has no parameters to configure.
+
+List attributesare added to the output feature, containing the minimum and maximum cell values found on the band. As the raster did not have any palettes, palette-relate
+Related Transformers: RasterBandInterpretationCoercer, RasterBandPropertyExtractor, RasterCellValueCalculator, RasterExpressionEvaluator, RasterInterpretationCoercer, RasterPropertyExtractor, RasterStatisticsCalculator"
+220;85da7658-be62-49b0-a7d8-9d321de88a1e;"Name: ExcelStyler
+Category: Cartography and Reports
+Description: Name: ExcelStyler Category: Cartography and Reports Description: rtical alignment of text within the cell. Options areTop,Center, orBottom. If no value is set, Microsoft Excel’s behavior is to align text to the bottom of the cell.
+Text Indent
+Values represents spaces in Microsoft Excel. This value works in conjunction withHorizontal Alignment, and specifies the level of indentation from the alignment boundary. Valid values are from 0 to 15.
+This value has no effect onCenter Alignment.
+Text Orientation
+Specifies the angle, in degrees, to rotate the text.
+Positive values rotate the text counterclockwise, and negative values rotate the t
+Related Transformers: "
+221;5df77703-f8df-437a-be4b-d9f644493199;"Name: PointCloudStatisticsCalculator
+Category: Calculated Values, Point Clouds
+Description: Name: PointCloudStatisticsCalculator Category: Calculated Values, Point Clouds Description: , color, or first/last return.
+PointCloudStatisticsCalculator
+Calculates statistics on point cloud components and adds the results as attributes.
+PointCloudSurfaceBuilder
+Takes an input point cloud and reconstructs it into an output mesh.
+PointCloudThinner
+Reduces the number of points in (thins) a point cloud by keeping points at a fixed interval, a maximum number of points, or a set quantity of first or last points. Remaining points are discarded.
+PointCloudToPointCoercer
+Converts point clouds to point or multipoint geometries, optionally retaining attribute and component values.
+PointCloudTransf
+Related Transformers: PointCloudExpressionEvaluator, PointCloudPropertyExtractor, PointCloudSorter, RasterBandMinMaxExtractor, RasterStatisticsCalculator, StatisticsCalculator"
+222;87645ebe-5108-47ea-b786-f5798c95172b;"Name: SurfaceFootprintReplacer
+Category: 3D, Geometries
+Description: Name: SurfaceFootprintReplacer Category: 3D, Geometries Description: Replaces the geometry of a feature 
+ with a planar representation of the feature's shadow.
+The output features are made of polygons with 3D coordinates. Any holes in the actual shadows are missing in the output features. The light source casting the shadows is considered to be infinitely far away.
+
+Configuration
+Related Transformers: "
+223;deeabe5f-e8ff-4e09-9c0e-920b7013c038;"Name: BoxConnector
+Category: Integrations, Web, Workflows
+Description: Name: BoxConnector Category: Integrations, Web, Workflows Description: led below.
+
+Box Path
+
+Delete as
+Select whether to delete a File or Folder.
+Object
+The file or folder on Box to delete. If valid credentials have been provided as a web connection, you may browse to a location.
+
+Box Source
+
+Object
+The file/folder to download. If valid credentials have been provided as a web connection, you may browse to a location.
+
+Destination
+
+Download as
+Select whether to store the downloaded data in a File, Folder or Attribute.
+Download to Folder
+Specify the path to the folder that will store the downloaded file. Valid for Download as File or Folder.
+Includ
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, OneDriveConnector, ProjectWiseWSGConnector, S3Connector"
+224;a3de94fe-0c28-4b08-8701-fe0efc5ff388;"Name: XSLTProcessor
+Category: 
+Description: Name: XSLTProcessor Category:  Description: Output Ports
+
+Each transformed document is output via this port. The transformed document may be either embedded in an attribute or written to a file.
+These features did not transform due to errors (for example, an incorrect file path).
+
+Parameters
+
+XML Source Type, XML File, XML Attribute
+The XML source type is either an XML file or a feature attribute whose value is the entire XML document.
+Configuration Type, File, Embedded, Attribute
+The stylesheet document is either an XML file, embedded in the transformer, or in a feature attribute whose value 
+Related Transformers: "
+225;2503edad-7236-4f22-9665-72760a18f91c;"Name: PointCloudOnRasterComponentSetter
+Category: Point Clouds, Rasters
+Description: Name: PointCloudOnRasterComponentSetter Category: Point Clouds, Rasters Description: ute and component values.
+PointCloudTransformationApplier
+Applies a point cloud’s scale, offset, or transformation matrix to it, recalculating component values and removing the transformation values.
+
+Configuration
+Related Transformers: PointCloudComponentAdder, PointCloudComponentCopier, PointCloudExpressionEvaluator, PointOnRasterValueExtractor, RasterSelector"
+226;8dc99870-7a93-465a-9fba-1338ce16d867;"Name: BinaryDecoder
+Category: Strings
+Description: Name: BinaryDecoder Category: Strings Description: nsformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a number of tools and shortcuts that can assist in constructing values, generally available from the drop-down context menu adjacent to the value field.
+
+Using the Text Editor
+
+The Text Editor provides a convenient way to construct text strings (including regular expressions) from various data sources, such as attributes, parameters, and constants, where the res
+Related Transformers: "
+227;1a6ab510-a23b-44e2-99fd-d641fe481ced;"Name: RasterHillshader
+Category: 3D, Cartography and Reports, Rasters
+Description: Name: RasterHillshader Category: 3D, Cartography and Reports, Rasters Description: ommunity
+
+TheFME Communityis the place for demos, how-tos, articles, FAQs, and more. Get answers to your questions, learn from other users, and suggest, vote, and comment on new features.
+Search forall results about the RasterHillshaderon theFME Community.
+
+Examples may contain information licensed under the Open Government Licence – Vancouver and/or the Open Government Licence – Canada.
+Related Transformers: RasterAspectCalculator, RasterSlopeCalculator, Scaler"
+228;8c537669-d174-4ee9-9d8c-063d970746dd;"Name: RasterBandAdder
+Category: Rasters
+Description: Name: RasterBandAdder Category: Rasters Description: r
+Alters the interpretation type of individual raster bands, converting cell values if necessary.
+
+RasterBandKeeper
+Removes all unselected bands from a raster feature.
+RasterBandMinMaxExtractor
+Extracts the minimum and maximum band values, palette keys, and palette values from a raster feature, and adds them to a list attribute.
+RasterBandNameSetter
+Sets the band name of selected bands on a raster, making raster contents simpler to understand compared to band numbers.
+RasterBandNodataRemover
+Removes the existing Nodata identifier from selected bands of a rast
+Related Transformers: RasterBandCombiner, RasterBandInterpretationCoercer, RasterBandKeeper, RasterBandNameSetter, RasterBandOrderer, RasterBandRemover, RasterBandSeparator, RasterInterpretationCoercer"
+229;0d8f64f2-9904-4485-a9f6-13fa079b42bd;"Name: Sorter
+Category: Workflows
+Description: Name: Sorter Category: Workflows Description: f sorting conventions in a region have differences from the ASCII ordering.
+Attributes are sorted according to their position in the list. You can reorder the list using the Move Up and Move Down buttons.
+If an attribute name is specified but is not present on a feature, the sorting algorithm will consider that feature to have a null or zero value for that attribute.
+InAlphabeticmode, missing and null attribute values are treated as the empty string when they are sorted. InNumericmode, non-numeric attribute values are treated as the value 0 when they a
+Related Transformers: ListSorter, SpatialSorter"
+230;9efc53a9-8ddb-4d98-93ca-6552d2e7c76a;"Name: MultipleGeometryFilter
+Category: Filters and Joins
+Description: Name: MultipleGeometryFilter Category: Filters and Joins Description: Output Ports
+
+If the aggregate is set up such that each part is independent from the others, and should be interpreted as its own complete geometry, then the feature will be sent to theContainsport.
+Aggregates that do not match the criteria forContainswill be sent to theNotContainsport.
+This transformer works only on aggregates, so features containing any other geometry type will be sent to the<Rejected>output port.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced 
+Related Transformers: "
+231;4eec7bfb-017e-45bc-aa8c-89dcf3ac3a16;"Name: 3DAffiner
+Category: 3D, Coordinates
+Description: Name: 3DAffiner Category: 3D, Coordinates Description: abled once you have clicked on a row item. Choices include:
+Cut, copy, and paste may be used within a transformer, or between transformers.
+Filter
+
+Import
+
+Reset/Refresh
+
+Generally resets the table to its initial state, and may provide additional options to remove invalid entries. Behavior varies between transformers.
+Note:Not all tools are available in all transformers.
+
+Reference
+
+Processing Behavior
+Feature-Based
+Feature Holding
+No
+
+FME Community
+
+TheFME Communityis the place for demos, how-tos, articles, FAQs, and more. Get answers to your questions, learn 
+Related Transformers: 3DRotator, Affiner, AffineWarper, Offsetter, PointCloudTransformationApplier, Rotator, Scaler, SecondOrderConformer"
+232;fdb8cd81-b29b-4994-ae1f-49a78638008b;"Name: ListBasedFeatureMerger
+Category: Filters and Joins
+Description: Name: ListBasedFeatureMerger Category: Filters and Joins Description: ns
+Math Operators
+FME Feature Functions
+FME Parameters
+
+Dialog Options - Tables
+
+Transformers with table-style parameters have additional tools for populating and manipulating values.
+Row Reordering
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, Copy, and Paste
+
+Enabled once you have clicked on a row item. Choices include:
+Cut, copy, and paste may be used within a transformer, or between transformers.
+Filter
+
+Import
+
+Reset/Refresh
+
+Generally resets the table to its initial state, and may provide additional options to remove invalid entries. Behavior varie
+Related Transformers: DatabaseJoiner, FeatureJoiner, FeatureMerger, InlineQuerier, ListBuilder, ListConcatenator, ListCopier, ListDuplicateRemover, ListElementCounter, ListExploder, ListExpressionPopulator, ListHistogrammer, ListIndexer, ListPopulator, ListRangeExtractor, ListRenamer, ListSearcher, ListSorter, ListSummer, Matcher, SQLCreator, SQLExecutor"
+233;794a7f99-c900-40ff-aa3c-2f54e2f22a66;"Name: VariableSetter
+Category: Workflows
+Description: Name: VariableSetter Category: Workflows Description: Creates and sets the specified variable to the specified value.
+The variable can later be read back into an attribute using theVariableRetrievertransformer.
+
+Configuration
+Related Transformers: "
+234;8305f815-8578-49d6-9357-286e53dda28e;"Name: RasterExpressionEvaluator
+Category: Calculated Values, Rasters
+Description: Name: RasterExpressionEvaluator Category: Calculated Values, Rasters Description:  of the smallest output raster.
+RasterRegisterer
+Transforms an image to minimize its difference with another.
+RasterResampler
+Resamples rasters, based on specified output dimensions, cell size in ground units, or percentage of original, and interpolates new cell values.
+RasterRotationApplier
+Rotates a raster feature according to its rotation angle property, interpolating new cell values, updating all other affected raster properties, and producing an output raster feature with a rotation angle of zero.
+RasterSharpener
+Enhances the features of a raster image. The RasterSharpener enhances 
+Related Transformers: ExpressionEvaluator, PointCloudExpressionEvaluator, RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterSingularCellValueCalculator, RasterStatisticsCalculator"
+235;63a611d5-856e-4041-b1ab-54e4abf79a4b;"Name: OneDriveConnector
+Category: Integrations, Web, Workflows
+Description: Name: OneDriveConnector Category: Integrations, Web, Workflows Description:  assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable parameter. For more information, seeTransformer Parameter Menu Options.
+
+Defining Values
+
+There are several ways to define a value for use in a Transformer. The simplest is to simply type in a value or string, which can include functions of various types such as attribute references, math and string functions, andworkspaceparameters. There are a nu
+Related Transformers: AzureBlobStorageConnector, AzureFileStorageConnector, BoxConnector, CesiumIonConnector, DropboxConnector, FMEFlowResourceConnector, GoogleCloudStorageConnector, GoogleDriveConnector, HDFSConnector, ProjectWiseWSGConnector, S3Connector"
+236;b2335369-214f-46f5-9a1c-d4c83b120cdf;"Name: PointCloudComponentTypeCoercer
+Category: Point Clouds
+Description: Name: PointCloudComponentTypeCoercer Category: Point Clouds Description: Step 2 - Altering Data Type and Scaling Values
+
+In the parameters dialog of the PointCloudComponentTypeCoercer, all three color components are set toTypeUInt8, and theConversion Typeis set toScale by data type. This will scale the values while preserving their proportions in regard to the original and new types’ ranges.
+
+The output point cloud feature now has 8-bit color components.
+
+Individual points’ color values have been proportionately scaled, and now fall within the range of 1 to 255 - the possible values for an 8-bit unsigned integer.
+Related Transformers: PointCloudComponentAdder, PointCloudComponentCopier, PointCloudExpressionEvaluator, PointCloudOnRasterComponentSetter, PointCloudTransformationApplier"
+237;fd1aa130-eaf8-47be-ad30-154269393c79;"Name: BinaryEncoder
+Category: Strings
+Description: Name: BinaryEncoder Category: Strings Description: e Arithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Arithmetic Editor
+
+Conditional Values
+
+Set values depending on one or more test conditions that either pass or fail.
+Parameter Condition Definition Dialog
+
+Content
+
+Expressions and strings can include a number of functions, characters, parameters, and more.
+When setting values - whether entered directly in a parameter or constructed using one of the
+Related Transformers: "
+238;79e005d5-1367-442a-a2a4-f5dee627ce4e;"Name: RasterSharpener
+Category: Rasters
+Description: Name: RasterSharpener Category: Rasters Description: Choosing a Raster Transformer
+
+FME has an extensive selection of transformers for working with raster data. They can be generally categorized as working with whole rasters, bands, cells or palettes, and those designed for workflow control or combining raster with vector data.
+For information on raster geometry and properties, seeRasters (IFMERaster).
+
+Working with Rasters
+
+RasterCellOriginSetter
+Sets the cell origin point within cells in a raster.
+RasterConvolver
+Applies a convolution filter (sometimes called akernelorlens) to raster features and outputs the 
+Related Transformers: RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterExpressionEvaluator, RasterSingularCellValueCalculator, RasterStatisticsCalculator"
+239;cd8466b6-ea2b-4e5c-936f-0de2e7521abf;"Name: RasterToPolygonCoercer
+Category: Rasters
+Description: Name: RasterToPolygonCoercer Category: Rasters Description: .
+RasterExpressionEvaluator
+Evaluates expressions on each cell in a raster or pair of rasters, including algebraic operations and conditional statements.
+RasterExtentsCoercer
+Replaces the geometry of input raster features with a polygon covering either the extents of a raster or the extent of data within a raster.
+RasterGCPExtractor
+ExtractsGround Control Point(GCP) coordinate system and point values from a raster feature and exposes them as attributes.
+RasterGCPSetter
+SetsGround Control Points(GCPs) on a raster, pairing cell positions with known coordinates.
+Raster
+Related Transformers: AttributeRangeFilter, AttributeRangeMapper, Dissolver, RasterCellCoercer"
+240;81b57347-a951-4948-9c6c-d7698a5b5a24;"Name: PointCloudComponentRenamer
+Category: Point Clouds
+Description: Name: PointCloudComponentRenamer Category: Point Clouds Description: How does it work?
+
+The PointCloudComponentRenamer receives point cloud features, changes the names of selected existing components, and then outputs the modified point cloud feature.
+Components may be renamed to standard component names or user-defined names. If a target component name (the new name) is already in use, that component will be overwritten.
+Multiple components may be renamed at once.
+
+Examples
+
+In this example, we are starting with a text file (CSV) of cell signal measurements. We want to convert the entire dataset to a single point cloud.
+Note that coordinates
+Related Transformers: PointCloudComponentAdder, PointCloudComponentCopier, PointCloudComponentKeeper, PointCloudComponentRemover"
+241;9817517c-5d66-4b32-8d0c-66c3b814d43b;"Name: SchemaScanner
+Category: Workflows
+Description: Name: SchemaScanner Category: Workflows Description: aximum number of characters in a string.
+When usingExplicit Width and Precision, consider scanning all features (Number of Features to Scan) to ensure all existing attribute value lengths are considered.
+
+Working with Dates
+
+Dates and times may be optionally scanned for.
+If strings match the FME datetime format of%Y%m%d%H%M%Sthey may be scanned for withDetect FME Dates.
+To scan for strings that match another date or time format, useConvert Input Date Format to FME Date. Note that this option is only available ifOutput Schema Before Data Featuresis set toYes.
+
+Related Transformers: FeatureReader, SchemaMapper"
+242;246c2a91-cd93-4690-820f-708a2e368029;"Name: XMLXQueryUpdater
+Category: 
+Description: Name: XMLXQueryUpdater Category:  Description: ext document for the query will be set to the value of the parameter (either as a file or a string, as appropriate).
+XML Result
+Name the attribute to contain the XQuery results. It is used only when the XML document is an attribute.
+For every element in the result set, a feature will be output theQueryResultsport with the value of the result set to the attribute specified by this parameter.
+When the query operates directly on a file, the update will occur on the file itself, and no features will be produced. If this is not the desired result, you can re
+Related Transformers: "
+243;1d22332c-1c4f-4fe6-9b5c-48094a10ce24;"Name: KMLTourBuilder
+Category: Cartography and Reports
+Description: Name: KMLTourBuilder Category: Cartography and Reports Description:  may provide additional options to remove invalid entries. Behavior varies between transformers.
+Note:Not all tools are available in all transformers.
+
+FME Community
+
+TheFME Communityis the place for demos, how-tos, articles, FAQs, and more. Get answers to your questions, learn from other users, and suggest, vote, and comment on new features.
+Search forall results about the KMLTourBuilderon theFME Community.
+Keywords: ""Google Earth"" KML
+Related Transformers: "
+244;1522cfd7-58e4-4ea8-9e78-da8eb0e4a6f0;"Name: RCaller
+Category: 
+Description: Name: RCaller Category:  Description: Installing R
+
+To use this transformer, you must install both R and the sqldf package. Using raster objects additionally requires the raster package.
+Download R Installers from:
+https://www.r-project.org/
+Windows:
+Install R following the usual Windows installation steps.
+For more information, please seehttps://cran.r-project.org/bin/windows/base/.
+macOS:
+For installing R on macOS, either you can either download the latest R image from:
+https://www.r-project.org/
+Or, alternatively use the homebrew, package manager command:
+brew install R
+This req
+Related Transformers: "
+245;a2bb62ab-26c0-4964-98b4-0d32b78c7f5f;"Name: CoordinateSystemExtractor
+Category: Coordinates
+Description: Name: CoordinateSystemExtractor Category: Coordinates Description: Input Ports
+
+This transformer accepts any feature.
+
+Output Ports
+
+Features with the extracted coordinate system name stored as an attribute.
+
+Parameters
+
+Coordinate System
+The name of the attribute to contain the extracted coordinate system name.
+
+Editing Transformer Parameters
+
+Using a set of menu options, transformer parameters can be assigned by referencing other elements in theworkspace. More advanced functions, such as an advanced editor and an arithmetic editor, are also available in some transformers. To access a menu of these options, clickbeside the applicable par
+Related Transformers: CoordinateSystemDescriptionConverter, CoordinateSystemRemover, CoordinateSystemSetter, LocalCoordinateSystemSetter"
+246;73d9d94f-f0e4-468e-8bfc-cbf6061f2c71;"Name: RasterBandPropertyExtractor
+Category: Calculated Values, Rasters
+Description: Name: RasterBandPropertyExtractor Category: Calculated Values, Rasters Description: rithmetic Editor provides a convenient way to construct math expressions from various data sources, such as attributes, parameters, and feature functions, where the result is used directly inside a parameter.
+Arithmetic Editor
+
+Conditional Values
+
+Set values depending on one or more test conditions that either pass or fail.
+Parameter Condition Definition Dialog
+
+Content
+
+Expressions and strings can include a number of functions, characters, parameters, and more.
+When setting values - whether entered directly in a parameter or constructed using one of the editors - strings and expressions c
+Related Transformers: RasterBandMinMaxExtractor, RasterPropertyExtractor, RasterStatisticsCalculator"
+247;d6e1e186-046f-470d-818b-6ac50ba57d02;"Name: RasterBandNodataRemover
+Category: Rasters
+Description: Name: RasterBandNodataRemover Category: Rasters Description: aster bands, converting cell values if necessary.
+
+RasterBandKeeper
+Removes all unselected bands from a raster feature.
+RasterBandMinMaxExtractor
+Extracts the minimum and maximum band values, palette keys, and palette values from a raster feature, and adds them to a list attribute.
+RasterBandNameSetter
+Sets the band name of selected bands on a raster, making raster contents simpler to understand compared to band numbers.
+RasterBandNodataRemover
+Removes the existing Nodata identifier from selected bands of a raster feature. Any values previously equal to the Nodata va
+Related Transformers: RasterBandNodataSetter, RasterPaletteNodataSetter"
+248;738a7b58-aba0-4cef-9faa-39560d2bcc8f;"Name: RasterExpressionEvaluator
+Category: Calculated Values, Rasters
+Description: Name: RasterExpressionEvaluator Category: Calculated Values, Rasters Description: uator
+Evaluates expressions on each cell in a raster or pair of rasters, including algebraic operations and conditional statements.
+RasterExtentsCoercer
+Replaces the geometry of input raster features with a polygon covering either the extents of a raster or the extent of data within a raster.
+RasterGCPExtractor
+ExtractsGround Control Point(GCP) coordinate system and point values from a raster feature and exposes them as attributes.
+RasterGCPSetter
+SetsGround Control Points(GCPs) on a raster, pairing cell positions with known coordinates.
+RasterGeoreferencer
+Georeferences a raster by eith
+Related Transformers: ExpressionEvaluator, PointCloudExpressionEvaluator, RasterCellValueCalculator, RasterCellValueReplacer, RasterCellValueRounder, RasterConvolver, RasterSingularCellValueCalculator, RasterStatisticsCalculator"
+249;cd1a63df-4ccc-4f67-a128-635dbadff8e8;"Name: AttributeManager
+Category: Attributes
+Description: Name: AttributeManager Category: Attributes Description: ipt Object Notation).
+
+fme_json
+logical
+Logical stores TRUE/FALSE data, which may be any of:
+An integer value of 1 (true) or 0 (false)
+Any string that begins with ""t"" or ""y"" (true), or ""f"" or ""n"" (false), or NULL.
+
+fme_boolean
+number(width, precision)
+Number stores single and double precision floating point values.
+Widthis the total number of characters allocated to the field, including the decimal point.
+Precisioncontrols the precision of the data and is the number of digits to the right of the decimal.
+
+fme_decimal(width,decimal)
+real32
+Real32 stores floating-p
+Related Transformers: AttributeCopier, AttributeCreator, AttributeKeeper, AttributeRemover, AttributeRenamer, AttributeValueMapper, BulkAttributeRenamer, BulkAttributeRemover"
+250;cd1a63df-4ccc-4f67-a128-635dbadff8e8;"<start>['Name: AttributeManager\nCategory: Attributes\nDescription: Name: AttributeManager Category: Attributes Description: ipt Object Notation).\n\nfme_json\nlogical\nLogical stores TRUE/FALSE data, which may be any of:\nAn integer value of 1 (true) or 0 (false)\nAny string that begins with ""t"" or ""y"" (true), or ""f"" or ""n"" (false), or NULL.\n\nfme_boolean\nnumber(width, precision)\nNumber stores single and double precision floating point values.\nWidthis the total number of characters allocated to the field, including the decimal point.\nPrecisioncontrols the precision of the data and is the number of digits to the right of the decimal.\n\nfme_decimal(width,decimal)\nreal32\nReal32 stores floating-p\nRelated Transformers: AttributeCopier, AttributeCreator, AttributeKeeper, AttributeRemover, AttributeRenamer, AttributeValueMapper, BulkAttributeRenamer, BulkAttributeRemover']<eos>"
